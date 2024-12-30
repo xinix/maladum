@@ -1,0 +1,1 @@
+[{"product":"maladum","count":1,"rarity":"tutorial","slug":"apple","name":"Apple","color":"red","size":"xs","attributes":["rest"],"restore_health":1,"buy":2,"sell":0},{"product":"maladum","count":1,"rarity":"tutorial","slug":"axe","name":"Axe","color":"blue","size":"md","attributes":["sharp","melee","forceful"],"buy":9,"sell":5}]

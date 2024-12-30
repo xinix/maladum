@@ -1,11 +1,10 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue' // https://vite.dev/config/
-import fs from 'fs' // https://vite.dev/config/
+import vue from '@vitejs/plugin-vue'
+import mkcert from 'vite-plugin-mkcert'
 import { resolve } from 'path'
 import { createHtmlPlugin } from 'vite-plugin-html'
-import { VitePWA } from 'vite-plugin-pwa' // https://vite.dev/config/
+import { VitePWA } from 'vite-plugin-pwa'
 
-// https://vite.dev/config/
 export default defineConfig({
   define: {
     __VUE_I18N_FULL_INSTALL__: true,
@@ -14,13 +13,9 @@ export default defineConfig({
     __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
   },
   server: {
-    host: 'maladum.dev',
+    host: 'maladum.test',
     open: true,
     port: 8765,
-    https: {
-      key: fs.readFileSync('./.cert/key.pem'),
-      cert: fs.readFileSync('./.cert/cert.pem'),
-    },
   },
   base: '/maladum/',
   build: {
@@ -33,6 +28,7 @@ export default defineConfig({
   },
   plugins: [
     vue(),
+    mkcert(),
     createHtmlPlugin({
       minify: false,
       pages: [

@@ -10,30 +10,35 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "i18n": "node build/i18n.cjs"
+    "i18n": "node build/i18n.cjs",
+    "sprite": "node build/sprite.cjs",
+    "tokens": "node build/tokens.cjs"
   },
   "dependencies": {
-    "pinia": "^2.2.6",
-    "sass": "^1.81.0",
+    "dexie": "^4.0.10",
+    "pinia": "^2.3.0",
+    "sass": "^1.83.0",
     "vue": "^3.5.13",
-    "vue-i18n": "^10.0.4",
-    "vue-router": "^4.4.5"
+    "vue-i18n": "^11.0.1",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.15.0",
     "@typescript-eslint/parser": "^8.15.0",
-    "@vitejs/plugin-vue": "^5.2.0",
+    "@vitejs/plugin-vue": "^5.2.1",
     "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-vue": "^9.31.0",
     "normalize.css": "^8.0.1",
     "prettier": "^3.3.3",
+    "spritesmith": "^3.5.1",
     "typescript": "^5.7.2",
-    "vite": "^5.4.11",
+    "vite": "^6.0.6",
     "vite-plugin-html": "^3.2.2",
-    "vite-plugin-pwa": "^0.21.0",
-    "vue-tsc": "^2.1.10",
+    "vite-plugin-mkcert": "^1.17.6",
+    "vite-plugin-pwa": "^0.21.1",
+    "vue-tsc": "^2.2.0",
     "yaml": "^2.6.1"
   }
 }

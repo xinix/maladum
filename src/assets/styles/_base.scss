@@ -1,0 +1,64 @@
+@use "vars";
+
+html {
+    font-family: var(--font-main), sans-serif;
+    font-size: 100%;
+    font-weight: var(--normal);
+    line-height: 1.1;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    color: var(--body-color);
+    background: var(--body-bg);
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    -webkit-print-color-adjust: exact;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-title), serif;
+    font-weight: var(--bold);
+    line-height: 1.1;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-transparent) var(--header-bg);
+}
+
+*::-webkit-scrollbar {
+    width: 11px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--header-bg);
+}
+
+*::-webkit-scrollbar-thumb {
+    border: 3px solid var(--transparent-bg);
+    border-radius: 6px;
+    background-color: var(--primary-transparent);
+}
+
+@media (min-width: 600px) {
+    body {
+        animation: gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+}

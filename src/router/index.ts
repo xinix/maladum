@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const HomePage = () => import('@/pages/HomePage.vue')
+const TokenPage = () => import('@/pages/TokenPage.vue')
+const SettingsPage = () => import('@/pages/SettingsPage.vue')
 
 const routes = [
   {
@@ -8,6 +10,19 @@ const routes = [
     name: 'home',
     component: HomePage,
     meta: { search: true },
+  },
+  {
+    path: '/item/:slug',
+    component: TokenPage,
+    name: 'token',
+    props: true,
+    meta: { search: true, back: true },
+  },
+  {
+    path: '/settings',
+    name: 'settings',
+    component: SettingsPage,
+    meta: { back: true },
   },
 ]
 

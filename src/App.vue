@@ -1,30 +1,43 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts" setup>
+import { computed, ref } from 'vue'
+import { useRoute } from 'vue-router'
+
+import ToTopButton from '@/components/buttons/ToTopButton.vue'
+import MenuHeader from '@/components/app/MenuHeader.vue'
+
+const rt = useRoute()
+const search = computed<boolean>(() => !!rt.meta.search)
+const back = computed<boolean>(() => !!rt.meta.back)
+const menu = ref()
+const main = ref()
+
+setTimeout(() => main.value.focus(), 100)
+
+function onKeyPress(event: KeyboardEvent) {
+  if (event.key === '/') {
+    menu.value.focus()
+  }
+  return event
+}
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
+  <div class="wrapper">
+    <MenuHeader
+      ref="menu"
+      :show-back="back"
+      :show-search="search"
+      tabindex="-2"
+      @keyup="onKeyPress"
+    />
+    <main ref="main" class="content" tabindex="-1" @keyup="onKeyPress">
+      <router-view v-slot="{ Component, route }">
+        <transition mode="out-in" name="slide-fade">
+          <component :is="Component" :key="route.path" />
+        </transition>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+        <ToTopButton />
+      </router-view>
+    </main>
+  </div>
+</template>

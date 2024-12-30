@@ -1,0 +1,33 @@
+.token {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+
+  &.md {
+    width: 150px;
+    height: 150px;
+  }
+
+  &.sm {
+    width: 115px;
+    height: 150px;
+  }
+
+  &.xs {
+    width: 85px;
+    height: 150px;
+  }
+
+  &.lg {
+    width: 215px;
+    height: 150px;
+  }
+
+  &.xl {
+    width: 280px;
+    height: 150px;
+  }
+}
+
+@import "@/assets/generated/maladum.css";
