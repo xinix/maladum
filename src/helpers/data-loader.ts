@@ -1,7 +1,7 @@
 import { ProductType } from '@/tokens/types.ts'
 
+const maladum = () => import('@/assets/data/maladum.json')
+
 export function loadDataJson(product: ProductType) {
-    return {
-        maladum: require('@/assets/data/maladum.json'),
-    }[product].then((module: any) => module.default)
+    return { maladum }[product]().then((module: any) => module.default)
 }

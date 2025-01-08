@@ -31,14 +31,18 @@ about-me: >-
   App for Core Space where players can lookup the item tokens they find the game and get a detailed 
   explanation about the symbols. A few years later I got everything for Maladum and decided to make 
   an App for that too.
+no_result: "This is not what you were looking for, but we couldn't find it either."
 maladum: "Maladum Dungeons of Enveron Starter Set"
+buy: Buy
+sell: Sell
 rarity: Rarity
-tutorial: Tutorial
+tuto: Tutorial
+tutorial_only: Only show items used in the Tutorial
 common: Common
 uncommon: Uncommon
 rare: Rare
 exclusive: Exclusive
-size: Size
+f_size: Size
 xxs: XXS
 xs: XS
 sm: SM
@@ -51,4 +55,539 @@ blue: Blue
 red: Red
 yellow: Yellow
 purple: Purple
-black: Black
+grey: Grey
+rarity_common: Common item - after the Tutorial, place these into the token pouch
+rarity_uncommon: Uncommon item - place these into a separate bag with other uncommon items
+rarity_rare: Rare item - place these into a separate bag with other rare items
+rarity_exclusive: Exclusive item - place these into a separate bag with other exclusive items
+tutorial: Tutorial item - punch these out first and follow the instructions in the Learn to Play Booklet
+armour: >-
+  <strong>Armour;</strong>
+  A physical armour value will reduce the number of hits against the wearer by the value shown.
+  It will also limit their ability to cast spells.
+melee: >-
+  If your character has an unarmed combat icon on their board or in their armour slot you may use 
+  that, rolling dice equal to the number inside.<br><br>Alternatively you may choose one of your
+  character's melee weapons to attack with, using the number of dice shown.
+forceful_melee: >-
+  If your character has an unarmed combat icon on their board or in their armour slot you may use 
+  that, rolling dice equal to the number inside. If the icon has a burst around it like this, It
+  can be used to make a <strong>forceful</strong> hit. The attack will roll one extra die, but
+  there is a chance that the weapon will break. <br><br>
+  If two or more blunders (skull icon) are rolled during a forceful melee attack, the weapon is 
+  broken. The current attack will be resolved as normal, but then flip the token face down. <br><br>
+  Broken items cannot be used while they are broken. They must be repaire at the Artisan's Guild 
+  after the game.
+ranged: >-
+  <strong>Ranged attack</strong>; To attempt a ranged attack, choose a target within range, line of 
+  sight and cannot be engaged with your character. If you are engaged with one or more enemies while 
+  making a ranged attack, they make an attack of opportunity against you after your shot is resolved.
+  <br><br>The most common modifier applied to ranged attacks is cover. Partial cover will reduce the 
+  number of hits on a target by 1. This is always resolved before any other modifiers such as armour.
+ranged_1: >-
+  <strong>Short range</strong>; 
+  This weapon can be used to make a ranged attack up to 5 squares away - the length of 
+  the short ruler. The weapon will roll {0} dice shown.
+ranged_2: >-
+  <strong>Medium range;</strong> 
+  This weapon can be used to make a ranged attack from 5-13 squares away - the length of 
+  the longer ruler. The weapon will roll {0} dice shown.
+ranged_3: >-
+  <strong>Long range;</strong>
+  This weapon can be used to make a ranged attack 14 squares or more away - anything 
+  further than the long ruler. The weapon will roll {0} dice shown.
+x_dice: >-
+  <strong>+X dice;</strong>
+  This is usually found alongside the <strong>Channel icon</strong>. The attack may roll an 
+  additional number of dice equal to the number of pegs spent.
+ammunition: >-
+  <strong>Ammunition</strong>;
+  This icon is used to show that a weapon requires ammunition. When the weapon is used, 
+  the player must discard one of these tokens from their inventory. If the player does not have 
+  any tokens to discard, the weapon cannot be used.
+balanced: >-
+  <strong>Balanced</strong>;
+  This weapon rolls +1 dice when thrown.
+bludgeoning: >-
+  <strong>Bludgeoning</strong>; 
+  If this attack rolls a critical hit, the target is Fatigued, even if no damage was caused.<br><br>
+  The target suffers one additional Fatigued counter for each damage caused.<br><br> 
+  This attack rolls one extra die when attacking terrain pieces.
+book: >-
+  <strong>Book</strong>;
+  In the next Market Phase after obtaining this token, rol the Magic Die to see what literary secrets
+  you've uncovered. If the token is Uncommon, add 1 to the roll. If the token is Rare or Exclusive,
+  add 2 to the roll.
+  <ul>
+  <li>1-2: The book is a worthless - discard it.</li>
+  <li>3-5: The book is sold for Guilder equal to the number rolled.</li>
+  <li>6-7: An Adventurer of your choice gains 1 Experience. Discard the book.</li>
+  <li>8: You found information on an ancient artefact. Add one random relic resource token to the 
+  token pouch and discard the book.</li>
+  </ul>
+burning: >-
+  <strong>Burning</strong>; If this attack rolls a critical hit, the target is Burning, even if no
+  damage was caused. Equipment with this icon is considered a source of fire.
+camouflage: >-
+  This character can only be targeted by ranged attacks from within short range.
+channel: >-
+  <strong>Channel;</strong>
+  This icon will be seen alongside other statistics or abilities. At least one Magic peg must be spent
+  to use the statistic/activate the ability. If an ability has an X value, additional pegs may be 
+  spent to improve the effect. Remember to roll the Magic Die when using this item.
+forbidden_channel: >-
+  Abilities with the black Forbidden Channel icon work in the same way as Channel - discard at least
+  one Magic peg to use an ability - but the Forbidden Magic Die must be rolled instead of the regular
+  Magic Die.
+cleave: >-
+  <strong>Cleave;</strong>
+  If a melee attack with this weapon defeats an enemy, you may resolve the same attack against another
+  eligible enemy, removing one hit from the roll. You may continue to do this until you fail to defeat
+  an enemy or there are no eligible enemies remaining.
+crafting: >-
+  <strong>Crafting resource;</strong>
+  This item is used as an ingredient for crafting. The letter and colour determine the resource type.
+  Numbered items are used to craft unique relics.
+creature: >-
+  <strong>Creature;</strong>
+  Unless stated otherwise, this character cannot Open Doors, Search, use equipment or Interact with terrain.
+cumbersome: >-
+  <strong>Combersome;</strong>
+  If an attack with this weapon rolls any blunders and is not broken, turn this token 180 degrees. It
+  cannot be used in this position. It requires an effortless action to ready the weapon for use again.
+  <br><br>
+  Cumbersome weapons cannot be thrown.
+curse: >-
+  <strong>Curse;</strong>
+  If this weapon rolls a critical hit, the target is Cursed, even if no damage was caused.
+darkness: >-
+  <strong>Darkness;</strong>
+  Treat this item as a darkness counter. It will move with any character carrying it, affecting the
+  area in short range as usual.
+light: >-
+  <strong>Light;</strong>
+  Treat this item as a light counter. It will move with any character carrying it, affecting the
+  area in short range as usual.
+defensive_re_roll: >-
+  <strong>Defensive Re-roll;</strong>
+  The character may force a single die to be re-rolled from any attack made against them, unless
+  the attack ignores physical armour. Critical hits cannot be re-rolled.
+discard: >-
+  <strong>Discard;</strong>
+  When this item has been used, return it to the supply.
+effortless: >-
+  <strong>Effortless;</strong>
+  This item can be used as an effortless action.
+entangling: >-
+  <strong>Entangling;</strong>
+  If this attack causes one or more hits, the target is Fatigued. If this attack rolls a critical hit,
+  the target is knocked prone. These effects apply even if no damage was caused.
+fast: >-
+  <strong>Fast;</strong>
+  When making a Move action, this character can move X additional squares. If a character has this 
+  ability from multiple sources, they use the highest value - they do not stack.
+first_strike: >-
+  <strong>First Strike;</strong>
+  When this character enters within melee range of an enemy (including when placed onto the gaming area
+  or when a door opens), it gets an immediate free Melee Attack action.
+fly: >-
+  <strong>Fly;</strong>
+  This character can fly above the ground with the following benefits: <br><br><ul>
+  <li>Scramble</li>
+  <li>They ignore the first hit of any attack of opportunity against them.</li>
+  <li>They cannot be knocked prone. They are still subject to any other parts of a rule that would normally make them prone.</li>
+  </ul>
+hawkeye: >-
+  <strong>Hawkeye;</strong>
+  This attack ignores partial cover and can fire at engaged characters at any range without randomising
+  the target.
+hazardous: >-
+  <strong>Hazardous;</strong>
+  When this item would be used, roll the blue die. If a hit is scored, the item's normal effects
+  are applied. On a blunder, the user suffers the effects shown alongside the icon instead (such 
+  as gaining status counters or losing pegs). On a blank, no effects are applied.
+hidden_location: >-
+  <strong>Hidden Location;</strong>
+  Draw the Hidden Location card with the number matching this token. Return the token to its supply
+  (the pouch for common tokens, or the seperate bag otherwise).
+hit_and_run: >-
+  <strong>Hit and Run;</strong>
+  After making a melee attack, if this character is still engaged it will make a free Mode directly
+  away from the defender, ignoring attacks of opportunity, if there is space to do so. It will 
+  not engage other enemies with this Move.
+immobile: >-
+  <strong>Immobile;</strong>
+  This character cannot Move or be moved unless a rule explicitly says otherwise.
+immunity: >-
+  <strong>Immunity;</strong>
+  This icon will be seen alongside other abilities and statuses. This character does not suffer
+  any counters or effects from the ability shown.
+indestructible: >-
+  <strong>Indestructible;</strong>
+  This item ignores any rule that would cause it to break. If you need to determine a random
+  item to be broken, choose another if possible.
+infinite_ammo: >-
+  <strong>Infinite Ammo;</strong>
+  When this token is used for a ranged attack, it ignore blunder results that would cause you
+  to run out of ammo and discard it.
+key: >-
+  <strong>Key;</strong>
+  A character carrying this item may lock or unlock any door or terrain piece as an effortless action.
+lasting_effect: >-
+  <strong>Lasting Effect;</strong>
+  Effects granted by this item last until the end of the round. Rotate the token 180 degrees as a 
+  reminder. If the token is discarded after use, place it on your character board instead and 
+  discard it at the end of the round. <br><br>
+  The user may spend X Magic pegs (max 2) to add X Reminder counters to the item. In each 
+  Assessment Phase, remove a Reminder counter instead of discarding/rotating the item.
+location_specific: >-
+  <strong>Location Specific;</strong>
+  Unless stated otherwise in a quest briefing, this item only works in the quest in which it 
+  was found, or the next quest if purchased in a Market Phase.
+loud: >-
+  <strong>Loud;</strong>
+  Increase the Dread by 1 when this item is used.
+lull: >-
+  <strong>Lull;</strong>
+  Reduce the Dread by the amount shown when this item is used.
+magical_armour: >-
+  <strong>Magical Armour;</strong>
+  Spend an action and up to X Magic pegs to increase your Warded value by the number of pegs 
+  spent. <br><br>
+  Rotate the token 180 degrees to mark it as active. The token cannot be used in this position.
+malacyte_enhancement: >-
+  <strong>Malacyte Enhancement;</strong>
+  This character may cast spells with one more Magic peg than their rank allows.
+malacyte_stability: >-
+  <strong>Malacyte Stability;</strong>
+  You may discard a Magic peg to re-roll the Magic die.
+malacyte_conduit: >-
+  <strong>Malacyte Conduit;</strong>
+  This character cannot contain the magical energy in their body. At the start of each of this
+  character's turns, add a blue peg to the Dread Tracker. If on an item, the rule applies while
+  it is being carried or worn.
+master: >-
+  <strong>Master;</strong>
+  This icon will be seen alongside other abilities on Companions or Summoned characters. The 
+  linked ability applies to the controlling character while they are within short range of 
+  this character.
+night_sight: >-
+  <strong>Night sight;</strong>
+  This character ignors all effects of Darkness.
+otherworldly: >-
+  <strong>Otherworldly;</strong>
+  This character originates from another dimension. The icon has no effect on its own but will
+  interact with other rules found in expansions.
+pack: >-
+  <strong>Pack;</strong>
+  These characters arrive in groups. When they enter play, place the number of miniatures shown
+  here instead of a single character. They still activate individually.
+parry: >-
+  <strong>Parry;</strong>
+  When the use of this item is the target of a melee attack, you may roll a combat die. Each hit
+  scored will negate one hit from the enemy's attack as if it were physical armour. You then 
+  become Fatigued.
+piercing: >-
+  <strong>Piercing;</strong>
+  Physical armour cannot negate hits from this weapon.
+plunderer: >-
+  <strong>Plunderer;</strong>
+  If this attack causes damage, a random item from the defending character's inventory is scattered.
+  If the attack also scored a critical hit the attacker may take take the item instead.
+poison: >-
+  <strong>Poison;</strong>
+  If this weapon rolls a critical hit, the target is Poisoned, even if no damage was caused.
+preparation: >-
+  <strong>Preparation</strong>;
+  After this weapon is used, turn the token 180 degrees. It cannot be used in this position. It 
+  requires an action to ready the weapon for use again.
+purification: >-
+  <strong>Purification;</strong>
+  When this ability is used, the character may replace their X rightmost black Health pegs with
+  green ones. <br><br>
+  This ability will specify when it applies, such as when Channelled, when Resting, or by
+  spending an action or Skill.
+quickstrike: >-
+  <strong>Quickstrike;</strong>
+  If this weapon rolls a critical hit during a melee attack, you may Dash or make another 
+  attack (with this or another weapon) for free immediately after the initial attack is
+  resolved.
+rank: >-
+  <strong>Rank;</strong>
+  The power level of an NPC. NPCs activate in order of rank, starting with the highest, and 
+  their rank may also be referenced by other rules and effects.
+reach: >-
+  <strong>Reach;</strong>
+  This weapon mayy be used to make a Melee Attack against an enemy up to X squares away, 
+  including diagonally. Unless in contact, the characters are not considered to be 
+  engaged for any other purpose, including attack of opportunity. <br><br>
+  When using multi-level terrain this rule applies vertically as well - the marks on the 
+  ruler can be used to determine how many squares a target is from their attacker when
+  measuring up or down at an angle. Measure from ground level.
+reactive: >-
+  <strong>Reactive;</strong>
+  Once per turn, if another character start their turn or enters a square withing range of
+  this character's attack (intentionally or otherwise), this character immediately make a 
+  free attack against them. This interrupts any movement, and the moving character can 
+  continue their action/turn after the attack if they survive.
+regeneration: >-
+  <strong>Regeneration (peg type);</strong>
+  Restore X pegs of the type shown in the Assessment Phase. If a character has this ability
+  from multiple sources, they are cumulative.
+relentless: >-
+  <strong>Relentless;</strong>
+  A character attacked multiple times in a single round by characters with this rule will 
+  have their physical armour reduced by 1 for each attack after the first, to minimum of zero. <br><br>
+  For example, the first attack by a character with Relentless will use the defender's standard
+  armour value. The second will reduce it by 1; the third will reduce it by 2, and so on.
+re_roll: >-
+  <strong>Re-roll;</strong>
+  If on a weapon, the character may re-roll a single combat die each time the weapon is used
+  to attack or parry.
+rest: >-
+  <strong>Rest</strong>;
+  This icon will be seen alongside other abilities and is only used during a Rest action.
+  This character may discard the token to apply the abilities shown.
+restore_action: >-
+  This icon can be found on potions and other remedies. When used you or another Adventurer in 
+  contact gain X additional actions (based on the number shown). Actions must be used in the 
+  character's current turn and cannot be saved for later.
+restore_health: >-
+  This icon can be found on potions and other remedies. When used restore X pegs on your - or 
+  another Adventurer in contact - health track (based on the number shown).
+restore_magic: >-
+  This icon can be found on potions and other remedies. When used restore X pegs on your - or 
+  another Adventurer in contact - magic track (based on the number shown).
+restore_skill: >-
+  This icon can be found on potions and other remedies. When used restore X pegs on your - or 
+  another Adventurer in contact - skill track (based on the number shown).
+retaliation: >-
+  <strong>Retaliation;</strong>
+  If this item/character blocks at least one hit from a melee attack that rolls any blunders, 
+  resolve an attack against the attacker with one die for each blunder (skull) rolled.
+rope: >-
+  <strong>Rope;</strong>
+  This character may spend an action to place this token in contact with them. While this token
+  is in position, any character may Climb up or down from that location at a cost of one action
+  for each level (height of a wall) climbed. <br><br>
+  If placed in contact with a gap, characters may Jump across the gap from its location, adding
+  2 to their safe distance.
+rough_ground: >-
+  <strong>Rough Ground;</strong>
+  This area follow the rules for Rough Ground using the value shown. Characters or items may have
+  this icon with a negative value, reducing the effect of any area of Rough Ground they are in
+  accordingly.
+scramble: <strong>Scramble;</strong>
+  The top number is the max height or width in square/inches of objects/characters that the
+  character can move up or over as part of a normal Move action - they do not need to Climb
+  them or spend any actions, just like a regular character climbing stairs. <br><br>
+  The bottom number is the character's safe distance for jumping down or across.
+sharp: >-
+  <strong>Sharp</strong>;
+  If this weapon rolls a critical hit the target is Wounded, even if no damage was caused.
+shield_block: >-
+  <strong>Shield Block;</strong>
+  This character may spend an action to raise the shield, taking this token from their 
+  inventory and placing it on their miniature to gain the effects shown inside the shield
+  icon. The token is placed back into the inventory again as soon as the used does any 
+  of the following: <br><br><ul>
+  <li>Takes any action other than Move or Dash</li>
+  <li>Suffers damage</li>
+  <li>Becomes Stunned</li>
+  </ul> <br><br>
+  The character may also raise the shield when the character is attacked outside of 
+  their own turn, before dice are rolled. After the attack the character will become
+  Fatigued. <br><br>
+  Only one shield can be raised at a time.
+size: >-
+  <strong>Size;</strong>
+  This character is smaller or larger than an average human and additional rules apply,
+  most commonly used for LoS, Knock Back and Moving Objects.
+skill: >-
+  <strong>Skill;</strong>
+  The skill shown here can be used by the character at up to the level shown, exactly
+  as if they were on the character's Class board.
+skill_camouflage_level_2: >-
+  <strong>Skill: Camouflage (lvl 2);</strong>
+  The skill shown here can be used by the character at up to the level shown, exactly
+  as if they were on the character's Class board. <br><br><ul>
+  <li>(1) While you are in contact with any wall you cannot be targeted for the 
+  rest of the round. Enemies can move through adjacent squares without stopping or 
+  attracting attacks of opportunity from you and cannot end a move in contact with you.
+  You do not block LoS in any way. </li>
+  <li>(2) Make a Move or Ranged Attack action. While you are in contact with any terrain
+  you cannot be targeted for the rest of the round. Enemies can move through adjacent squares without stopping or 
+  attracting attacks of opportunity from you and cannot end a move in contact with you.
+  You do not block LoS in any way. </li>
+  </ul>
+skill_intimidating_level_2: >-
+  <strong>Skill: Intimidating (lvl 2);</strong>
+  The skill shown here can be used by the character at up to the level shown, exactly
+  as if they were on the character's Class board. <br><br><ul>
+  <li>(1) Reaction: use when an enemy in LoS activates. You may choose the enemy's target 
+  for the round from any eligible characters it can see, even if it is already engaged and/or
+  another target is closer. </li>
+  <li>(2) Reaction: Use when an enemy enters LoS or starts their turn within LoS. Their turn 
+  immediately ends and they are Stunned. <br><br>
+  <strong>Passive:</strong> As an effortless action, you may take an action with any friendly
+  character in short range. They become Fatigued.</li>
+  </ul>
+skill_tracking_level_2: >-
+  <strong>Skill: Tracking (lbl 2);</strong>
+  The skill shown here can be used by the character at up to the level shown, exactly
+  as if they were on the character's Class board. <br><br><ul>
+  <li>(1) Look at the top three cards of the Event Deck. </li>
+  <li>(2) Based on the current Dread, roll the arrival of all NPCs due to arrive this round and 
+  place them next to the appropriate Entry Points. Grave Points or any other arrival location within
+  short range of this Adventurer cannot be used. You may then move the NPCs at any one Entry Point to 
+  a different one. Their arrival will not be rolled again this round - they will just be activated and 
+  enter the gaming area as normal. <br><br>
+  <strong>Passive:</strong> If any rule causes your Staging Point to be swapped with a random 
+  Entry Point, you may roll the Magic Die twice and pick your preferred result.</li>
+  </ul>
+skill_fortified_mind_level_2: >-
+  <strong>Skill: Fortified Mind (lvl 2);</strong>
+  The skill shown here can be used by the character at up to the level shown, exactly
+  as if they were on the character's Class board. <br><br><ul>
+  <li>(1) Use before casting an Action spell to cast it while engaged.</li>
+  <li>(2) Reaction: Use when a friendly character in short range suffers an attack. 
+  Use this character's magical armour to negate hits. Magic pegs from any combination
+  of this character and the target character may be used to boost the armour. Any Magic Die 
+  effects are applied to this character.</li>
+  </ul>
+skill_inspiring_level_3: >-
+  <strong>Skill: Inspiring (lvl 3);</strong>
+  The skill shown here can be used by the character at up to the level shown, exactly
+  as if they were on the character's Class board. <br><br><ul>
+  <li>(1) Remove a Terrified counter from a friendly character in short range.</li>
+  <li>(2) Reaction: Use after defeating an enemy. All other friendly characters in short range
+  may remove a Terrified counter OR take one action. <br><br>
+  <strong>Passive:</strong> Any other friendly character that starts its turn in short range
+  and LoS of this character removes a Terrified counter before activating. </li>
+  <li>(3) All friendly characters in short range (including this one) remove all Terrified
+  and Fatigue counters. Each may then make one action.</li>
+  </ul>
+stash: >-
+  <strong>Stash;</strong>
+  This item may be instantly discarded when found to add its value to your Stash - it
+  does not have to be placed into an Adventurer's inventory.
+terrifying: >-
+  <strong>Terrifying;</strong>
+  If this character rolls a critical hit when attacking, the target is Terrified. <br><br>
+  If an enemy character ends their turn within short range of this character, roll the Magic
+  Die. On a 1 that character becomes Terrified.
+trap: >-
+  <strong>Trap;</strong>
+  This item is a trap that can be set by an Adventurer. The may make an interact action to set
+  it and place it in an adjacent square. <br><br>
+  NPCs are unaware of the trap and will not adjust their route to avoid it. The trap is triggered
+  immediately when an enemy enters a square containing or adjacent to it and its effects are 
+  resolved against that enemy. Then flip the token face down - it will not resolve again this 
+  round. Flip it face up again in the Assessment Phase. Each time the trap is resolved, roll a 
+  die. On a (skull), discard the token. <br><br>
+  Adventurers may pick the item up.
+trap_description: >-
+  Traps - revealing one of these tokens during a Search immediately triggers the trap against 
+  the Adventurer that found it! Traps drawn outside of a Search action (e.g. when drawing 
+  equipment for an NPC) should be returned to the pouch with no effect and a new token should 
+  be drawn. Traps cannot be bought or sold.
+trap_melee: >-
+  Traps - revealing one of these tokens during a Search immediately triggers the trap against 
+  the Adventurer that found it! Perform a melee attack against the character that triggered 
+  the trap.
+unreliable: >-
+  <strong>Unreliable;</strong>
+  If an attack with this weapon rolls a single (skull), it has jammed. Turn the token 180 degrees.
+  It cannot be used in this position. It requires an action to ready the weapon for use again. If
+  it rolls two or more (skulls) it has broken.
+unsanctioned: >-
+  <strong>Unsanctioned;</strong>
+  This character follow the rules for Unsanctioned Maladaar.
+vampiric: >-
+  <strong>Vampiric (peg type);</strong>
+  If this attack rolls a critical hit the target loses a peg of the type shown if possible, in 
+  addition to any damage caused. If multiple types are listed, the target loses whichever they
+  have the most of (attacker's choice if equal). If a peg was lost, the attacker restores a peg
+  of same type if possible. If they cannot they become Blessed if possible.
+vicious: >-
+  <strong>Vicious;</strong>
+  Regular hits on the blue die on attacks made with this weapon are critical hits.
+volatile: >-
+  <strong>Volatile;</strong>
+  If this attack rolls a (skull) on the blue die, the user takes one damage. 
+  Then, all adjacent characters suffer an attack with a number of dice matching
+  the original attack and the Burning rule.
+worthy_opponent: >-
+  <strong>Worthy Opponent;</strong>
+  If an Adventurer defeats this character, their party gains one Renown. The
+  character must be defeated with a direct attack or effect - death from delayed
+  effects such as Poisoned or Wounded do not grant Renown. <br><br>
+  This character can only appear once per quest. Once it has arrived, any further
+  rules that cause another to enter play are ignored, even after it has been 
+  defeated.
+adamantine_elixir: >-
+  <strong>Adamantine Elixir;</strong>
+  While in effect, this potion grants Immunity to the following effects:
+  Bludgeoning, Burning, Entangling, Poison, Sharp, Terrifying, as well as increasing
+  the user's physical armour by 2. This armour increase does not hinder magic use.
+blessed_water: >-
+  <strong>Blessed Water;</strong>
+  This item can only be used to attack Revenants.
+camping_gear: >-
+  <strong>Camping Gear;</strong>
+  The party may re-roll all Wilderness rolls in the rest phase.
+cordial_of_cognisance: >-
+  <strong>Cordial of Cognisance;</strong>
+  When this item is used, the character gains three Experience and may immediately assign
+  it to their Class Board. Skills and Spells chosen may be used in this round. We suggest
+  marking the gains in a different colour as they are temporary. <br><br>
+  When the token is discarded the character loses two of the gained XP and Skills/Spells. <br><br>
+  Note that characters only Level Up in the Advancement Phase.
+daemon_mantle: >-
+  <strong>Daemon Mantle;</strong>
+  This item may be used to cast the Rearrange Cells spell with X = 5. No pegs are spent and the 
+  Magic Die is not rolled. Rotate the token 180 degrees - it cannot be used for the rest of the 
+  game.
+doorbuster: >-
+  <strong>Doorbuster;</strong>
+  This item adds three dice to a character's unarmed combat value against terrain pieces only.
+gas_trap: >-
+  <strong>Gas Trap;</strong>
+  This is resolved as a Ranged Attack with Blast against the character that triggered it. It 
+  does not cause damage. Instead each target suffers one Fatigue counter per hit.
+maladaar_almanac: >-
+  <strong>Maladaar's Almanac;</strong>
+  Characters must have a spell track on their Class board to use this item. The user marks spaces
+  equal to their rank (marking a new space when they reach a new rank). For each space marked, the
+  user may learn a new spell as if XP had been spent. Mark these with an X on the Maladaar reference
+  card. <br><br>
+  If after any quest a different character carries this item, erase any filled spaces here and erase
+  the corresponding space on the character's reference card.
+mystic_grimoire: >-
+  <strong>Mystic Grimoire;</strong>
+  The character holding this item may learn spells one level higher than their rank. Learned spells are
+  retained if the character no longer hold the item.
+oblivions_echo: >-
+  <strong>Oblivion's Echo;</strong>
+  This device channels the Crucible of Resurrection. The user may Interact with the item as if they were
+  Interacting with a Crucible. All the same rules apply.
+sceptre_of_dominion: >-
+  <strong>Sceptre of Dominion;</strong>
+  The character with this item can Persuade any character to do anything (except Adventurers from other
+  parties will not join you). NPCs with no Persuade value use their rank instead.
+sledge_of_burden: >-
+  <strong>Sledge of Burden;</strong>
+  This character is considered to be one size larger for the purposes of moving objects.
+tome_of_revenance: >-
+  <strong>Tome of Revenance;</strong>
+  This item allows the user to re-roll attacks and effects against Revenants only.
+fireball: >-
+  <strong>Fireball;</strong>
+  Elemental Magic - Action - Requires a source of fire within range of the casted and the target. 
+  Make a ranged attack from the source of fire with X dice, Blast and Burning.
+spell_nausea: >-
+  <strong>Nausea;</strong>
+  Vicarious Magic - Action - Target is Poisoned.
+focused_energy: >-
+  <strong>Focused Energy;</strong>
+  Elemental Magic - Action - Make a ranged attack with X dice, Bludgeoning and Sharp.

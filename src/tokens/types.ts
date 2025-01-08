@@ -1,19 +1,14 @@
 export type ProductType = 'maladum'
 
-export type TokenColor = 'blue' | 'red' | 'yellow' | 'purple' | 'black'
+export type TokenColor = 'blue' | 'red' | 'yellow' | 'purple' | 'grey'
 
 export type TokenSize = 'md' | 'lg' | 'xl' | 'xxl' | 'sm' | 'xs' | 'xxs'
 
-export type AttributeType = 'forceful' | 'melee' | 'rest' | 'sharp'
+export type AttributeType = string
 
-export type ItemDescription = 'flame-fuel'
+export type ItemDescription = string
 
-export type TokenRarity =
-    | 'tutorial'
-    | 'common'
-    | 'uncommon'
-    | 'rare'
-    | 'exclusive'
+export type TokenRarity = 'common' | 'uncommon' | 'rare' | 'exclusive'
 
 export const SIZE_NUMBERS = {
     xxs: 0,
@@ -44,9 +39,9 @@ type BaseToken = {
     color: TokenColor
     buy?: number | number[]
     sell?: number | number[]
+    range?: number[]
     description?: ItemDescription[]
     attributes?: AttributeType[]
-    restore_health?: number
 }
 
 export type TokenType = BaseToken & {
@@ -56,4 +51,11 @@ export type TokenType = BaseToken & {
 export type MaladumToken = BaseToken & {
     key: string
     size: number
+}
+
+export type FilterFormType = {
+    tutorial: string[]
+    colors: TokenColor[]
+    sizes: TokenSize[]
+    rarities: TokenRarity[]
 }

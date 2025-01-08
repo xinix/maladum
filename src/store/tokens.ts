@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
 import { db } from '@/db'
 import {
+    FilterFormType,
     MaladumToken,
     ProductType,
     SIZE_ENUM,
@@ -22,6 +23,7 @@ export const useTokens = defineStore('tokens', () => {
 
     // filter
     const q = ref('')
+    const tutorial = ref(false)
     const colors = ref<TokenColor[]>([])
     const rarities = ref<TokenRarity[]>([])
     const sizes = ref<TokenSize[]>([])
@@ -36,9 +38,9 @@ export const useTokens = defineStore('tokens', () => {
 
     function sortTokens(a: MaladumToken, b: MaladumToken) {
         return (
-            a.rarity.localeCompare(b.rarity) ||
             a.color.localeCompare(b.color) ||
             a.size - b.size ||
+            a.rarity.localeCompare(b.rarity) ||
             a.name.localeCompare(b.name)
         )
     }
@@ -68,6 +70,9 @@ export const useTokens = defineStore('tokens', () => {
                     }
                 }),
             )
+        }
+        if (tutorial.value) {
+            result = result.filter((a) => a.description != undefined && a.description.indexOf('tutorial') >= 0)
         }
         if (colors.value.length > 0) {
             result = result.filter((a) => colors.value.indexOf(a.color) >= 0)
@@ -114,10 +119,11 @@ export const useTokens = defineStore('tokens', () => {
         changed.value = true
     }
 
-    function filter(clrs: TokenColor[], rtys: TokenRarity[], szs: TokenSize[]) {
-        colors.value.splice(0, colors.value.length, ...clrs)
-        rarities.value.splice(0, rarities.value.length, ...rtys)
-        sizes.value.splice(0, sizes.value.length, ...szs)
+    function filter(form: FilterFormType) {
+        tutorial.value = form.tutorial.length > 0
+        colors.value.splice(0, colors.value.length, ...form.colors)
+        rarities.value.splice(0, rarities.value.length, ...form.rarities)
+        sizes.value.splice(0, sizes.value.length, ...form.sizes)
     }
 
     return {

@@ -3,7 +3,7 @@ import FormField from '@/components/forms/FormField.vue'
 import BaseCheckbox from '@/components/forms/BaseCheckbox.vue'
 
 import { computed, reactive, ref } from 'vue'
-import { TokenColor, TokenRarity, TokenSize } from '@/tokens/types'
+import { FilterFormType, TokenColor, TokenRarity, TokenSize } from '@/tokens/types'
 import { useTokens } from '@/store/tokens'
 
 const tokens = useTokens()
@@ -11,22 +11,13 @@ const tokens = useTokens()
 const active = ref(false)
 const popup = ref()
 
-const colors: TokenColor[] = ['blue', 'red', 'yellow', 'purple', 'black']
-const sizes: TokenSize[] = ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl']
+const colors: TokenColor[] = ['blue', 'red', 'yellow', 'purple', 'grey']
+const sizes: TokenSize[] = ['xs', 'sm', 'md', 'lg', 'xl']
 
-const rarities: TokenRarity[] = [
-    'tutorial',
-    'common',
-    'uncommon',
-    'rare',
-    'exclusive',
-]
+const rarities: TokenRarity[] = ['common', 'uncommon', 'rare', 'exclusive']
 
-const state = reactive<{
-    colors: TokenColor[]
-    sizes: TokenSize[]
-    rarities: TokenRarity[]
-}>({
+const state = reactive<FilterFormType>({
+    tutorial: [],
     colors: [],
     sizes: [],
     rarities: [],
@@ -58,7 +49,7 @@ const onEnter = (ev: KeyboardEvent) => {
     ev.cancelBubble = true
 
     toggle()
-    tokens.filter(state.colors, state.rarities, state.sizes)
+    tokens.filter(state)
     return ev
 }
 
@@ -69,12 +60,17 @@ const onToggle = (ev: MouseEvent) => {
 
 const onSave = () => {
     toggle()
-    tokens.filter(state.colors, state.rarities, state.sizes)
+    tokens.filter(state)
 }
 
 const onClear = (ev: MouseEvent) => {
     toggle()
-    tokens.filter([], [], [])
+    tokens.filter({
+        tutorial: [],
+        colors: [],
+        sizes: [],
+        rarities: []
+    })
     return ev
 }
 </script>
@@ -120,11 +116,21 @@ const onClear = (ev: MouseEvent) => {
                     class="content form-stacked"
                     @submit.prevent="onSave"
                 >
+
                     <FormField v-if="hasFilter" name="clear">
                         <button class="clear" type="button" @click="onClear">
                             {{ $t('clear_filter') }}
                         </button>
                     </FormField>
+
+                    <FormField label="tuto" name="tutorial">
+                        <BaseCheckbox
+                            v-model="state.tutorial"
+                            :label="$t('tutorial_only')"
+                            value="on"
+                        />
+                    </FormField>
+
 
                     <FormField label="rarity" name="rarity">
                         <BaseCheckbox
@@ -136,7 +142,7 @@ const onClear = (ev: MouseEvent) => {
                         />
                     </FormField>
 
-                    <FormField label="size" name="size">
+                    <FormField label="f_size" name="size">
                         <BaseCheckbox
                             v-for="size in sizes"
                             :key="size"

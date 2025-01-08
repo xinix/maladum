@@ -1,4 +1,5 @@
 import '@/assets/styles/main.scss'
+import '@/assets/generated/maladum.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'

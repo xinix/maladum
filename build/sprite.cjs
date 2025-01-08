@@ -48,10 +48,7 @@ for (const folder of folders) {
         const css = [
             `.token.${folder} { background-image: url('../images/${folder}.png'); background-size: ${result.properties.width}px ${result.properties.height}px }`
         ]
-        const js = [
-            'import { TokenType } from "@/tokens/types"',
-            'const tokens: TokenType[] = ['
-        ]
+        const yaml = []
 
         let lines = Object.keys(result.coordinates)
         for (const line of lines) {
@@ -67,25 +64,23 @@ for (const folder of folders) {
             name = name.charAt(0).toUpperCase() + name.slice(1)
 
             css.push(`.token.${folder}.${token[1]} { background-position-x: -${coord.x}px; background-position-y: -${coord.y}px; }`)
-            js.push(...[
-                '{',
-                `  product: '${folder}',`,
+            yaml.push(...[
+                `- product: ${folder}`,
                 `  slug: '${token[1]}',`,
                 `  name: '${name}',`,
-                `  color: 'blue',`,
-                `  size: 'sm',`,
-                `  icons: [],`,
-                '},',
+                `  rarity: common`,
+                `  color: blue`,
+                `  size: md`,
+                `  buy: 0`,
+                `  sell: 0`,
+                `  attributes:`,
             ])
         }
-
-        js.push(']')
-        js.push('export default tokens')
 
         fs.writeFileSync(`${__dirname}/../${outCss}`, css.join('\r'))
         console.log('SPRITE css done: ', outCss)
 
-        fs.writeFileSync(`${__dirname}/../${outJS}`, js.join('\r'))
-        console.log('SPRITE js done: ', outJS)
+        fs.writeFileSync(`${__dirname}/../${outJS}`, yaml.join('\r'))
+        console.log('SPRITE yaml done: ', outJS)
     })
 }

@@ -1,33 +1,84 @@
-.token {
-  width: 150px;
-  height: 150px;
-  border-radius: 15px;
-  background-repeat: no-repeat;
+$width-xs: 85px;
+$width-sm: 115px;
+$width-md: 150px;
+$width-lg: 215px;
+$width-xl: 280px;
 
-  &.md {
+.token {
     width: 150px;
     height: 150px;
-  }
+    border-radius: 15px;
+    background-repeat: no-repeat;
 
-  &.sm {
-    width: 115px;
-    height: 150px;
-  }
+    &.md {
+        width: $width-md;
+        height: 150px;
+    }
 
-  &.xs {
-    width: 85px;
-    height: 150px;
-  }
+    &.sm {
+        width: $width-sm;
+        height: 150px;
+    }
 
-  &.lg {
-    width: 215px;
-    height: 150px;
-  }
+    &.xs {
+        width: $width-xs;
+        height: 150px;
+    }
 
-  &.xl {
-    width: 280px;
-    height: 150px;
-  }
+    &.lg {
+        width: $width-lg;
+        height: 150px;
+    }
+
+    &.xl {
+        width: $width-xl;
+        height: 150px;
+    }
 }
 
-@import "@/assets/generated/maladum.css";
+.token-details.xs .title h3 {
+    max-width: $width-xs - 16;
+}
+
+.token-details.sm .title h3 {
+    max-width: $width-sm - 16;
+}
+
+.token-details.md .title h3 {
+    max-width: $width-md - 16;
+}
+
+.token-details.lg .title h3 {
+    max-width: $width-lg - 16;
+}
+
+.token-details.xl .title h3 {
+    max-width: $width-xl - 16;
+}
+
+.icon-description {
+    line-height: 1.4;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 1.5rem;
+
+    figure {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .icon-description {
+        grid-template-columns: 1fr;
+        grid-row-gap: 1em;
+    }
+}
