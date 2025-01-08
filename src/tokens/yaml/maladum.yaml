@@ -35,7 +35,7 @@
     - burning
     - channel
     - melee_re_roll
-  range: [2, 2]
+  range: [ 2, 2 ]
 - product: maladum
   slug: "arrow"
   name: "Arrow"
@@ -183,7 +183,7 @@
   sell: 0
   attributes:
     - ammo_arrow
-  range: [1, 3, 3]
+  range: [ 1, 3, 3 ]
 - product: maladum
   slug: "crossbow"
   name: "Crossbow"
@@ -195,7 +195,7 @@
   attributes:
     - ammo_arrow
     - preparation
-  range: [2, 2, 1]
+  range: [ 2, 2, 1 ]
 - product: maladum
   slug: "dagger"
   name: "Dagger"
@@ -211,15 +211,13 @@
 - product: maladum
   slug: "diabolic-phylactery"
   name: "Diabolic phylactery"
-  rarity: common
+  rarity: exclusive
   color: yellow
   size: sm
   buy:
   sell: 11
   attributes:
     - magic
-  description:
-    - exclusive
 - product: maladum
   slug: "efreets-heart"
   name: "Efreets heart"
@@ -338,7 +336,7 @@
   size: sm
   buy: 21
   sell: 16
-  range: [4]
+  range: [ 4 ]
   attributes:
     - ammo_bullet
     - loud
@@ -609,7 +607,7 @@
   size: lg
   buy: 13
   sell: 6
-  range: [1, 2, 2]
+  range: [ 1, 2, 2 ]
   attributes:
     - ammo_arrow
 - product: maladum
@@ -700,7 +698,7 @@
   size: xl
   buy: 25
   sell: 14
-  range: [0, 4, 3]
+  range: [ 0, 4, 3 ]
   attributes:
     - cumbersome
     - ammo_arrow
@@ -884,7 +882,7 @@
   size: md
   buy: 10
   sell: 5
-  range: [1, 2]
+  range: [ 1, 2 ]
   description:
     - tutorial
   attributes:
@@ -942,7 +940,7 @@
   size: xs
   buy: 4
   sell: 2
-  range: [1]
+  range: [ 1 ]
   attributes:
     - bludgeoning
 - product: maladum

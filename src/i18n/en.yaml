@@ -250,6 +250,9 @@ loud: >-
 lull: >-
   <strong>Lull;</strong>
   Reduce the Dread by the amount shown when this item is used.
+magic: >-
+  <strong>Magic;</strong>
+  While this item is in use, the character may increase their Magic stat by one. (unverified)
 magical_armour: >-
   <strong>Magical Armour;</strong>
   Spend an action and up to X Magic pegs to increase your Warded value by the number of pegs 

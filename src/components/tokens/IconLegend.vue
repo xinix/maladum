@@ -24,6 +24,7 @@ const pivot: any = {
     ammo_bullet: 'ammunition',
     ammo_dart: 'ammunition',
     ammo_shuriken: 'ammunition',
+    bludgeoning_immunity: 'immunity',
 }
 
 const text = computed(() => {
