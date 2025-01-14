@@ -1,13 +1,17 @@
 import { defineStore } from 'pinia'
 import { ProductType } from '@/tokens/types.ts'
 import { computed, ref } from 'vue'
+import {
+    getUserCollection,
+    setUserCollection,
+} from '@/helpers/local-storage.ts'
 
 export const useProducts = defineStore('products', () => {
     const productOptions: ProductType[] = ['maladum']
 
     const active = ref<ProductType[]>([])
 
-    const hist = window.localStorage.getItem('my-collection')
+    const hist = getUserCollection()
     if (hist != null) {
         const products: ProductType[] = hist.split(';') as ProductType[]
         active.value.push(...products)
@@ -27,7 +31,7 @@ export const useProducts = defineStore('products', () => {
     }
 
     function save() {
-        window.localStorage.setItem('my-collection', active.value.join(';'))
+        setUserCollection(active.value.join(';'))
     }
 
     return {

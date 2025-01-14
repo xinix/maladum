@@ -1,34 +1,31 @@
 import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
+import { getUserTheme, setUserTheme } from '@/helpers/local-storage.ts'
 
 export const useTheme = defineStore('theme', () => {
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-  const defaultTheme = prefersDark ? 'dark' : 'light'
-  const theme = ref<'dark' | 'light'>(
-    (window.localStorage.getItem('theme') as 'dark' | 'light') || defaultTheme,
-  )
+    const theme = ref<'dark' | 'light'>(getUserTheme())
 
-  const dark = computed(() => theme.value === 'dark')
-  const light = computed(() => theme.value === 'light')
+    const dark = computed(() => theme.value === 'dark')
+    const light = computed(() => theme.value === 'light')
 
-  function toggle() {
-    theme.value = theme.value === 'dark' ? 'light' : 'dark'
-  }
-
-  function save() {
-    window.localStorage.setItem('theme', theme.value)
-  }
-
-  function apply() {
-    /* html[data-theme='light'] */
-    const el = document.querySelector('html')
-    if (!el) return
-    if (light.value) {
-      el.dataset.theme = 'light'
-    } else {
-      delete el.dataset.theme
+    function toggle() {
+        theme.value = theme.value === 'dark' ? 'light' : 'dark'
     }
-  }
 
-  return { theme, dark, light, toggle, save, apply }
+    function save() {
+        setUserTheme(theme.value)
+    }
+
+    function apply() {
+        /* html[data-theme='light'] */
+        const el = document.querySelector('html')
+        if (!el) return
+        if (light.value) {
+            el.dataset.theme = 'light'
+        } else {
+            delete el.dataset.theme
+        }
+    }
+
+    return { theme, dark, light, toggle, save, apply }
 })
