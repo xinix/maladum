@@ -87,6 +87,8 @@
 
     --post-bg: rgba(21, 19, 16, .75);
     --post-color: #ffffff;
+
+    --white-icon: #ffffff;
 }
 
 html[data-theme='light'] {
@@ -116,6 +118,8 @@ html[data-theme='light'] {
 
     --header-bg: rgba(255, 255, 255, .75);
     --transparent-bg: rgba(239, 232, 232, 0.5);
+
+    --white-icon: rgba(0, 0, 0, .5);
 }
 
 @media (max-width: 450px) {

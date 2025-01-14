@@ -9,43 +9,51 @@ const props = defineProps<{
 
 const { t } = useI18n()
 const text = computed(() => t(`rarity_${props.value}`))
+const icon = computed(() => {
+    switch (props.value) {
+        case 'common':
+            return 'change_history'
+        case 'uncommon':
+            return 'square'
+        case 'rare':
+            return 'circle'
+        case 'exclusive':
+            return 'star'
+        default:
+            return ''
+    }
+})
 </script>
 
 <template>
     <component :is="tag" class="icon-description">
-        <figure :class="value" class="rarity">&nbsp;</figure>
+        <span :class="value" class="rarity material-symbols-rounded">{{
+            icon
+        }}</span>
         <span v-html="text"></span>
     </component>
 </template>
 
 <style lang="scss" scoped>
 .icon-description .rarity {
-    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
 
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        border-width: 0 1.5rem 1.5rem 0;
-        border-style: solid;
-        border-color: pink transparent;
+    &.common {
+        color: #05e004;
     }
 
-    &.common:before {
-        border-color: #05e004 transparent;
+    &.uncommon {
+        color: #f2e000;
     }
 
-    &.uncommon:before {
-        border-color: #f2e000 transparent;
+    &.rare {
+        color: #43caff;
     }
 
-    &.rare:before {
-        border-color: #43caff transparent;
-    }
-
-    &.exclusive:before {
-        border-color: #fff transparent;
+    &.exclusive {
+        color: var(--white-icon);
     }
 }
 </style>
