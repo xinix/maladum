@@ -53,9 +53,16 @@ export type MaladumToken = BaseToken & {
     size: number
 }
 
+export type MinMaxValue = {
+    min: number
+    max: number
+}
+
 export type FilterFormType = {
     tutorial: string[]
     colors: TokenColor[]
     sizes: TokenSize[]
     rarities: TokenRarity[]
+    buy: MinMaxValue
+    sell: MinMaxValue
 }

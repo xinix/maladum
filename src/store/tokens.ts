@@ -23,6 +23,8 @@ export const useTokens = defineStore('tokens', () => {
 
     // filter
     const q = ref('')
+    const buy = ref({ min: 0, max: 0 })
+    const sell = ref({ min: 0, max: 0 })
     const tutorial = ref(false)
     const colors = ref<TokenColor[]>([])
     const rarities = ref<TokenRarity[]>([])
@@ -71,8 +73,34 @@ export const useTokens = defineStore('tokens', () => {
                 }),
             )
         }
+        if (buy.value.min > 0) {
+            result = result.filter(
+                (a) => a.buy != undefined && (a.buy as number) >= buy.value.min,
+            )
+        }
+        if (buy.value.max > 0) {
+            result = result.filter(
+                (a) => a.buy != undefined && (a.buy as number) <= buy.value.max,
+            )
+        }
+        if (sell.value.min > 0) {
+            result = result.filter(
+                (a) =>
+                    a.sell != undefined && (a.sell as number) >= sell.value.min,
+            )
+        }
+        if (sell.value.max > 0) {
+            result = result.filter(
+                (a) =>
+                    a.sell != undefined && (a.sell as number) <= sell.value.max,
+            )
+        }
         if (tutorial.value) {
-            result = result.filter((a) => a.description != undefined && a.description.indexOf('tutorial') >= 0)
+            result = result.filter(
+                (a) =>
+                    a.description != undefined &&
+                    a.description.indexOf('tutorial') >= 0,
+            )
         }
         if (colors.value.length > 0) {
             result = result.filter((a) => colors.value.indexOf(a.color) >= 0)
@@ -120,6 +148,10 @@ export const useTokens = defineStore('tokens', () => {
     }
 
     function filter(form: FilterFormType) {
+        buy.value.min = form.buy.min
+        buy.value.max = form.buy.max
+        sell.value.min = form.sell.min
+        sell.value.max = form.sell.max
         tutorial.value = form.tutorial.length > 0
         colors.value.splice(0, colors.value.length, ...form.colors)
         rarities.value.splice(0, rarities.value.length, ...form.rarities)
@@ -135,6 +167,8 @@ export const useTokens = defineStore('tokens', () => {
         colors,
         rarities,
         sizes,
+        buy,
+        sell,
         load,
         setQ,
         getItemByKey,

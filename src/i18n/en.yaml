@@ -34,7 +34,9 @@ about-me: >-
 no_result: "This is not what you were looking for, but we couldn't find it either."
 maladum: "Maladum Dungeons of Enveron Starter Set"
 buy: Buy
+filter_buy: Filter by Buy price
 sell: Sell
+filter_sell: Filter by Sell price
 rarity: Rarity
 tuto: Tutorial
 tutorial_only: Only show items used in the Tutorial
@@ -51,11 +53,11 @@ lg: LG
 xl: XL
 xxl: XXL
 color: Colour
-blue: Blue
-red: Red
-yellow: Yellow
-purple: Purple
-grey: Grey
+blue: Weapons
+red: Gear
+yellow: Armour
+purple: Gems
+grey: Traps
 rarity_common: Common item - after the Tutorial, place these into the token pouch
 rarity_uncommon: Uncommon item - place these into a separate bag with other uncommon items
 rarity_rare: Rare item - place these into a separate bag with other rare items

@@ -3,8 +3,14 @@ import FormField from '@/components/forms/FormField.vue'
 import BaseCheckbox from '@/components/forms/BaseCheckbox.vue'
 
 import { computed, reactive, ref } from 'vue'
-import { FilterFormType, TokenColor, TokenRarity, TokenSize } from '@/tokens/types'
+import {
+    FilterFormType,
+    TokenColor,
+    TokenRarity,
+    TokenSize,
+} from '@/tokens/types'
 import { useTokens } from '@/store/tokens'
+import MinMaxInput from '@/components/forms/MinMaxInput.vue'
 
 const tokens = useTokens()
 
@@ -18,6 +24,8 @@ const rarities: TokenRarity[] = ['common', 'uncommon', 'rare', 'exclusive']
 
 const state = reactive<FilterFormType>({
     tutorial: [],
+    buy: { min: 0, max: 0 },
+    sell: { min: 0, max: 0 },
     colors: [],
     sizes: [],
     rarities: [],
@@ -32,6 +40,11 @@ const toggle = () => {
     if (active.value) {
         state.colors.splice(0, state.colors.length, ...tokens.colors)
         state.sizes.splice(0, state.sizes.length, ...tokens.sizes)
+        state.rarities.splice(0, state.rarities.length, ...tokens.rarities)
+        state.buy.min = tokens.buy.min
+        state.buy.max = tokens.buy.max
+        state.sell.min = tokens.sell.min
+        state.sell.max = tokens.sell.max
 
         setTimeout(() => {
             popup.value.focus()
@@ -66,10 +79,12 @@ const onSave = () => {
 const onClear = (ev: MouseEvent) => {
     toggle()
     tokens.filter({
+        buy: { min: 0, max: 0 },
+        sell: { min: 0, max: 0 },
         tutorial: [],
         colors: [],
         sizes: [],
-        rarities: []
+        rarities: [],
     })
     return ev
 }
@@ -116,7 +131,6 @@ const onClear = (ev: MouseEvent) => {
                     class="content form-stacked"
                     @submit.prevent="onSave"
                 >
-
                     <FormField v-if="hasFilter" name="clear">
                         <button class="clear" type="button" @click="onClear">
                             {{ $t('clear_filter') }}
@@ -131,6 +145,19 @@ const onClear = (ev: MouseEvent) => {
                         />
                     </FormField>
 
+                    <FormField label="buy" name="buy">
+                        <MinMaxInput
+                            v-model="state.buy"
+                            placeholder="filter_buy"
+                        />
+                    </FormField>
+
+                    <FormField label="sell" name="sell">
+                        <MinMaxInput
+                            v-model="state.sell"
+                            placeholder="filter_sell"
+                        />
+                    </FormField>
 
                     <FormField label="rarity" name="rarity">
                         <BaseCheckbox
