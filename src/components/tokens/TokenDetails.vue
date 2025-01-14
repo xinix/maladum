@@ -56,6 +56,20 @@ const rarity = computed(() => {
                 <dt v-if="item.sell">{{ $t('sell') }}:</dt>
                 <dd v-if="item.sell">{{ item.sell }}</dd>
             </dl>
+            <div v-else class="prices">
+                <div v-if="item.buy">
+                    <small :title="$t('buy')" class="material-symbols-rounded"
+                        >arrow_downward</small
+                    >
+                    <span>{{ item.buy }}</span>
+                </div>
+                <div v-if="item.sell">
+                    <small :title="$t('sell')" class="material-symbols-rounded"
+                        >arrow_upward</small
+                    >
+                    <span>{{ item.sell }}</span>
+                </div>
+            </div>
         </header>
         <section v-if="active" class="more">
             <ul class="list">
@@ -155,6 +169,13 @@ const rarity = computed(() => {
         font-family: var(--font-main), sans-serif;
         font-size: 1.125em;
         font-weight: bold;
+    }
+
+    .prices,
+    .prices > div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
 }
 
