@@ -5,6 +5,8 @@ import { resolve } from 'path'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import { VitePWA } from 'vite-plugin-pwa'
 
+const hash = Math.floor(Math.random() * 90000) + 10000
+
 export default defineConfig({
     define: {
         __VUE_I18N_FULL_INSTALL__: true,
@@ -23,6 +25,11 @@ export default defineConfig({
             input: {
                 main: resolve(__dirname, 'index.html'),
                 notFound: resolve(__dirname, '404.html'),
+            },
+            output: {
+                entryFileNames: `[name]` + hash + `.js`,
+                chunkFileNames: `[name]` + hash + `.js`,
+                assetFileNames: `[name]` + hash + `.[ext]`,
             },
         },
     },

@@ -1,6 +1,7 @@
 - product: maladum
-  slug: "action-potion"
-  name: "Action potion"
+  slug: "tonic-of-furor"
+  name: "tonic-of-furor"
+  count: 1
   rarity: rare
   color: red
   size: xs
@@ -11,8 +12,9 @@
     - effortless
     - restore_action
 - product: maladum
-  slug: "apple"
-  name: "Apple"
+  slug: "morsel"
+  name: "Morsel"
+  count: 4
   rarity: common
   color: red
   size: xs
@@ -26,6 +28,7 @@
 - product: maladum
   slug: "arcane-crutch"
   name: "Arcane crutch"
+  count: 1
   rarity: exclusive
   color: blue
   size: lg
@@ -39,6 +42,7 @@
 - product: maladum
   slug: "arrow"
   name: "Arrow"
+  count: 4
   rarity: common
   color: red
   size: xs
@@ -51,6 +55,7 @@
 - product: maladum
   slug: "axe"
   name: "Axe"
+  count: 2
   rarity: common
   color: blue
   size: md
@@ -64,6 +69,7 @@
 - product: maladum
   slug: "bastard-sword"
   name: "Bastard sword"
+  count: 1
   rarity: uncommon
   color: blue
   size: lg
@@ -77,6 +83,7 @@
 - product: maladum
   slug: "bear-trap"
   name: "Bear trap"
+  count: 2
   rarity: common
   color: grey
   size: md
@@ -88,8 +95,9 @@
     - trap_melee
     - sharp
 - product: maladum
-  slug: "bleeding-arrow"
-  name: "Bleeding arrow"
+  slug: "honed-arrow"
+  name: "Honed arrow"
+  count: 2
   rarity: common
   color: red
   size: xs
@@ -100,7 +108,8 @@
     - sharp
 - product: maladum
   slug: "blue-cystal"
-  name: "Blue cystal"
+  name: "Gem 8"
+  count: 1
   rarity: common
   color: purple
   size: xs
@@ -111,6 +120,7 @@
 - product: maladum
   slug: "boots-of-celerity"
   name: "Boots of celerity"
+  count: 1
   rarity: rare
   color: yellow
   size: md
@@ -122,6 +132,7 @@
 - product: maladum
   slug: "boundless-bracers"
   name: "Boundless bracers"
+  count: 1
   rarity: common
   color: yellow
   size: md
@@ -133,6 +144,7 @@
 - product: maladum
   slug: "breastplate-armour"
   name: "Breastplate armour"
+  count: 1
   rarity: uncommon
   color: yellow
   size: md
@@ -141,8 +153,9 @@
   attributes:
     - armour
 - product: maladum
-  slug: "bullet"
-  name: "Bullet"
+  slug: "shot"
+  name: "Shot"
+  count: 2
   rarity: common
   color: red
   size: xs
@@ -153,6 +166,7 @@
 - product: maladum
   slug: "chainmail-armour"
   name: "Chainmail armour"
+  count: 1
   rarity: uncommon
   color: yellow
   size: md
@@ -164,6 +178,7 @@
 - product: maladum
   slug: "club"
   name: "Club"
+  count: 3
   rarity: common
   color: blue
   size: sm
@@ -176,6 +191,7 @@
 - product: maladum
   slug: "composite-longbow"
   name: "Composite longbow"
+  count: 1
   rarity: uncommon
   color: blue
   size: lg
@@ -187,6 +203,7 @@
 - product: maladum
   slug: "crossbow"
   name: "Crossbow"
+  count: 1
   rarity: uncommon
   color: blue
   size: md
@@ -199,6 +216,7 @@
 - product: maladum
   slug: "dagger"
   name: "Dagger"
+  count: 3
   rarity: common
   color: blue
   size: xs
@@ -211,6 +229,7 @@
 - product: maladum
   slug: "diabolic-phylactery"
   name: "Diabolic phylactery"
+  count: 1
   rarity: exclusive
   color: yellow
   size: sm
@@ -221,6 +240,7 @@
 - product: maladum
   slug: "efreets-heart"
   name: "Efreets heart"
+  count: 1
   rarity: rare
   color: blue
   size: lg
@@ -234,6 +254,7 @@
 - product: maladum
   slug: "enchanted-blade"
   name: "Enchanted blade"
+  count: 2
   rarity: uncommon
   color: blue
   size: lg
@@ -247,6 +268,7 @@
 - product: maladum
   slug: "enchanted-cudgel"
   name: "Enchanted cudgel"
+  count: 1
   rarity: uncommon
   color: blue
   size: sm
@@ -259,6 +281,7 @@
 - product: maladum
   slug: "enchanted-gladius"
   name: "Enchanted gladius"
+  count: 1
   rarity: uncommon
   color: blue
   size: sm
@@ -271,6 +294,7 @@
 - product: maladum
   slug: "enchanted-stave"
   name: "Enchanted stave"
+  count: 1
   rarity: uncommon
   color: blue
   size: lg
@@ -283,6 +307,7 @@
 - product: maladum
   slug: "energy-wand"
   name: "Energy wand"
+  count: 1
   rarity: uncommon
   color: red
   size: md
@@ -295,6 +320,7 @@
 - product: maladum
   slug: "envoys-message"
   name: "Envoys message"
+  count: 1
   rarity: rare
   color: blue
   size: md
@@ -308,6 +334,7 @@
 - product: maladum
   slug: "fire-arrow"
   name: "Fire arrow"
+  count: 2
   rarity: uncommon
   color: red
   size: xs
@@ -319,6 +346,7 @@
 - product: maladum
   slug: "flail"
   name: "Flail"
+  count: 1
   rarity: uncommon
   color: blue
   size: md
@@ -331,6 +359,7 @@
 - product: maladum
   slug: "flinstock-pistol"
   name: "Flinstock pistol"
+  count: 1
   rarity: uncommon
   color: blue
   size: sm
@@ -344,6 +373,7 @@
 - product: maladum
   slug: "glatve"
   name: "Glatve"
+  count: 1
   rarity: rare
   color: blue
   size: xl
@@ -356,7 +386,8 @@
     - cleave
 - product: maladum
   slug: "gold-nugget"
-  name: "Gold nugget"
+  name: "Guilders 1"
+  count: 5
   rarity: common
   color: purple
   size: xs
@@ -368,7 +399,8 @@
     - stash
 - product: maladum
   slug: "gold"
-  name: "Gold"
+  name: "Gem 3"
+  count: 3
   rarity: common
   color: purple
   size: xs
@@ -379,6 +411,7 @@
 - product: maladum
   slug: "great-axe"
   name: "Great axe"
+  count: 1
   rarity: uncommon
   color: blue
   size: xl
@@ -392,6 +425,7 @@
 - product: maladum
   slug: "great-sword"
   name: "Great sword"
+  count: 1
   rarity: uncommon
   color: blue
   size: xl
@@ -406,6 +440,7 @@
 - product: maladum
   slug: "halberd"
   name: "Halberd"
+  count: 1
   rarity: uncommon
   color: blue
   size: lg
@@ -419,6 +454,7 @@
 - product: maladum
   slug: "hammer"
   name: "Hammer"
+  count: 2
   rarity: common
   color: blue
   size: md
@@ -432,6 +468,7 @@
 - product: maladum
   slug: "hatchet"
   name: "Hatchet"
+  count: 2
   rarity: common
   color: blue
   size: sm
@@ -443,6 +480,7 @@
 - product: maladum
   slug: "health-crystal"
   name: "Health crystal"
+  count: 1
   rarity: uncommon
   color: red
   size: xs
@@ -453,8 +491,9 @@
     - restore_health
     - channel
 - product: maladum
-  slug: "health-potion"
-  name: "Health potion"
+  slug: "healing-elixir"
+  name: "Healing Elixir"
+  count: 2
   rarity: rare
   color: red
   size: xs
@@ -467,6 +506,7 @@
 - product: maladum
   slug: "helmet"
   name: "Helmet"
+  count: 2
   rarity: common
   color: yellow
   size: xs
@@ -477,8 +517,9 @@
   attributes:
     - bludgeoning_immunity
 - product: maladum
-  slug: "herbs"
-  name: "Herbs"
+  slug: "sunblessed-weed"
+  name: "Sunblessed Weed"
+  count: 2
   rarity: uncommon
   color: red
   size: xs
@@ -493,6 +534,7 @@
 - product: maladum
   slug: "hyberian-diamond"
   name: "Hyberian diamond"
+  count: 1
   rarity: rare
   color: purple
   size: sm
@@ -501,6 +543,7 @@
 - product: maladum
   slug: "ignis-sceptre"
   name: "Ignis sceptre"
+  count: 1
   rarity: rare
   color: blue
   size: lg
@@ -512,8 +555,9 @@
     - blast
     - burning
 - product: maladum
-  slug: "iron-shield"
-  name: "Iron shield"
+  slug: "buckler"
+  name: "Buckler"
+  count: 2
   rarity: common
   color: blue
   size: xs
@@ -525,6 +569,7 @@
 - product: maladum
   slug: "javelin"
   name: "Javelin"
+  count: 2
   rarity: common
   color: blue
   size: sm
@@ -537,6 +582,7 @@
 - product: maladum
   slug: "keepers-robes"
   name: "Keepers robes"
+  count: 1
   rarity: uncommon
   color: yellow
   size: md
@@ -547,6 +593,7 @@
 - product: maladum
   slug: "key"
   name: "Key"
+  count: 2
   rarity: common
   color: red
   size: xs
@@ -558,6 +605,7 @@
 - product: maladum
   slug: "khaarastad-regalta"
   name: "Khaarastad regalta"
+  count: 1
   rarity: rare
   color: yellow
   size: lg
@@ -570,6 +618,7 @@
 - product: maladum
   slug: "large-shield"
   name: "Large shield"
+  count: 1
   rarity: common
   color: red
   size: md
@@ -580,6 +629,7 @@
 - product: maladum
   slug: "leather-armour"
   name: "Leather armour"
+  count: 2
   rarity: common
   color: yellow
   size: md
@@ -590,6 +640,7 @@
 - product: maladum
   slug: "long-sword"
   name: "Long sword"
+  count: 2
   rarity: uncommon
   color: blue
   size: lg
@@ -602,6 +653,7 @@
 - product: maladum
   slug: "longbow"
   name: "Longbow"
+  count: 2
   rarity: uncommon
   color: blue
   size: lg
@@ -613,6 +665,7 @@
 - product: maladum
   slug: "lordsblade"
   name: "Lordsblade"
+  count: 1
   rarity: rare
   color: blue
   size: xl
@@ -626,6 +679,7 @@
 - product: maladum
   slug: "lothors-destiny"
   name: "Lothors destiny"
+  count: 1
   rarity: rare
   color: blue
   size: lg
@@ -637,6 +691,7 @@
 - product: maladum
   slug: "lowkicks-axe"
   name: "Lowkicks axe"
+  count: 1
   rarity: rare
   color: blue
   size: md
@@ -649,6 +704,7 @@
 - product: maladum
   slug: "mace"
   name: "Mace"
+  count: 2
   rarity: uncommon
   color: blue
   size: md
@@ -658,8 +714,9 @@
     - forceful_melee
     - bludgeoning
 - product: maladum
-  slug: "magic-potion"
-  name: "Magic potion"
+  slug: "maladic-draught"
+  name: "Maladic Draught"
+  count: 1
   rarity: rare
   color: red
   size: xs
@@ -672,6 +729,7 @@
 - product: maladum
   slug: "maladaars-almanac"
   name: "Maladaars almanac"
+  count: 1
   rarity: common
   color: red
   size: md
@@ -682,6 +740,7 @@
 - product: maladum
   slug: "map"
   name: "Map"
+  count: 1
   rarity: common
   color: red
   size: sm
@@ -693,6 +752,7 @@
 - product: maladum
   slug: "merutan-longbow"
   name: "Merutan longbow"
+  count: 1
   rarity: uncommon
   color: blue
   size: xl
@@ -706,6 +766,7 @@
 - product: maladum
   slug: "objective"
   name: "Objective"
+  count: 2
   rarity: exclusive
   color: purple
   size: md
@@ -717,6 +778,7 @@
 - product: maladum
   slug: "oblivions-echo"
   name: "Oblivions echo"
+  count: 1
   rarity: exclusive
   color: red
   size: md
@@ -725,8 +787,9 @@
   description:
     - oblivions_echo
 - product: maladum
-  slug: "pepper"
-  name: "Pepper"
+  slug: "djinnbane"
+  name: "Djinnbane"
+  count: 2
   rarity: uncommon
   color: red
   size: xs
@@ -739,6 +802,7 @@
 - product: maladum
   slug: "pick"
   name: "Pick"
+  count: 2
   rarity: common
   color: blue
   size: sm
@@ -751,6 +815,7 @@
 - product: maladum
   slug: "pike"
   name: "Pike"
+  count: 1
   rarity: uncommon
   color: blue
   size: xl
@@ -762,8 +827,9 @@
     - cumbersome
     - reach
 - product: maladum
-  slug: "poison-trinket"
-  name: "Poison trinket"
+  slug: "blightshield"
+  name: "Blightshield"
+  count: 1
   rarity: exclusive
   color: yellow
   size: xs
@@ -774,6 +840,7 @@
 - product: maladum
   slug: "provisions"
   name: "Provisions"
+  count: 4
   rarity: common
   color: red
   size: md
@@ -785,6 +852,7 @@
 - product: maladum
   slug: "quarterstaff"
   name: "Quarterstaff"
+  count: 2
   rarity: uncommon
   color: blue
   size: lg
@@ -796,8 +864,9 @@
     - melee
     - reach
 - product: maladum
-  slug: "quickstrike-dagger"
-  name: "Quickstrike dagger"
+  slug: "dirk"
+  name: "Dirk"
+  count: 1
   rarity: common
   color: blue
   size: xs
@@ -809,6 +878,7 @@
 - product: maladum
   slug: "quiver"
   name: "Quiver"
+  count: 2
   rarity: uncommon
   color: yellow
   size: sm
@@ -820,6 +890,7 @@
 - product: maladum
   slug: "rapter"
   name: "Rapter"
+  count: 1
   rarity: uncommon
   color: blue
   size: md
@@ -830,8 +901,9 @@
     - sharp
     - quickstrike
 - product: maladum
-  slug: "regen-trinket"
-  name: "Regen trinket"
+  slug: "hexwell-talisman"
+  name: "Hexwell Talisman"
+  count: 1
   rarity: uncommon
   color: yellow
   size: xs
@@ -843,6 +915,7 @@
 - product: maladum
   slug: "remedy"
   name: "Remedy"
+  count: 2
   rarity: common
   color: red
   size: sm
@@ -856,6 +929,7 @@
 - product: maladum
   slug: "revered-effigy"
   name: "Revered effigy"
+  count: 1
   rarity: rare
   color: red
   size: md
@@ -866,6 +940,7 @@
 - product: maladum
   slug: "sabre"
   name: "Sabre"
+  count: 1
   rarity: uncommon
   color: blue
   size: md
@@ -877,6 +952,7 @@
 - product: maladum
   slug: "short-bow"
   name: "Short bow"
+  count: 2
   rarity: uncommon
   color: blue
   size: md
@@ -890,6 +966,7 @@
 - product: maladum
   slug: "short-sword"
   name: "Short sword"
+  count: 2
   rarity: common
   color: blue
   size: sm
@@ -899,8 +976,9 @@
     - forceful_melee
     - parry
 - product: maladum
-  slug: "skill-potion"
-  name: "Skill potion"
+  slug: "potion-of-acuity"
+  name: "Potion of Acuity"
+  count: 1
   rarity: rare
   color: red
   size: xs
@@ -911,8 +989,9 @@
     - effortless
     - restore_skill
 - product: maladum
-  slug: "skill-root"
-  name: "Skill root"
+  slug: "arcanum-kouse"
+  name: "Arcanum Kouse"
+  count: 2
   rarity: uncommon
   color: red
   size: xs
@@ -921,10 +1000,11 @@
   attributes:
     - discard
     - effortless
-    - restore_skill
+    - restore_magic
 - product: maladum
-  slug: "skill-trinket"
-  name: "Skill trinket"
+  slug: "aegis-charm"
+  name: "Aegis Charm"
+  count: 1
   rarity: uncommon
   color: yellow
   size: xs
@@ -933,8 +1013,9 @@
   attributes:
     - magical_armour
 - product: maladum
-  slug: "slingshot"
-  name: "Slingshot"
+  slug: "sling"
+  name: "Sling"
+  count: 2
   rarity: common
   color: blue
   size: xs
@@ -946,6 +1027,7 @@
 - product: maladum
   slug: "small-shield"
   name: "Small shield"
+  count: 2
   rarity: common
   color: red
   size: sm
@@ -959,6 +1041,7 @@
 - product: maladum
   slug: "spear"
   name: "Spear"
+  count: 2
   rarity: common
   color: blue
   size: md
@@ -973,6 +1056,7 @@
 - product: maladum
   slug: "spellweavers-cowl"
   name: "Spellweavers cowl"
+  count: 1
   rarity: rare
   color: yellow
   size: sm
@@ -983,6 +1067,7 @@
 - product: maladum
   slug: "studded-leather-armour"
   name: "Studded leather armour"
+  count: 1
   rarity: uncommon
   color: yellow
   size: md
@@ -995,6 +1080,7 @@
 - product: maladum
   slug: "sword"
   name: "Sword"
+  count: 2
   rarity: common
   color: blue
   size: md
@@ -1008,6 +1094,7 @@
 - product: maladum
   slug: "tainted-talon"
   name: "Tainted talon"
+  count: 1
   rarity: exclusive
   color: blue
   size: sm
@@ -1020,6 +1107,7 @@
 - product: maladum
   slug: "tome-of-revenance"
   name: "Tome of revenance"
+  count: 1
   rarity: exclusive
   color: red
   size: md
@@ -1032,6 +1120,7 @@
 - product: maladum
   slug: "torch"
   name: "Torch"
+  count: 4
   rarity: exclusive
   color: blue
   size: sm
@@ -1043,7 +1132,8 @@
     - burning
 - product: maladum
   slug: "trap-alarm"
-  name: "Trap alarm"
+  name: "Alarm Trap"
+  count: 2
   rarity: common
   color: grey
   size: xs
@@ -1056,7 +1146,8 @@
     - loud
 - product: maladum
   slug: "trap-fire"
-  name: "Trap fire"
+  name: "Flame Trap"
+  count: 1
   rarity: common
   color: grey
   size: sm
@@ -1069,7 +1160,8 @@
     - burning
 - product: maladum
   slug: "trap-poison"
-  name: "Trap poison"
+  name: "Poison trap"
+  count: 2
   rarity: common
   color: grey
   size: xs
@@ -1082,7 +1174,8 @@
     - poison
 - product: maladum
   slug: "trap-spikes"
-  name: "Trap spikes"
+  name: "Small Spike Trap"
+  count: 3
   rarity: common
   color: grey
   size: sm
@@ -1096,6 +1189,7 @@
 - product: maladum
   slug: "travelling-cloak"
   name: "Travelling cloak"
+  count: 2
   rarity: common
   color: yellow
   size: sm
@@ -1104,8 +1198,9 @@
   attributes:
     - skill_camouflage_level_2
 - product: maladum
-  slug: "trinket"
-  name: "Trinket"
+  slug: "avian-seal"
+  name: "Avian Seal"
+  count: 2
   rarity: common
   color: yellow
   size: xs
@@ -1117,6 +1212,7 @@
 - product: maladum
   slug: "whip"
   name: "Whip"
+  count: 1
   rarity: uncommon
   color: blue
   size: sm
@@ -1127,8 +1223,9 @@
     - reach
     - entangling
 - product: maladum
-  slug: "wrist-band"
-  name: "Wrist band"
+  slug: "steel-bracers"
+  name: "Steel Bracers"
+  count: 1
   rarity: common
   color: yellow
   size: xs
@@ -1138,7 +1235,8 @@
     - parry
 - product: maladum
   slug: "yellow-crystal"
-  name: "Yellow crystal"
+  name: "Gem 5"
+  count: 1
   rarity: uncommon
   color: purple
   size: xs
