@@ -78,11 +78,11 @@ forceful_melee: >-
   there is a chance that the weapon will break. <br><br>
   If two or more blunders (skull icon) are rolled during a forceful melee attack, the weapon is 
   broken. The current attack will be resolved as normal, but then flip the token face down. <br><br>
-  Broken items cannot be used while they are broken. They must be repaire at the Artisan's Guild 
+  Broken items cannot be used while they are broken. They must be repaired at the Artisan's Guild 
   after the game.
 ranged: >-
-  <strong>Ranged attack</strong>; To attempt a ranged attack, choose a target within range, line of 
-  sight and cannot be engaged with your character. If you are engaged with one or more enemies while 
+  <strong>Ranged attack</strong>; To attempt a ranged attack, choose a target within range and line of 
+  sight that is not engaged with your character. If you are engaged with one or more enemies while 
   making a ranged attack, they make an attack of opportunity against you after your shot is resolved.
   <br><br>The most common modifier applied to ranged attacks is cover. Partial cover will reduce the 
   number of hits on a target by 1. This is always resolved before any other modifiers such as armour.
@@ -101,7 +101,7 @@ ranged_3: >-
 x_dice: >-
   <strong>+X dice;</strong>
   This is usually found alongside the <strong>Channel icon</strong>. The attack may roll an 
-  additional number of dice equal to the number of pegs spent.
+  additional number of dice equal to the number of Magic pegs spent.
 ammunition: >-
   <strong>Ammunition</strong>;
   This icon is used to show that a weapon requires ammunition. When the weapon is used, 
@@ -117,12 +117,12 @@ bludgeoning: >-
   This attack rolls one extra die when attacking terrain pieces.
 book: >-
   <strong>Book</strong>;
-  In the next Market Phase after obtaining this token, rol the Magic Die to see what literary secrets
+  In the next Market Phase after obtaining this token, roll the Magic Die to see what literary secrets
   you've uncovered. If the token is Uncommon, add 1 to the roll. If the token is Rare or Exclusive,
   add 2 to the roll.
   <ul>
   <li>1-2: The book is a worthless - discard it.</li>
-  <li>3-5: The book is sold for Guilder equal to the number rolled.</li>
+  <li>3-5: The book is sold for Guilders equal to the number rolled.</li>
   <li>6-7: An Adventurer of your choice gains 1 Experience. Discard the book.</li>
   <li>8: You found information on an ancient artefact. Add one random relic resource token to the 
   token pouch and discard the book.</li>
@@ -154,7 +154,7 @@ creature: >-
   <strong>Creature;</strong>
   Unless stated otherwise, this character cannot Open Doors, Search, use equipment or Interact with terrain.
 cumbersome: >-
-  <strong>Combersome;</strong>
+  <strong>Cumbersome;</strong>
   If an attack with this weapon rolls any blunders and is not broken, turn this token 180 degrees. It
   cannot be used in this position. It requires an effortless action to ready the weapon for use again.
   <br><br>
@@ -211,7 +211,7 @@ hazardous: >-
 hidden_location: >-
   <strong>Hidden Location;</strong>
   Draw the Hidden Location card with the number matching this token. Return the token to its supply
-  (the pouch for common tokens, or the seperate bag otherwise).
+  (the pouch for common tokens, or the separate supply otherwise).
 hit_and_run: >-
   <strong>Hit and Run;</strong>
   After making a melee attack, if this character is still engaged it will make a free Mode directly
@@ -267,7 +267,7 @@ malacyte_stability: >-
   <strong>Malacyte Stability;</strong>
   You may discard a Magic peg to re-roll the Magic die.
 malacyte_conduit: >-
-  <strong>Malacyte Conduit;</strong>
+  <strong>Malacytic Conduit;</strong>
   This character cannot contain the magical energy in their body. At the start of each of this
   character's turns, add a blue peg to the Dread Tracker. If on an item, the rule applies while
   it is being carried or worn.
@@ -277,12 +277,12 @@ master: >-
   linked ability applies to the controlling character while they are within short range of 
   this character.
 night_sight: >-
-  <strong>Night sight;</strong>
-  This character ignors all effects of Darkness.
+  <strong>Night Sight;</strong>
+  This character ignores all effects of Darkness.
 otherworldly: >-
   <strong>Otherworldly;</strong>
   This character originates from another dimension. The icon has no effect on its own but will
-  interact with other rules found in expansions.
+  interact with other rules.
 pack: >-
   <strong>Pack;</strong>
   These characters arrive in groups. When they enter play, place the number of miniatures shown
@@ -323,7 +323,7 @@ rank: >-
   their rank may also be referenced by other rules and effects.
 reach: >-
   <strong>Reach;</strong>
-  This weapon mayy be used to make a Melee Attack against an enemy up to X squares away, 
+  This weapon may be used to make a Melee Attack against an enemy up to X squares away, 
   including diagonally. Unless in contact, the characters are not considered to be 
   engaged for any other purpose, including attack of opportunity. <br><br>
   When using multi-level terrain this rule applies vertically as well - the marks on the 
@@ -382,7 +382,8 @@ rough_ground: >-
   This area follow the rules for Rough Ground using the value shown. Characters or items may have
   this icon with a negative value, reducing the effect of any area of Rough Ground they are in
   accordingly.
-scramble: <strong>Scramble;</strong>
+scramble: >-
+  <strong>Scramble;</strong>
   The top number is the max height or width in square/inches of objects/characters that the
   character can move up or over as part of a normal Move action - they do not need to Climb
   them or spend any actions, just like a regular character climbing stairs. <br><br>
