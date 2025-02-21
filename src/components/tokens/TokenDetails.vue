@@ -249,7 +249,7 @@ const rarity = computed(() => {
             'token more';
 
         .token.xl,
-        .token .xxl {
+        .token.xxl {
             position: absolute;
             transform: scale(0.65) translateX(-25%);
         }

@@ -1,5 +1,6 @@
 import '@/assets/styles/main.scss'
 import '@/assets/generated/maladum.css'
+import '@/assets/generated/beasts.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'

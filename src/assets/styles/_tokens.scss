@@ -3,6 +3,7 @@ $width-sm: 115px;
 $width-md: 150px;
 $width-lg: 215px;
 $width-xl: 280px;
+$width-xxl: 410px;
 
 .token {
     width: 150px;
@@ -34,6 +35,10 @@ $width-xl: 280px;
         width: $width-xl;
         height: 150px;
     }
+
+    &.xxl {
+        width: $width-xxl;
+    }
 }
 
 .token-details.xs .title h3 {
@@ -54,6 +59,10 @@ $width-xl: 280px;
 
 .token-details.xl .title h3 {
     max-width: $width-xl - 16;
+}
+
+.token-details.xxl .title h3 {
+    max-width: $width-xxl - 16;
 }
 
 .icon-description {

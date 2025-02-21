@@ -1,4 +1,4 @@
-export type ProductType = 'maladum'
+export type ProductType = 'maladum' | 'beasts' // 'adventure' | 'vaults'
 
 export type TokenColor = 'blue' | 'red' | 'yellow' | 'purple' | 'grey'
 
@@ -42,6 +42,7 @@ type BaseToken = {
     range?: number[]
     description?: ItemDescription[]
     attributes?: AttributeType[]
+    crafting?: string[]
 }
 
 export type TokenType = BaseToken & {

@@ -33,6 +33,9 @@ about-me: >-
   an App for that too.
 no_result: "This is not what you were looking for, but we couldn't find it either."
 maladum: "Maladum Dungeons of Enveron Starter Set"
+beasts: "Beasts of Enveron Expansion"
+adventure: "Of Ale and Adventure Expansion"
+vaults: "Beyond the Vaults Expansion"
 buy: Buy
 filter_buy: Filter by Buy price
 sell: Sell
@@ -266,7 +269,7 @@ malacyte_enhancement: >-
 malacyte_stability: >-
   <strong>Malacyte Stability;</strong>
   You may discard a Magic peg to re-roll the Magic die.
-malacyte_conduit: >-
+malacytic_conduit: >-
   <strong>Malacytic Conduit;</strong>
   This character cannot contain the magical energy in their body. At the start of each of this
   character's turns, add a blue peg to the Dread Tracker. If on an item, the rule applies while
@@ -425,6 +428,14 @@ skill_camouflage_level_2: >-
   you cannot be targeted for the rest of the round. Enemies can move through adjacent squares without stopping or 
   attracting attacks of opportunity from you and cannot end a move in contact with you.
   You do not block LoS in any way. </li>
+  </ul>
+skill_intimidating_1: >-
+  <strong>Intimidating (lvl 1);</strong>
+  This character may use the Intimidating skill up to the level shown, exactly  as if they were on the 
+  character's Class board. <br><br><ul>
+  <li>(1) Reaction: use when an enemy in LoS activates. You may choose the enemy's target 
+  for the round from any eligible characters it can see, even if it is already engaged and/or
+  another target is closer. </li>
   </ul>
 skill_intimidating_level_2: >-
   <strong>Skill: Intimidating (lvl 2);</strong>
@@ -597,3 +608,138 @@ spell_nausea: >-
 focused_energy: >-
   <strong>Focused Energy;</strong>
   Elemental Magic - Action - Make a ranged attack with X dice, Bludgeoning and Sharp.
+skill_disarm_2: >-
+  <strong>Disarm (lvl 2);</strong>
+  The skill shown here can be used by the character at up to the level shown, exactly
+  as if they were on the character's Class board. <br><br><ul>
+  <li>(1) Reaction: Use after suffering a melee attack in which you took no damage. The weapon
+  that the attacker used is removed from their dashboard and scattered.</li>
+  <li>(2) Reaction: Use after suffering a melee attack in which you took no damage. The weapon
+  that the attacker used is removed from their dashboard and added to yours. If you do not have 
+  the space for it, drop it or another item you are holding.</li>
+  </ul>
+skill_frenzy_3: >-
+  <strong>Frenzy (lvl 3);</strong>
+  The skill shown here can be used by the character at up to the level shown, exactly
+  as if they were on the character's Class board. <br><br><ul>
+  <li>(1) Use before making a melee attack. Add two dice to the attack.</li>
+  <li>(2) Use before making a melee attack. Add three dice to the attack.</li>
+  <li>(3) Use before making a melee attack. Add four dice to the attack. After rolling the 
+  dice, you may split the hits scored between any number of enemies in range of your weapon. Any 
+  other effect such as Bludgeoning are applied to all enemies that suffer a hit.
+  <br><br><strong>Passive:</strong> Gain First Strike</li>
+  </ul>
+harpoons: >-
+  <strong>Harpoons;</strong>
+  This weapon require ammunition to fire. To fire this weapon you must have a matching ammunition
+  token in your inventory. When used, discard the ammunition token.
+steel: >-
+  <strong>Steel;</strong>
+  Commonly found in discarded weaponry and armour that can be reforged to give it a new life on
+  the battlefield.
+wood: >-
+  <strong>Wood;</strong>
+  Another common material widely found in planks or weapon shafts. It can be repurposed for new 
+  weapons or shields, or even carved into keepsakes.
+textiles: >-
+  <strong>Textiles;</strong>
+  Various fabrics, including leather, can be crafted into new clothing and even armour by the 
+  guild's artisans.
+riches: >-
+  <strong>Riches;</strong>
+  Opulent materials such as precious metals and stones or rare animal skins add refinement to a
+  wide range of items.
+herbs: >-
+  <strong>Herbs;</strong>
+  These plants have medicinal properties and can be used for potions and other remedies.
+fungus: >-
+  <strong>Fungus;</strong>
+  Ubiquitous in the damp surroundings of a dungeon, certain types of fungus can also be 
+  medicinal, albeit hallucinogenic, and are known to affect a person's Maladum.
+minerals: >-
+  <strong>Minerals;</strong>
+  These can be extracted from the ground itself, and are often used as a supplement to sharpen
+  the mind and improve the body. They are a common ingredient in herbal potions.
+keltic_steel: >-
+  <strong>Keltic Steel;</strong>
+  Commonly found in more expensive weaponry and even coins, kelt ore can be smelted with iron to 
+  create this blue-grey alloy. Weapons made with keltic steel are stronger and easier to wield.
+graam_ore: >-
+  <strong>Graam Ore;</strong>
+  Graam is a conductor for Maladum, and can be crafted to tune inanimate objects with a user's 
+  malacytes, allowing them to channel their magical abilities.
+powdered_drakon_bone: >-
+  <strong>Powdered Drakon Bone;</strong>
+  This can be taken in its raw form for a rush of adrenaline, or combined into tonics to enhance
+  its effects. It can even be folded into steel.
+issen_oil: >-
+  <strong>Issen Oil;</strong>
+  Extracted from the Maladum-rich bed of the river Issen, this a highly flammable substance used to
+  harness the power of fire into weaponry or create potent explosives.
+serpent_venom: >-
+  <strong>Serpent Venom;</strong>
+  Toxens distilled from a variety of poisonous snakes and other deadly creatures can be smeared
+  onto blades or even magically infused into items to pass on their lethal properties to new
+  victims.
+alary_carapace: >-
+  <strong>Alary Carapace;</strong>
+  This iridescent chitin somehow beautiful and terrifying at the same time. It's considered lucky
+  and Adenturers will pay over the odds to have it inlaid into their equipment.
+extract_of_maladite: >-
+  <strong>Extract of Maladite;</strong>
+  This malacyte-rich rock can be smelted and infused into weapons and armour to shield the user
+  from magical attacks.
+necrotic_fluids: >-
+  <strong>Necrotic Fluids;</strong>
+  The chemical brew created by the Malagaunt can be used to imbue its ability to manipulate 
+  lifeforces into items.
+blast: >-
+  <strong>Blast;</strong>
+  This item has a blast effect. Blast weapons affect not only the target, but also everyone in
+  the surrounding squares. Even if they miss, they can still cause damage!<br><br>
+  If two or more blunders are rolled, the target point of the blast is moved one square in a 
+  direction of the target player's choice (or random for NPC).<br><br>
+  The same attack roll is resolved against each character in the eight adjacent squares, but with
+  one fewer hit. <br></br>
+  Continue to resolve the attack against characters in subsequent squares, reducing the hits by one
+  until no hits remain.
+range_plus_1: >-
+  <strong>Range +1;</strong>
+  This item increases the range of ranged attacks by one square.
+remove_poison: >-
+  <strong>Remove Poison;</strong>
+  This item can be used to remove Poisoned counters from a character.
+remove_wounded: >-
+  <strong>Remove Wounded;</strong>
+  This item can be used to remove Wounded counters from a character.
+spell_illusion: >-
+  <strong>Illusion;</strong>
+  Place an Illusion in any empty square in range and LoS of both the caster and a chosen enemy.
+  The enemy is distracted.
+regen_magic: >-
+  <strong>Magic Regeneration;</strong>
+  This item restores one Magic peg in the Assessment Phase.
+skill_nature: >-
+  <strong>One with nature (lvl 1);</strong>
+  This character may use the Nature skill up to the level shown, exactly  as if they were on the 
+  character's Class board. <br><br><ul>
+  <li>(1) Use during a General Search action to forage, taking the items listed below in 
+  addition to any drawn. Roll the magic Die.<br><br>
+  1: You did not find anything other than the item drawn. <br>
+  2-3: Take a Morsel or Herbs token. <br>
+  4-5: Take a Provisions or Fungus token. <br>
+  6: Take a Remedy or Minerals token. <br>
+  <strong>Passive:</strong> When staying in the Wilderness in the Rest Phase you may roll once on 
+  the above table for each character with this skill.</li>
+  </ul>
+skill_ambush_2: >-
+  <strong>Ambush (lvl 2);</strong>
+  This character may use the Ambush skill up to the level shown, exactly  as if they were on the 
+  character's Class board. <br><br><ul>
+  <li>(1) <strong>Reaction:</strong> Use when an enemy ends a move within 4 squares and you are in
+  full or partial cover. Make a Ranged Attack action against that enemy. You may Dash before or 
+  after this action.</li>
+  <li>(2) <strong>Reaction:</strong> Use when an enemy ends a move within 4 squares and you are in
+  full or partial cover. Make a Move action and then an Attack against that enemy, You may Dash 
+  before or after this action.</li>
+  </ul>

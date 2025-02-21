@@ -215,4 +215,8 @@ const onClickBuy = (ev: MouseEvent) => {
 .product-option.maladum figure {
     background-image: var(--maladum);
 }
+
+.product-option.beasts figure {
+    background-image: var(--beasts);
+}
 </style>

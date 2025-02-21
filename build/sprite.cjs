@@ -66,13 +66,14 @@ for (const folder of folders) {
             css.push(`.token.${folder}.${token[1]} { background-position-x: -${coord.x}px; background-position-y: -${coord.y}px; }`)
             yaml.push(...[
                 `- product: ${folder}`,
-                `  slug: '${token[1]}',`,
-                `  name: '${name}',`,
+                `  slug: "${token[1]}"`,
+                `  name: "${name}"`,
+                `  count: 1`,
                 `  rarity: common`,
                 `  color: blue`,
                 `  size: md`,
-                `  buy: 0`,
-                `  sell: 0`,
+                `  buy: `,
+                `  sell: `,
                 `  attributes:`,
             ])
         }
