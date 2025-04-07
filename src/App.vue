@@ -14,30 +14,36 @@ const main = ref()
 setTimeout(() => main.value.focus(), 100)
 
 function onKeyPress(event: KeyboardEvent) {
-  if (event.key === '/') {
-    menu.value.focus()
-  }
-  return event
+    if (event.key === '/') {
+        menu.value.focus()
+    }
+    return event
 }
 </script>
 
 <template>
-  <div class="wrapper">
-    <MenuHeader
-      ref="menu"
-      :show-back="back"
-      :show-search="search"
-      tabindex="-2"
-      @keyup="onKeyPress"
-    />
-    <main ref="main" class="content" tabindex="-1" @keyup="onKeyPress">
-      <router-view v-slot="{ Component, route }">
-        <transition mode="out-in" name="slide-fade">
-          <component :is="Component" :key="route.path" />
-        </transition>
+    <div class="wrapper maladum-app">
+        <MenuHeader
+            ref="menu"
+            :show-back="back"
+            :show-search="search"
+            tabindex="-2"
+            @keyup="onKeyPress"
+        />
+        <main
+            id="main-content"
+            ref="main"
+            class="content"
+            tabindex="-1"
+            @keyup="onKeyPress"
+        >
+            <router-view v-slot="{ Component, route }">
+                <transition mode="out-in" name="slide-fade">
+                    <component :is="Component" :key="route.path" />
+                </transition>
 
-        <ToTopButton />
-      </router-view>
-    </main>
-  </div>
+                <ToTopButton />
+            </router-view>
+        </main>
+    </div>
 </template>

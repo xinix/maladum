@@ -72,7 +72,7 @@
   sell: 12
   attributes:
     - ammo_arrow
-  range: [ 1, 3, 3 ]
+  range: [1, 3, 3]
 - product: beasts
   slug: "crag_troll_hide"
   name: "Crag troll hide"
@@ -177,8 +177,10 @@
   size: md
   buy: 8
   sell: 4
+  description:
+    - skill
   attributes:
-    - skill_nature
+    - skill_nature_1
 - product: beasts
   slug: "huntmans_reach"
   name: "Huntman's reach"
@@ -232,7 +234,7 @@
   size: xxl
   buy: 35
   sell: 20
-  range: [ 3, 4, 4 ]
+  range: [3, 4, 4]
   attributes:
     - harpoons
     - preparation
@@ -272,11 +274,15 @@
   size: xl
   buy:
   sell: 28
-  crafting: [ "6", A, M, M, V, B ]
+  crafting: ["6", A, M, M, V, B]
+  description:
+    - skill
   attributes:
     - melee
     - bludgeoning
     - vicious
+    - skill_frenzy_1
+    - skill_frenzy_2
     - skill_frenzy_3
 - product: beasts
   slug: "net"
@@ -287,9 +293,12 @@
   size: md
   buy: 11
   sell: 4
+  description:
+    - skill
   attributes:
     - entangling
     - forceful_melee
+    - skill_disarm_1
     - skill_disarm_2
 - product: beasts
   slug: "nightshroud"
@@ -300,8 +309,11 @@
   size: md
   buy: 13
   sell: 7
+  description:
+    - skill
   attributes:
     - camouflage
+    - skill_ambush_1
     - skill_ambush_2
 - product: beasts
   slug: "phoenix_bough"
@@ -404,7 +416,7 @@
   size: lg
   buy: 38
   sell: 22
-  range: [ 2 ]
+  range: [2]
   description:
     - spell_illusion
   attributes:
@@ -421,7 +433,7 @@
   size: xs
   buy: 4
   sell: 2
-  range: [ 1 ]
+  range: [1]
   attributes:
     - bludgeoning
 - product: beasts
@@ -473,5 +485,7 @@
   size: xs
   buy: 7
   sell: 4
+  description:
+    - skill
   attributes:
     - skill_intimidating_1

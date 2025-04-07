@@ -93,7 +93,7 @@ const onClear = (ev: MouseEvent) => {
     <a
         :class="{ active: hasFilter }"
         :title="$t('filter')"
-        class="btn btn-filter"
+        class="mbtn mbtn-filter"
         href="javascript:void(0)"
         type="button"
         @click="onToggle"
@@ -116,11 +116,11 @@ const onClear = (ev: MouseEvent) => {
                     <h2>{{ $t('filter') }}</h2>
 
                     <div class="buttons">
-                        <button class="btn" form="filter-form" type="submit">
+                        <button class="mbtn" form="filter-form" type="submit">
                             <span class="material-symbols-rounded">check</span>
                             <code>ENTER</code>
                         </button>
-                        <button class="btn" type="button" @click="onToggle">
+                        <button class="mbtn" type="button" @click="onToggle">
                             <span class="material-symbols-rounded">close</span>
                             <code>ESC</code>
                         </button>
@@ -204,7 +204,7 @@ const onClear = (ev: MouseEvent) => {
     </transition>
 </template>
 <style lang="scss" scoped>
-.btn-filter {
+.mbtn-filter {
     position: relative;
     transition: all 0.2s ease-out;
     opacity: 0.75;
@@ -235,7 +235,7 @@ const onClear = (ev: MouseEvent) => {
 }
 
 .popup {
-    position: fixed;
+    position: absolute;
     z-index: 900;
     top: 0;
     right: 0;
@@ -275,13 +275,13 @@ const onClear = (ev: MouseEvent) => {
         padding: 2em;
         text-transform: uppercase;
 
-        .btn {
+        .mbtn {
             display: inline-flex;
             align-items: center;
             gap: 0.25em;
         }
 
-        .btn + .btn {
+        .mbtn + .mbtn {
             margin-left: 0.5em;
         }
 

@@ -38,7 +38,7 @@
     - burning
     - channel
     - melee_re_roll
-  range: [ 2, 2 ]
+  range: [2, 2]
 - product: maladum
   slug: "arrow"
   name: "Arrow"
@@ -199,7 +199,7 @@
   sell: 0
   attributes:
     - ammo_arrow
-  range: [ 1, 3, 3 ]
+  range: [1, 3, 3]
 - product: maladum
   slug: "crossbow"
   name: "Crossbow"
@@ -212,7 +212,7 @@
   attributes:
     - ammo_arrow
     - preparation
-  range: [ 2, 2, 1 ]
+  range: [2, 2, 1]
 - product: maladum
   slug: "dagger"
   name: "Dagger"
@@ -365,7 +365,7 @@
   size: sm
   buy: 21
   sell: 16
-  range: [ 4 ]
+  range: [4]
   attributes:
     - ammo_bullet
     - loud
@@ -611,9 +611,12 @@
   size: lg
   buy: 26
   sell: 14
+  description:
+    - skill
   attributes:
     - armour
     - defensive_re_roll
+    - skill_intimidating_level_1
     - skill_intimidating_level_2
 - product: maladum
   slug: "large-shield"
@@ -659,7 +662,7 @@
   size: lg
   buy: 13
   sell: 6
-  range: [ 1, 2, 2 ]
+  range: [1, 2, 2]
   attributes:
     - ammo_arrow
 - product: maladum
@@ -746,8 +749,11 @@
   size: sm
   buy: 3
   sell: 1
+  description:
+    - skill
   attributes:
     - location_specific
+    - skill_tracking_level_1
     - skill_tracking_level_2
 - product: maladum
   slug: "merutan-longbow"
@@ -758,7 +764,7 @@
   size: xl
   buy: 25
   sell: 14
-  range: [ 0, 4, 3 ]
+  range: [0, 4, 3]
   attributes:
     - cumbersome
     - ammo_arrow
@@ -935,7 +941,11 @@
   size: md
   buy: 17
   sell: 13
+  description:
+    - skill
   attributes:
+    - skill_inspiring_level_1
+    - skill_inspiring_level_2
     - skill_inspiring_level_3
 - product: maladum
   slug: "sabre"
@@ -958,7 +968,7 @@
   size: md
   buy: 10
   sell: 5
-  range: [ 1, 2 ]
+  range: [1, 2]
   description:
     - tutorial
   attributes:
@@ -1021,7 +1031,7 @@
   size: xs
   buy: 4
   sell: 2
-  range: [ 1 ]
+  range: [1]
   attributes:
     - bludgeoning
 - product: maladum
@@ -1062,7 +1072,10 @@
   size: sm
   buy: 13
   sell: 9
+  description:
+    - skill
   attributes:
+    - skill_fortified_mind_level_1
     - skill_fortified_mind_level_2
 - product: maladum
   slug: "studded-leather-armour"
@@ -1195,7 +1208,10 @@
   size: sm
   buy: 5
   sell: 3
+  description:
+    - skill
   attributes:
+    - skill_camouflage_level_1
     - skill_camouflage_level_2
 - product: maladum
   slug: "avian-seal"

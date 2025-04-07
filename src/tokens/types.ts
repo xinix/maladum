@@ -1,4 +1,4 @@
-export type ProductType = 'maladum' | 'beasts' // 'adventure' | 'vaults'
+export type ProductType = 'maladum' | 'beasts' | 'adventure' //  'vaults'
 
 export type TokenColor = 'blue' | 'red' | 'yellow' | 'purple' | 'grey'
 

@@ -412,78 +412,14 @@ size: >-
   <strong>Size;</strong>
   This character is smaller or larger than an average human and additional rules apply,
   most commonly used for LoS, Knock Back and Moving Objects.
+stars: >-
+  <strong>Throwing Stars;</strong>
+  Throwing stars are weapons in themselves - they do not require a separate Gear token and the 
+  Weapon token itself is discarded if they run out.
 skill: >-
   <strong>Skill;</strong>
   The skill shown here can be used by the character at up to the level shown, exactly
   as if they were on the character's Class board.
-skill_camouflage_level_2: >-
-  <strong>Skill: Camouflage (lvl 2);</strong>
-  The skill shown here can be used by the character at up to the level shown, exactly
-  as if they were on the character's Class board. <br><br><ul>
-  <li>(1) While you are in contact with any wall you cannot be targeted for the 
-  rest of the round. Enemies can move through adjacent squares without stopping or 
-  attracting attacks of opportunity from you and cannot end a move in contact with you.
-  You do not block LoS in any way. </li>
-  <li>(2) Make a Move or Ranged Attack action. While you are in contact with any terrain
-  you cannot be targeted for the rest of the round. Enemies can move through adjacent squares without stopping or 
-  attracting attacks of opportunity from you and cannot end a move in contact with you.
-  You do not block LoS in any way. </li>
-  </ul>
-skill_intimidating_1: >-
-  <strong>Intimidating (lvl 1);</strong>
-  This character may use the Intimidating skill up to the level shown, exactly  as if they were on the 
-  character's Class board. <br><br><ul>
-  <li>(1) Reaction: use when an enemy in LoS activates. You may choose the enemy's target 
-  for the round from any eligible characters it can see, even if it is already engaged and/or
-  another target is closer. </li>
-  </ul>
-skill_intimidating_level_2: >-
-  <strong>Skill: Intimidating (lvl 2);</strong>
-  The skill shown here can be used by the character at up to the level shown, exactly
-  as if they were on the character's Class board. <br><br><ul>
-  <li>(1) Reaction: use when an enemy in LoS activates. You may choose the enemy's target 
-  for the round from any eligible characters it can see, even if it is already engaged and/or
-  another target is closer. </li>
-  <li>(2) Reaction: Use when an enemy enters LoS or starts their turn within LoS. Their turn 
-  immediately ends and they are Stunned. <br><br>
-  <strong>Passive:</strong> As an effortless action, you may take an action with any friendly
-  character in short range. They become Fatigued.</li>
-  </ul>
-skill_tracking_level_2: >-
-  <strong>Skill: Tracking (lbl 2);</strong>
-  The skill shown here can be used by the character at up to the level shown, exactly
-  as if they were on the character's Class board. <br><br><ul>
-  <li>(1) Look at the top three cards of the Event Deck. </li>
-  <li>(2) Based on the current Dread, roll the arrival of all NPCs due to arrive this round and 
-  place them next to the appropriate Entry Points. Grave Points or any other arrival location within
-  short range of this Adventurer cannot be used. You may then move the NPCs at any one Entry Point to 
-  a different one. Their arrival will not be rolled again this round - they will just be activated and 
-  enter the gaming area as normal. <br><br>
-  <strong>Passive:</strong> If any rule causes your Staging Point to be swapped with a random 
-  Entry Point, you may roll the Magic Die twice and pick your preferred result.</li>
-  </ul>
-skill_fortified_mind_level_2: >-
-  <strong>Skill: Fortified Mind (lvl 2);</strong>
-  The skill shown here can be used by the character at up to the level shown, exactly
-  as if they were on the character's Class board. <br><br><ul>
-  <li>(1) Use before casting an Action spell to cast it while engaged.</li>
-  <li>(2) Reaction: Use when a friendly character in short range suffers an attack. 
-  Use this character's magical armour to negate hits. Magic pegs from any combination
-  of this character and the target character may be used to boost the armour. Any Magic Die 
-  effects are applied to this character.</li>
-  </ul>
-skill_inspiring_level_3: >-
-  <strong>Skill: Inspiring (lvl 3);</strong>
-  The skill shown here can be used by the character at up to the level shown, exactly
-  as if they were on the character's Class board. <br><br><ul>
-  <li>(1) Remove a Terrified counter from a friendly character in short range.</li>
-  <li>(2) Reaction: Use after defeating an enemy. All other friendly characters in short range
-  may remove a Terrified counter OR take one action. <br><br>
-  <strong>Passive:</strong> Any other friendly character that starts its turn in short range
-  and LoS of this character removes a Terrified counter before activating. </li>
-  <li>(3) All friendly characters in short range (including this one) remove all Terrified
-  and Fatigue counters. Each may then make one action.</li>
-  </ul>
 stash: >-
   <strong>Stash;</strong>
   This item may be instantly discarded when found to add its value to your Stash - it
@@ -608,27 +544,6 @@ spell_nausea: >-
 focused_energy: >-
   <strong>Focused Energy;</strong>
   Elemental Magic - Action - Make a ranged attack with X dice, Bludgeoning and Sharp.
-skill_disarm_2: >-
-  <strong>Disarm (lvl 2);</strong>
-  The skill shown here can be used by the character at up to the level shown, exactly
-  as if they were on the character's Class board. <br><br><ul>
-  <li>(1) Reaction: Use after suffering a melee attack in which you took no damage. The weapon
-  that the attacker used is removed from their dashboard and scattered.</li>
-  <li>(2) Reaction: Use after suffering a melee attack in which you took no damage. The weapon
-  that the attacker used is removed from their dashboard and added to yours. If you do not have 
-  the space for it, drop it or another item you are holding.</li>
-  </ul>
-skill_frenzy_3: >-
-  <strong>Frenzy (lvl 3);</strong>
-  The skill shown here can be used by the character at up to the level shown, exactly
-  as if they were on the character's Class board. <br><br><ul>
-  <li>(1) Use before making a melee attack. Add two dice to the attack.</li>
-  <li>(2) Use before making a melee attack. Add three dice to the attack.</li>
-  <li>(3) Use before making a melee attack. Add four dice to the attack. After rolling the 
-  dice, you may split the hits scored between any number of enemies in range of your weapon. Any 
-  other effect such as Bludgeoning are applied to all enemies that suffer a hit.
-  <br><br><strong>Passive:</strong> Gain First Strike</li>
-  </ul>
 harpoons: >-
   <strong>Harpoons;</strong>
   This weapon require ammunition to fire. To fire this weapon you must have a matching ammunition
@@ -719,27 +634,95 @@ spell_illusion: >-
 regen_magic: >-
   <strong>Magic Regeneration;</strong>
   This item restores one Magic peg in the Assessment Phase.
-skill_nature: >-
+skill_camouflage_level_1: >-
+  <strong>Skill: Camouflage (lvl 1);</strong>
+  (1) While you are in contact with any wall you cannot be targeted for the 
+  rest of the round. Enemies can move through adjacent squares without stopping or 
+  attracting attacks of opportunity from you and cannot end a move in contact with you.
+  You do not block LoS in any way.
+skill_camouflage_level_2: >-
+  <strong>Skill: Camouflage (lvl 2);</strong>
+  (2) Make a Move or Ranged Attack action. While you are in contact with any terrain
+  you cannot be targeted for the rest of the round. Enemies can move through adjacent squares without stopping or 
+  attracting attacks of opportunity from you and cannot end a move in contact with you.
+  You do not block LoS in any way.
+skill_intimidating_1: >-
+  <strong>Intimidating (lvl 1);</strong>
+  (1) Reaction: use when an enemy in LoS activates. You may choose the enemy's target 
+  for the round from any eligible characters it can see, even if it is already engaged and/or
+  another target is closer.
+skill_intimidating_level_2: >-
+  <strong>Skill: Intimidating (lvl 2);</strong>
+  (2) Reaction: Use when an enemy enters LoS or starts their turn within LoS. Their turn 
+  immediately ends and they are Stunned. <br><br>
+  <strong>Passive:</strong> As an effortless action, you may take an action with any friendly
+  character in short range. They become Fatigued.
+skill_tracking_level_1: >-
+  <strong>Skill: Tracking (lbl 1);</strong>
+  (1) Look at the top three cards of the Event Deck.
+skill_tracking_level_2: >-
+  <strong>Skill: Tracking (lbl 2);</strong>
+  (2) Based on the current Dread, roll the arrival of all NPCs due to arrive this round and 
+  place them next to the appropriate Entry Points. Grave Points or any other arrival location within
+  short range of this Adventurer cannot be used. You may then move the NPCs at any one Entry Point to 
+  a different one. Their arrival will not be rolled again this round - they will just be activated and 
+  enter the gaming area as normal. <br><br>
+  <strong>Passive:</strong> If any rule causes your Staging Point to be swapped with a random 
+  Entry Point, you may roll the Magic Die twice and pick your preferred result.
+skill_fortified_mind_level_1: >-
+  <strong>Skill: Fortified Mind (lvl 1);</strong>
+  (1) Use before casting an Action spell to cast it while engaged.
+skill_fortified_mind_level_2: >-
+  <strong>Skill: Fortified Mind (lvl 2);</strong>
+  (2) Reaction: Use when a friendly character in short range suffers an attack. 
+  Use this character's magical armour to negate hits. Magic pegs from any combination
+  of this character and the target character may be used to boost the armour. Any Magic Die 
+  effects are applied to this character.
+skill_inspiring_level_1: >-
+  <strong>Skill: Inspiring (lvl 1);</strong>
+  (1) Remove a Terrified counter from a friendly character in short range.
+skill_inspiring_level_2: >-
+  <strong>Skill: Inspiring (lvl 2);</strong>
+  (2) Reaction: Use after defeating an enemy. All other friendly characters in short range
+  may remove a Terrified counter OR take one action. <br><br>
+  <strong>Passive:</strong> Any other friendly character that starts its turn in short range
+  and LoS of this character removes a Terrified counter before activating.
+skill_inspiring_level_3: >-
+  <strong>Skill: Inspiring (lvl 3);</strong>
+  (3) All friendly characters in short range (including this one) remove all Terrified
+  and Fatigue counters. Each may then make one action.
+skill_disarm_1: >-
+  <strong>Disarm (lvl 1);</strong>
+  (1) Reaction: Use after suffering a melee attack in which you took no damage. The weapon
+  that the attacker used is removed from their dashboard and scattered.
+skill_disarm_2: >-
+  <strong>Disarm (lvl 2);</strong>
+  (2) Reaction: Use after suffering a melee attack in which you took no damage. The weapon
+  that the attacker used is removed from their dashboard and added to yours. If you do not have 
+  the space for it, drop it or another item you are holding.
+skill_frenzy_3: >-
+  <strong>Frenzy (lvl 3);</strong>
+  (3) Use before making a melee attack. Add four dice to the attack. After rolling the 
+  dice, you may split the hits scored between any number of enemies in range of your weapon. Any 
+  other effect such as Bludgeoning are applied to all enemies that suffer a hit.
+  <br><br><strong>Passive:</strong> Gain First Strike
+skill_nature_1: >-
   <strong>One with nature (lvl 1);</strong>
-  This character may use the Nature skill up to the level shown, exactly  as if they were on the 
-  character's Class board. <br><br><ul>
-  <li>(1) Use during a General Search action to forage, taking the items listed below in 
+  (1) Use during a General Search action to forage, taking the items listed below in 
   addition to any drawn. Roll the magic Die.<br><br>
   1: You did not find anything other than the item drawn. <br>
   2-3: Take a Morsel or Herbs token. <br>
   4-5: Take a Provisions or Fungus token. <br>
   6: Take a Remedy or Minerals token. <br>
   <strong>Passive:</strong> When staying in the Wilderness in the Rest Phase you may roll once on 
-  the above table for each character with this skill.</li>
-  </ul>
+  the above table for each character with this skill.
+skill_ambush_1: >-
+  <strong>Ambush (lvl 1);</strong>
+  (1) <strong>Reaction:</strong> Use when an enemy ends a move within 4 squares and you are in
+  full or partial cover. Make a Ranged Attack action against that enemy. You may Dash before or 
+  after this action.
 skill_ambush_2: >-
   <strong>Ambush (lvl 2);</strong>
-  This character may use the Ambush skill up to the level shown, exactly  as if they were on the 
-  character's Class board. <br><br><ul>
-  <li>(1) <strong>Reaction:</strong> Use when an enemy ends a move within 4 squares and you are in
-  full or partial cover. Make a Ranged Attack action against that enemy. You may Dash before or 
-  after this action.</li>
-  <li>(2) <strong>Reaction:</strong> Use when an enemy ends a move within 4 squares and you are in
+  (2) <strong>Reaction:</strong> Use when an enemy ends a move within 4 squares and you are in
   full or partial cover. Make a Move action and then an Attack against that enemy, You may Dash 
-  before or after this action.</li>
-  </ul>
+  before or after this action.

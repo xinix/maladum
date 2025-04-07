@@ -9,7 +9,7 @@ const { loading, items, qSummary, containerClass, onClear } = useMaladumTokens()
     <section class="container">
         <p v-if="qSummary" class="summary">
             <span v-html="qSummary" />
-            <button class="btn-link" type="button" @click="onClear">
+            <button class="mbtn-link" type="button" @click="onClear">
                 {{ $t('clear_filter') }}
             </button>
         </p>

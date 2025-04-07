@@ -182,7 +182,7 @@ function onSave() {
     header {
         margin-bottom: 3em;
 
-        .btn {
+        .mbtn {
             font-size: 90%;
             display: inline-flex;
             align-items: center;

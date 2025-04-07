@@ -1,52 +1,54 @@
 @use "vars";
 
-.dl {
-    display: grid;
-    grid-gap: .5em .5em;
-    grid-template-columns: auto auto auto 1fr;
-
-    dt {
-        font-weight: bold;
-    }
-}
-
-@media (max-width: 600px) {
+.maladum-app {
     .dl {
+        display: grid;
+        grid-gap: .5em .5em;
+        grid-template-columns: auto auto auto 1fr;
+
+        dt {
+            font-weight: bold;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .dl {
+            grid-template-columns: auto 1fr;
+        }
+    }
+
+    .list ul {
+        margin: 1em 0 1em 1em;
+        list-style: none;
+
+        >li:before {
+            padding-right: .5em;
+            content: "•";
+            color: var(--primary)
+        }
+
+        >li+li {
+            margin-top: .5em;
+        }
+    }
+
+    .list ol {
+        margin: 1em 0 1em 1em;
+
+        >li+li {
+            margin-top: .5em;
+        }
+    }
+
+    .description {
+        display: grid;
+        margin: .5em;
         grid-template-columns: auto 1fr;
-    }
-}
+        gap: .5em;
 
-.list ul {
-    margin: 1em 0 1em 1em;
-    list-style: none;
-
-    > li:before {
-        padding-right: .5em;
-        content: "•";
-        color: var(--primary)
-    }
-
-    > li + li {
-        margin-top: .5em;
-    }
-}
-
-.list ol {
-    margin: 1em 0 1em 1em;
-
-    > li + li {
-        margin-top: .5em;
-    }
-}
-
-.description {
-    display: grid;
-    margin: .5em;
-    grid-template-columns: auto 1fr;
-    gap: .5em;
-
-    dt {
-        font-weight: bold;
-        text-align: right;
+        dt {
+            font-weight: bold;
+            text-align: right;
+        }
     }
 }

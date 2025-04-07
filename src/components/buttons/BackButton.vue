@@ -13,7 +13,7 @@ function onBack(ev: MouseEvent) {
 }
 </script>
 <template>
-  <button class="btn" type="button" v-bind="$attrs" @click="onBack">
+  <button class="mbtn" type="button" v-bind="$attrs" @click="onBack">
     <span class="material-symbols-rounded icon">arrow_back</span>
     <span class="label">{{ $t('back') }}</span>
   </button>

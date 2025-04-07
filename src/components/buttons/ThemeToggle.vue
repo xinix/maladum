@@ -18,7 +18,7 @@ const onToggleDark = (ev: MouseEvent) => {
 <template>
   <button
     :class="{ dark }"
-    class="btn theme-toggle"
+    class="mbtn theme-toggle"
     type="button"
     @click="onToggleDark"
   >

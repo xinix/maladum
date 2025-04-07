@@ -1,128 +1,130 @@
 @use "vars";
 
-.form-field {
-    margin: 1.5em 1em;
+.maladum-app {
+    .form-field {
+        margin: 1.5em 1em;
 
-    .form-label {
+        .form-label {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.5em;
+            text-transform: uppercase;
+        }
+    }
+
+    select {
+        padding: .6em 4em .6em 1em;
+        cursor: pointer;
+        color: var(--select-color);
+        border: solid 3px var(--select-border);
+        border-radius: .5em;
+
+        background-color: var(--select-bg);
+        background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+            linear-gradient(135deg, gray 50%, transparent 50%),
+            linear-gradient(to right, #cccccc, #cccccc);
+        background-repeat: no-repeat;
+        background-position: calc(100% - 20px) calc(1em + 2px),
+            calc(100% - 15px) calc(1em + 2px),
+            calc(100% - 2.5em) 0.5em;
+        background-size: 5px 5px,
+            5px 5px,
+            1px 1.5em;
+    }
+
+    .radio {
         font-weight: bold;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 0.5em;
-        text-transform: uppercase;
+        cursor: pointer;
+        gap: 0.75em;
     }
-}
-
-select {
-    padding: .6em 4em .6em 1em;
-    cursor: pointer;
-    color: var(--select-color);
-    border: solid 3px var(--select-border);
-    border-radius: .5em;
-
-    background-color: var(--select-bg);
-    background-image: linear-gradient(45deg, transparent 50%, gray 50%),
-    linear-gradient(135deg, gray 50%, transparent 50%),
-    linear-gradient(to right, #cccccc, #cccccc);
-    background-repeat: no-repeat;
-    background-position: calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px),
-    calc(100% - 2.5em) 0.5em;
-    background-size: 5px 5px,
-    5px 5px,
-    1px 1.5em;
-}
-
-.radio {
-    font-weight: bold;
-    display: flex;
-    cursor: pointer;
-    gap: 0.75em;
-}
-
-input[type="radio"] {
-    font: inherit;
-    display: grid;
-    width: 1.15em;
-    height: 1.15em;
-    margin: 0;
-    cursor: pointer;
-    transform: translateY(-0.075em);
-    color: currentColor;
-    border: 0.15em solid currentColor;
-    border-radius: 50%;
-    background-color: var(--input-bg);
-    appearance: none;
-    place-content: center;
-}
-
-input[type="radio"]::before {
-    width: 0.65em;
-    height: 0.65em;
-    content: "";
-    cursor: pointer;
-    transition: 120ms transform ease-in-out;
-    transform: scale(0);
-    border-radius: 50%;
-    background-color: CanvasText;
-    box-shadow: inset 1em 1em var(--primary);
-}
-
-input[type="radio"]:checked::before {
-    transform: scale(1);
-}
-
-input[type="radio"]:focus {
-    outline: max(2px, 0.15em) solid var(--primary-transparent);
-    outline-offset: max(2px, 0.15em);
-}
-
-.radio:hover {
-    text-decoration: underline;
 
     input[type="radio"] {
+        font: inherit;
+        display: grid;
+        width: 1.15em;
+        height: 1.15em;
+        margin: 0;
+        cursor: pointer;
+        transform: translateY(-0.075em);
+        color: currentColor;
+        border: 0.15em solid currentColor;
+        border-radius: 50%;
+        background-color: var(--input-bg);
+        appearance: none;
+        place-content: center;
+    }
+
+    input[type="radio"]::before {
+        width: 0.65em;
+        height: 0.65em;
+        content: "";
+        cursor: pointer;
+        transition: 120ms transform ease-in-out;
+        transform: scale(0);
+        border-radius: 50%;
+        background-color: CanvasText;
+        box-shadow: inset 1em 1em var(--primary);
+    }
+
+    input[type="radio"]:checked::before {
+        transform: scale(1);
+    }
+
+    input[type="radio"]:focus {
         outline: max(2px, 0.15em) solid var(--primary-transparent);
         outline-offset: max(2px, 0.15em);
     }
-}
 
+    .radio:hover {
+        text-decoration: underline;
 
-.checkbox + .checkbox {
-    margin-top: 1em;
-}
-
-.form-stacked .form-field {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: 1fr;
-}
-
-@media (min-width: 1000px) {
-
-    .form-field {
-        display: grid;
-        grid-gap: 1em 1em;
-        grid-template-columns: 1fr 5fr;
-
-        .form-label {
-            display: block;
+        input[type="radio"] {
+            outline: max(2px, 0.15em) solid var(--primary-transparent);
+            outline-offset: max(2px, 0.15em);
         }
     }
-}
 
 
-.form-field + .form-field {
-    margin-top: 2.5em;
-}
-
-.form-dotted {
-    .form-field + .form-field {
-        padding-top: 2.5em;
-        border-top: dotted 5px var(--primary-transparent);
+    .checkbox+.checkbox {
+        margin-top: 1em;
     }
-}
 
-.theme-option + .theme-option {
-    margin-top: 1em;
+    .form-stacked .form-field {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+    }
 
+    @media (min-width: 1000px) {
+
+        .form-field {
+            display: grid;
+            grid-gap: 1em 1em;
+            grid-template-columns: 1fr 5fr;
+
+            .form-label {
+                display: block;
+            }
+        }
+    }
+
+
+    .form-field+.form-field {
+        margin-top: 2.5em;
+    }
+
+    .form-dotted {
+        .form-field+.form-field {
+            padding-top: 2.5em;
+            border-top: dotted 5px var(--primary-transparent);
+        }
+    }
+
+    .theme-option+.theme-option {
+        margin-top: 1em;
+
+    }
 }

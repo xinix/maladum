@@ -2,8 +2,9 @@
   position: relative;
   display: block;
   min-width: 100%;
+  min-height: 100vh;
 
-  .wrapper > .content {
+  .wrapper>.content {
     padding: 1rem;
 
     &:focus {
@@ -18,7 +19,7 @@
 
 @media (max-width: 450px) {
   #app {
-    .wrapper > .content {
+    .wrapper>.content {
       padding: 1em 0.25em;
     }
   }

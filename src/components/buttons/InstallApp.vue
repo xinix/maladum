@@ -28,7 +28,7 @@ const onInstall = (ev: MouseEvent) => {
 <template>
   <button
     :title="$t('install_app')"
-    class="btn btn-link"
+    class="mbtn mbtn-link"
     type="button"
     @click="onInstall"
   >
@@ -37,7 +37,7 @@ const onInstall = (ev: MouseEvent) => {
 </template>
 
 <style lang="scss" scoped>
-.btn-link {
+.mbtn-link {
   padding: 0.6em 0.6em 0.6em 0;
   opacity: 0.75;
 

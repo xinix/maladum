@@ -7,7 +7,7 @@ import {
 } from '@/helpers/local-storage.ts'
 
 export const useProducts = defineStore('products', () => {
-    const productOptions: ProductType[] = ['maladum', 'beasts']
+    const productOptions: ProductType[] = ['maladum', 'beasts', 'adventure']
 
     const active = ref<ProductType[]>([])
 
@@ -28,6 +28,8 @@ export const useProducts = defineStore('products', () => {
             maladum:
                 'https://battlesystems.co.uk/product/maladum-dungeons-of-enveron-starter-set/',
             beasts: 'https://battlesystems.co.uk/product/maladum-beasts-of-enveron-expansion/',
+            adventure:
+                'https://battlesystems.co.uk/product/maladum-of-ale-and-adventure-expansion/',
         }[product]
     }
 

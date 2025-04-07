@@ -1,22 +1,24 @@
 @use "vars";
 
-a {
-    color: var(--link-color);
-}
-
-.details {
-    strong {
-        font-weight: bold;
-        border-radius: 2px;
-        background-color: transparent;
-        background-image: linear-gradient(to right, var(--secondary-a1), var(--secondary-a2) 33%, var(--secondary-a3) 66%, var(--secondary-a4));
-        background-repeat: no-repeat;
-        background-position: left bottom;
-        background-size: 100% 3px;
+.maladum-app {
+    a {
+        color: var(--link-color);
     }
 
-    em {
-        font-weight: bold;
-    }
+    .details {
+        strong {
+            font-weight: bold;
+            border-radius: 2px;
+            background-color: transparent;
+            background-image: linear-gradient(to right, var(--secondary-a1), var(--secondary-a2) 33%, var(--secondary-a3) 66%, var(--secondary-a4));
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            background-size: 100% 3px;
+        }
 
+        em {
+            font-weight: bold;
+        }
+
+    }
 }

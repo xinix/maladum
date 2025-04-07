@@ -5,6 +5,7 @@ import JustText from '@/components/tokens/JustText.vue'
 import IconLegend from '@/components/tokens/IconLegend.vue'
 import RangeLegend from '@/components/tokens/RangeLegend.vue'
 import RarityLegend from '@/components/tokens/RarityLegend.vue'
+import CraftingLegend from '@/components/tokens/CraftingLegend.vue'
 
 const props = withDefaults(
     defineProps<{ item: MaladumToken; active?: boolean }>(),
@@ -37,6 +38,22 @@ const rarity = computed(() => {
         return `${props.item.rarity}`
     }
     return ''
+})
+
+const description = computed(() => {
+    const result: any[] = []
+    if (props.item.description != null) {
+        if (props.item.crafting != null) {
+            if (!props.item.description.includes('crafting'))
+                result.push('crafting')
+        }
+        result.push([...props.item.description])
+        return result
+    }
+    if (props.item.crafting != null) {
+        result.push('crafting')
+    }
+    return result
 })
 </script>
 <template>
@@ -73,13 +90,13 @@ const rarity = computed(() => {
         </header>
         <section v-if="active" class="more">
             <ul class="list">
+                <RarityLegend :value="rarity" tag="li" />
                 <JustText
-                    v-for="attr in item.description"
+                    v-for="attr in description"
                     :key="attr"
                     :attribute="attr"
                     tag="li"
                 />
-                <RarityLegend :value="rarity" tag="li" />
             </ul>
             <ul v-if="item.attributes" class="list">
                 <RangeLegend v-if="item.range" :range="item.range" tag="li" />
@@ -89,6 +106,9 @@ const rarity = computed(() => {
                     :icon="attr"
                     tag="li"
                 />
+            </ul>
+            <ul v-if="item.crafting" class="list">
+                <CraftingLegend :token="item" tag="li" />
             </ul>
         </section>
     </component>

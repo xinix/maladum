@@ -63,17 +63,17 @@ for (const folder of folders) {
                 .replaceAll('-', ' ')
             name = name.charAt(0).toUpperCase() + name.slice(1)
 
-            css.push(`.token.${folder}.${token[1]} { background-position-x: -${coord.x}px; background-position-y: -${coord.y}px; }`)
+            css.push(`.token.${folder}.${token[1].replaceAll('_', '-')} { background-position-x: -${coord.x}px; background-position-y: -${coord.y}px; }`)
             yaml.push(...[
                 `- product: ${folder}`,
                 `  slug: "${token[1]}"`,
                 `  name: "${name}"`,
-                `  count: 1`,
-                `  rarity: common`,
                 `  color: blue`,
+                `  rarity: common`,
                 `  size: md`,
                 `  buy: `,
                 `  sell: `,
+                `  count: 1`,
                 `  attributes:`,
             ])
         }
