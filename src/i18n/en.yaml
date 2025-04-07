@@ -150,9 +150,9 @@ cleave: >-
   eligible enemy, removing one hit from the roll. You may continue to do this until you fail to defeat
   an enemy or there are no eligible enemies remaining.
 crafting: >-
-  <strong>Crafting resource;</strong>
-  This item is used as an ingredient for crafting. The letter and colour determine the resource type.
-  Numbered items are used to craft unique relics.
+  <strong>Crafting (resource);</strong>
+  This item is used as an ingredient for crafting or needs resources to be crafted. The letter and 
+  colour determine the resource type. Numbered items are used to craft unique relics.
 creature: >-
   <strong>Creature;</strong>
   Unless stated otherwise, this character cannot Open Doors, Search, use equipment or Interact with terrain.
@@ -183,6 +183,10 @@ discard: >-
 effortless: >-
   <strong>Effortless;</strong>
   This item can be used as an effortless action.
+objective: >-
+  <strong>Objective;</strong>
+  Objective tokens are used for certain quests and will be placed in a random chest or other
+  location.
 entangling: >-
   <strong>Entangling;</strong>
   If this attack causes one or more hits, the target is Fatigued. If this attack rolls a critical hit,
@@ -238,7 +242,7 @@ infinite_ammo: >-
 key: >-
   <strong>Key;</strong>
   A character carrying this item may lock or unlock any door or terrain piece as an effortless action.
-lasting_effect: >-
+lasting: >-
   <strong>Lasting Effect;</strong>
   Effects granted by this item last until the end of the round. Rotate the token 180 degrees as a 
   reminder. If the token is discarded after use, place it on your character board instead and 
@@ -634,6 +638,38 @@ spell_illusion: >-
 regen_magic: >-
   <strong>Magic Regeneration;</strong>
   This item restores one Magic peg in the Assessment Phase.
+spell_cocoon: >-
+  <strong>Cocoon (Elemental Magic);</strong>
+  Gain the benefits of a Rest action, regardless of enemies in the room or in short range and
+  LoS (enemies engaged with a Resting character will still prevent it as normal). Nearby characters
+  may Rest as part of the spell - it affects up to X characters (including the caster) with a 
+  range of X squares.
+spell_invisibility: >-
+  <strong>Invisibility (Proximate Magic);</strong>
+  Gain the listed effects until the end of the round.<br><br>
+  X=1: You cannot be targeted by enemies beyond short range. <br><br>
+  X=2: You cannot be targeted by non-adjacent enemies. You do not block LoS. <br><br>
+  X=3: You cannot be targeted. You ignore attacks of opportunity, but may still make them. 
+  You do not block LoS. You only block movement if you choose to.
+spell_rearrange_cells: >-
+  <strong>Rearrange cells (Proximate Magic);</strong>
+  Temporarily mutate your body into that of a beast. Increase the following statistics by a total of
+  X+2 in any combination:<br><br>
+  Melee (max 4)<br>
+  Armour (max 3)<br>
+  Movement (max 2)<br><br>
+  Instead of increasing a statistic, you may add any of the following effects to your attack: 
+  bludgeoning / sharp / quickstrike / entangling / vicious <br><br>
+  Make note of these increases.<br><br>
+  Increase your size by 1, or increase it by 2 and become Terrifying if X=3 or more.<br><br>
+  While mutated you cannot use any equipment, although you can still carry it.<br><br>
+  Place X Reminder counters on your character board. Remove one counter in each Assessment Phase.
+  The effects last until the last counter is removed.
+2_actions: Using this item/weapon takes 2 actions.
+starting_magic: >-
+  <strong>Starting Magic;</strong>
+  This item is used to increase the starting Magic of a character. The number shown is the 
+  amount of starting Magic gained.
 skill_camouflage_level_1: >-
   <strong>Skill: Camouflage (lvl 1);</strong>
   (1) While you are in contact with any wall you cannot be targeted for the 
@@ -700,6 +736,12 @@ skill_disarm_2: >-
   (2) Reaction: Use after suffering a melee attack in which you took no damage. The weapon
   that the attacker used is removed from their dashboard and added to yours. If you do not have 
   the space for it, drop it or another item you are holding.
+skill_frenzy_1: >-
+  <strong>Frenzy (lvl 1);</strong>
+  (1) Use before making a melee attack. Add two dice to the attack.
+skill_frenzy_2: >-
+  <strong>Frenzy (lvl 2);</strong>
+  (2) Use before making a melee attack. Add three dice to the attack.
 skill_frenzy_3: >-
   <strong>Frenzy (lvl 3);</strong>
   (3) Use before making a melee attack. Add four dice to the attack. After rolling the 
@@ -726,3 +768,59 @@ skill_ambush_2: >-
   (2) <strong>Reaction:</strong> Use when an enemy ends a move within 4 squares and you are in
   full or partial cover. Make a Move action and then an Attack against that enemy, You may Dash 
   before or after this action.
+skill_persuasion_1: >-
+  <strong>Skill: Persuasion (lvl 1);</strong>
+  (1) Use before making a Persuade roll. Add two automatic hits to the roll.
+skill_persuasion_2: >-
+  <strong>Skill: Persuasion (lvl 2);</strong>
+  (2) Make a Persuade action against an Adventurer from another party to try to dissuade them from
+  their mission. They suffer one Fatigued counter per unblocked hit.
+  <br/><br/>
+  <strong>Passive:</strong> Add one extra die to your Persuade rolls.
+skill_persuasion_3: >-
+  <strong>Skill: Persuasion (lvl 3);</strong>
+  (3) Make a Persuade action against any character, adding three automatic hits. The normal options
+  apply, except that Adventurers from other parties will not join you.
+skill_tricks_of_the_trade_1: >-
+  <strong>Skill: Tricks of the Trade (lvl 1);</strong>
+  (1) You may lock or unlock a door or terrain piece in contact, OR you may use when Searching,
+  after drawing tokens, to ignore any Trap token(s) drawn with no effect.
+skill_distraction_1: >-
+  <strong>Skill: Distraction (lvl 1);</strong>
+  (1) A character in medium range and LoS becomes Fatigued.
+skill_smithing_1: >-
+  <strong>Skill: Smithing (lvl 1);</strong>
+  (1) During a questm spend an action to Repair a broken item as if you were visiting the 
+  Artisan's Guild at no cost. The items you may repair depend on X:<br/><br/>
+  1: Common<br/>
+  2: Common or Uncommon<br/>
+  3: Any item<br/><br/>
+  <strong>Market Phase:</strong> Repair an item as above at no cost.
+skill_entertainer_1: >-
+  <strong>Skill: Entertainer (lvl 1);</strong>
+  (1) Remove a Fatigue counter from another character in short range. <br><br>
+  <strong>Rest phase:</strong> Add up to 2 to any Inn roll without spending renown.
+skill_entertainer_2: >-
+  <strong>Skill: Entertainer (lvl 2);</strong>
+  (1) Use when Resting. Bless each friendly character (including this one) in short range.
+  You may increase the Dread level by up to two to Bless each character that many additional 
+  times.<br><br>
+  <strong>Rest phase:</strong> At the end of the Phase, Bless all characters in your party.
+skill_reflexes_1: >-
+  <strong>Skill: Reflexes (lvl 1);</strong>
+  (1) <strong>Reaction:</strong> Use when an enemy engages you. In any order, make a Move action,
+  ignoring attacks of opportunity, and an Attack action.<br><br>
+  <strong>Passive:</strong> Ignore one hit scored against you during any attack of opportunity.
+skill_impervious_1: >-
+  <strong>Skill: Impervious (lvl 1);</strong>
+  (1) <strong>Reaction:</strong> Use whenever you would suffer a status counter of any type. Discard
+  the counter with no effect.
+skill_impervious_2: >-
+  <strong>Skill: Impervious (lvl 2);</strong>
+  (2) Gain +2 Armour until the end of the round.
+skill_impervious_3: >-
+  <strong>Skill: Impervious (lvl 3);</strong>
+  (3) Restore 1 Health. This may take you above your starting level as long as there is space on
+  your dashboard. You may discard any status counters you wish to.<br><br>
+  In addition, you ignore all damage, resist all spells without spending pegs, and discard all
+  status counters with no effect until the end of the round.

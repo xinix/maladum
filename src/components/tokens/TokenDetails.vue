@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { MaladumToken, SIZE_ENUM } from '@/tokens/types.ts'
-import JustText from '@/components/tokens/JustText.vue'
 import IconLegend from '@/components/tokens/IconLegend.vue'
 import RangeLegend from '@/components/tokens/RangeLegend.vue'
 import RarityLegend from '@/components/tokens/RarityLegend.vue'
 import CraftingLegend from '@/components/tokens/CraftingLegend.vue'
+import JustText from '@/components/tokens/JustText.vue'
 
 const props = withDefaults(
     defineProps<{ item: MaladumToken; active?: boolean }>(),
@@ -43,11 +43,11 @@ const rarity = computed(() => {
 const description = computed(() => {
     const result: any[] = []
     if (props.item.description != null) {
+        result.push(...props.item.description)
         if (props.item.crafting != null) {
             if (!props.item.description.includes('crafting'))
                 result.push('crafting')
         }
-        result.push([...props.item.description])
         return result
     }
     if (props.item.crafting != null) {
@@ -98,7 +98,7 @@ const description = computed(() => {
                     tag="li"
                 />
             </ul>
-            <ul v-if="item.attributes" class="list">
+            <ul class="list">
                 <RangeLegend v-if="item.range" :range="item.range" tag="li" />
                 <IconLegend
                     v-for="attr in item.attributes"
@@ -106,8 +106,6 @@ const description = computed(() => {
                     :icon="attr"
                     tag="li"
                 />
-            </ul>
-            <ul v-if="item.crafting" class="list">
                 <CraftingLegend :token="item" tag="li" />
             </ul>
         </section>
@@ -205,19 +203,6 @@ const description = computed(() => {
     background-color: var(--transparent-bg);
     box-shadow: var(--shadow-md);
     backdrop-filter: blur(5px);
-}
-
-.list {
-    font-size: 1.25em;
-    margin: 1em;
-    list-style: none;
-}
-
-.list + .list,
-.list li + li {
-    margin-top: 1em;
-    padding-top: 1em;
-    border-top: inset 3px var(--primary-transparent);
 }
 
 @media (max-width: 600px) {

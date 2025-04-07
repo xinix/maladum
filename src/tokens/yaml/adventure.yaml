@@ -110,8 +110,7 @@
   size: sm
   buy:
   sell: 9
-  attributes:
-    - resource
+  crafting: [W, E, T]
 - product: adventure
   slug: "bewitched-blade"
   name: "Bewitched Blade"
@@ -257,7 +256,7 @@
   count: 2
   rarity: exclusive
   color: purple
-  size: md
+  size: xs
   buy:
   sell:
   attributes:
@@ -323,7 +322,7 @@
   size: sm
   buy:
   sell:
-  attributes:
+  crafting: [S, W]
 - product: adventure
   slug: "broken-weaponry-ww"
   name: "Broken Weaponry"
@@ -382,9 +381,8 @@
   size: lg
   buy: 10
   sell: 5
-  attributes:
-    - re_roll
-    - wilderness_roll
+  description:
+    - camping_gear
 - product: adventure
   slug: "casque-of-warding"
   name: "Casque of warding"
@@ -528,6 +526,8 @@
   buy:
   sell: 28
   crafting: [5, T, F, B, B, V]
+  description:
+    - daemon_mantle
   attributes:
     - spell_rearrange_cells
 - product: adventure
@@ -562,11 +562,9 @@
   buy:
   sell: 4
   crafting: [T, R]
-  attributes:
-    - resource
 - product: adventure
   slug: "decadent-finery-rr"
-  name: "Decrepit Treasure"
+  name: "Decadent Treasure"
   count: 1
   rarity: common
   color: purple
@@ -574,8 +572,6 @@
   crafting: [R, R]
   buy:
   sell: 6
-  attributes:
-    - resource
 - product: adventure
   slug: "decadent-finery-rt"
   name: "Decadent Finery"
@@ -586,8 +582,6 @@
   buy:
   sell: 4
   crafting: [T, R]
-  attributes:
-    - resource
 - product: adventure
   slug: "destinys-tincture"
   name: "Destiny's Tincture"
@@ -720,8 +714,6 @@
   buy:
   sell: 10
   crafting: [S, B, G]
-  attributes:
-    - resource
 - product: adventure
   slug: "explosive-bullets"
   name: "Explosive Bullets"
@@ -772,8 +764,7 @@
   size: xs
   buy: 25
   sell: 9
-  attributes:
-    - resource
+  crafting: [E]
 - product: adventure
   slug: "falling-rock-trap"
   name: "Falling Rock Trap"
@@ -796,8 +787,6 @@
   buy:
   sell: 18
   crafting: [G, A, R]
-  attributes:
-    - resource
 - product: adventure
   slug: "flame-trap"
   name: "Flame Trap"
@@ -885,8 +874,8 @@
   size: xs
   buy: 5
   sell: 1
+  crafting: [F]
   attributes:
-    - resource
     - restore_magic
 - product: adventure
   slug: "gas-trap"
@@ -930,8 +919,6 @@
   buy: 16
   sell: 5
   crafting: [G]
-  attributes:
-    - resource
 - product: adventure
   slug: "grail-of-the-gods"
   name: "Grail of the Gods"
@@ -1069,7 +1056,6 @@
   sell: 1
   crafting: [H]
   attributes:
-    - resource
     - restore_health
 - product: adventure
   slug: "hexwell-talisman"
@@ -1103,8 +1089,6 @@
   buy:
   sell: 15
   crafting: [1, X]
-  attributes:
-    - resource
 - product: adventure
   slug: "homing-arrows"
   name: "Homing Arrows"
@@ -1186,7 +1170,7 @@
   buy: 8
   sell: 4
   attributes:
-    - skill_one_with_nature_1
+    - skill_nature_1
   description:
     - skill
 - product: adventure
@@ -1198,8 +1182,8 @@
   size: sm
   buy: 21
   sell: 6
+  crafting: [I]
   attributes:
-    - resource
     - blast
     - effortless
     - discard
@@ -1228,8 +1212,7 @@
   size: sm
   buy: 13
   sell: 5
-  attributes:
-    - resource
+  crafting: [K]
 - product: adventure
   slug: "keltmail-armour"
   name: "Keltmail Armour"
@@ -1376,7 +1359,6 @@
   description:
     - minerals
   attributes:
-    - resource
     - restore_skill
 - product: adventure
   slug: "mystic-grimoire"
@@ -1424,7 +1406,7 @@
   count: 6
   rarity: exclusive
   color: purple
-  size: sm
+  size: xs
   buy:
   sell:
   description:
@@ -1434,12 +1416,11 @@
   name: "Ornate Box"
   count: 1
   rarity: common
-  color: red
+  color: purple
   size: sm
   buy:
   sell: 3
-  attributes:
-    - resource
+  crafting: [R, W]
 - product: adventure
   slug: "pan-pipes"
   name: "Pan Pipes"
@@ -1579,8 +1560,8 @@
   size: xs
   buy: 15
   sell: 4
+  crafting: [B]
   attributes:
-    - resource
     - 2_actions
     - discard
 - product: adventure
@@ -1604,8 +1585,7 @@
   size: xs
   buy:
   sell: 3
-  attributes:
-    - resource
+  crafting: [F, M]
 - product: adventure
   slug: "questionable-brew-hf"
   name: "Questionable Brew"
@@ -1615,8 +1595,7 @@
   size: xs
   buy:
   sell: 3
-  attributes:
-    - resource
+  crafting: [H, F]
 - product: adventure
   slug: "questionable-brew-mh"
   name: "Questionable Brew"
@@ -1626,8 +1605,7 @@
   size: xs
   buy:
   sell: 3
-  attributes:
-    - resource
+  crafting: [M, H]
 - product: adventure
   slug: "reapers-riposte"
   name: "Reaper's Riposte"
@@ -1692,8 +1670,7 @@
   size: md
   buy:
   sell: 9
-  attributes:
-    - resource
+  crafting: [R, K, S]
 - product: adventure
   slug: "rusted-armour-rts"
   name: "Rusted Armour"
@@ -1703,8 +1680,7 @@
   size: md
   buy:
   sell: 5
-  attributes:
-    - resource
+  crafing: [R, T, S]
 - product: adventure
   slug: "rusted-armour-ss"
   name: "Rusted Armour"
@@ -1714,8 +1690,7 @@
   size: md
   buy:
   sell: 2
-  attributes:
-    - resource
+  crafting: [S, S]
 - product: adventure
   slug: "rusted-armour-sst"
   name: "Rusted Armour"
@@ -1725,8 +1700,7 @@
   size: md
   buy:
   sell: 3
-  attributes:
-    - resource
+  crafting: [S, S, T]
 - product: adventure
   slug: "sceptre-of-dominion"
   name: "Sceptre of Dominion"
@@ -1738,13 +1712,12 @@
   sell: 28
   crafting: [4, R, R, R, G, A]
   description:
-    - skill
+    - sceptre_of_dominion
   attributes:
     - skill_persuasion_1
     - skill_persuasion_2
     - skill_persuasion_3
     - 2_actions
-    - skill
 - product: adventure
   slug: "scythe"
   name: "Scythe"
@@ -1784,10 +1757,7 @@
   size: xs
   buy: 9
   sell: 3
-  description:
-    - venom
-  attributes:
-    - resource
+  crafting: [V]
 - product: adventure
   slug: "shillelagh"
   name: "Shillelagh"
@@ -1836,6 +1806,8 @@
   size: lg
   buy: 18
   sell: 8
+  description:
+    - sledge_of_burden
   attributes:
     - size
 - product: adventure
@@ -1924,8 +1896,7 @@
   size: md
   buy:
   sell:
-  attributes:
-    - resource
+  crafting: [3]
 - product: adventure
   slug: "staff-of-harmony"
   name: "Staff of Harmony"
@@ -1963,10 +1934,7 @@
   size: xs
   buy: 5
   sell: 1
-  description:
-    - steel
-  attributes:
-    - resource
+  crafting: [S]
 - product: adventure
   slug: "steel-bracers"
   name: "Steel Bracers"
@@ -1987,10 +1955,7 @@
   size: sm
   buy: 13
   sell: 5
-  description:
-    - keltic_steel
-  attributes:
-    - resource
+  crafting: [K]
 - product: adventure
   slug: "sundered-sceptre"
   name: "Sundered Sceptre"
@@ -2000,8 +1965,7 @@
   size: md
   buy:
   sell: 15
-  attributes:
-    - resource
+  crafting: [4]
 - product: adventure
   slug: "sword"
   name: "Sword"
@@ -2052,8 +2016,7 @@
   size: md
   buy:
   sell: 2
-  attributes:
-    - resource
+  crafting: [T, T]
 - product: adventure
   slug: "textiles"
   name: "Textiles"
@@ -2271,10 +2234,7 @@
   size: xs
   buy: 4
   sell: 0
-  description:
-    - wood
-  attributes:
-    - resource
+  crafting: [W]
 - product: adventure
   slug: "wyrmbreath-pistol"
   name: "Wyrmbreath Pistol"

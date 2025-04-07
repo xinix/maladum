@@ -50,6 +50,20 @@
         animation: gradient 15s ease infinite;
     }
 
+
+    .list {
+        font-size: 1.25em;
+        margin: 1em;
+        list-style: none;
+    }
+
+    .list + .list,
+    .list li + li {
+        margin-top: 1em;
+        padding-top: 1em;
+        border-top: inset 3px var(--primary-transparent);
+    }
+
 }
 
 @keyframes gradient {
