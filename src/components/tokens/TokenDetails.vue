@@ -29,7 +29,7 @@ const tokenClass = computed(() => {
     const size = SIZE_ENUM[props.item.size]
     cls[props.item.product] = true
     cls[size] = true
-    cls[props.item.slug] = true
+    cls[props.item.slug.replaceAll('_', '-')] = true
     return cls
 })
 
