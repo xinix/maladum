@@ -899,6 +899,8 @@
   size: xs
   buy: 12
   sell: 12
+  description:
+    - gem
 - product: adventure
   slug: "gem-17"
   name: "Gem 17"
@@ -908,7 +910,8 @@
   size: xs
   buy: 17
   sell: 17
-  attributes:
+  description:
+    - gem
 - product: adventure
   slug: "graam-ore"
   name: "Graam Ore"

@@ -187,6 +187,7 @@ const description = computed(() => {
         font-family: var(--font-main), sans-serif;
         font-size: 1.125em;
         font-weight: bold;
+        text-transform: capitalize;
     }
 
     .prices,

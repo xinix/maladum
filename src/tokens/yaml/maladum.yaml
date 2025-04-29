@@ -195,8 +195,8 @@
   rarity: uncommon
   color: blue
   size: lg
-  buy: 0
-  sell: 0
+  buy: 18
+  sell: 12
   attributes:
     - ammo_arrow
   range: [1, 3, 3]
@@ -357,8 +357,8 @@
     - reach
     - bludgeoning
 - product: maladum
-  slug: "flinstock-pistol"
-  name: "Flinstock pistol"
+  slug: "flintlock-pistol"
+  name: "Flintlock Pistol"
   count: 1
   rarity: uncommon
   color: blue
@@ -371,14 +371,14 @@
     - loud
     - unreliable
 - product: maladum
-  slug: "glatve"
-  name: "Glatve"
+  slug: "glaive"
+  name: "Glaive"
   count: 1
   rarity: rare
   color: blue
   size: xl
   buy: 21
-  sell: 12
+  sell: 14
   attributes:
     - melee
     - sharp
@@ -407,7 +407,7 @@
   buy: 3
   sell: 3
   description:
-    - gold
+    - gem
 - product: maladum
   slug: "great-axe"
   name: "Great axe"
@@ -616,13 +616,13 @@
   attributes:
     - armour
     - defensive_re_roll
-    - skill_intimidating_level_1
-    - skill_intimidating_level_2
+    - skill_intimidating_1
+    - skill_intimidating_2
 - product: maladum
   slug: "large-shield"
   name: "Large shield"
   count: 1
-  rarity: common
+  rarity: uncommon
   color: red
   size: md
   buy: 10
@@ -692,8 +692,8 @@
     - melee
     - malacyte_enhancement
 - product: maladum
-  slug: "lowkicks-axe"
-  name: "Lowkicks axe"
+  slug: "lowicks-axe"
+  name: "Lowick’s Axe"
   count: 1
   rarity: rare
   color: blue
@@ -733,7 +733,7 @@
   slug: "maladaars-almanac"
   name: "Maladaars almanac"
   count: 1
-  rarity: common
+  rarity: rare
   color: red
   size: md
   buy: 24
@@ -892,7 +892,7 @@
   sell: 6
   attributes:
     - ammo_arrow
-    - infinite
+    - infinite_ammo
 - product: maladum
   slug: "rapter"
   name: "Rapter"
@@ -922,7 +922,7 @@
   slug: "remedy"
   name: "Remedy"
   count: 2
-  rarity: common
+  rarity: uncommon
   color: red
   size: sm
   buy: 4
@@ -1252,6 +1252,8 @@
 - product: maladum
   slug: "yellow-crystal"
   name: "Gem 5"
+  description:
+    - gem
   count: 1
   rarity: uncommon
   color: purple

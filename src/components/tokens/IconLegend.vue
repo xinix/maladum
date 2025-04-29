@@ -16,7 +16,9 @@ const props = withDefaults(
     },
 )
 const { t } = useI18n()
-const imgSrc = computed(() => `/maladum/icons/${props.icon}.png`)
+const leIcon = computed(() => props.icon.replaceAll('-', '_'))
+
+const imgSrc = computed(() => `/maladum/icons/${leIcon.value}.png`)
 
 const pivot: any = {
     ammo_arrow: 'ammunition',
@@ -28,9 +30,10 @@ const pivot: any = {
 }
 
 const text = computed(() => {
-    let legend = props.legend === '' ? props.icon : props.legend
-    if (pivot[props.icon] != null) {
-        legend = pivot[props.icon]
+    const icon = leIcon.value
+    let legend = props.legend === '' ? icon : props.legend
+    if (pivot[icon] != null) {
+        legend = pivot[icon]
     }
     if (props.mustache != null) {
         return t(
@@ -44,7 +47,7 @@ const text = computed(() => {
 <template>
     <component :is="tag" class="icon-description">
         <figure>
-            <img :alt="icon" :src="imgSrc" class="attribute-icon" />
+            <img :alt="leIcon" :src="imgSrc" class="attribute-icon" />
         </figure>
         <span v-html="text" />
     </component>

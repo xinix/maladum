@@ -177,6 +177,10 @@ defensive_re_roll: >-
   <strong>Defensive Re-roll;</strong>
   The character may force a single die to be re-rolled from any attack made against them, unless
   the attack ignores physical armour. Critical hits cannot be re-rolled.
+melee_re_roll: >-
+  <strong>Melee Re-roll;</strong>
+  The character can use this weapon to make a melee attack, using the number of dice shown.
+  Additionally, the character may re-roll a single combat die each time the weapon is used to attack.
 discard: >-
   <strong>Discard;</strong>
   When this item has been used, return it to the supply.
@@ -261,7 +265,7 @@ lull: >-
   Reduce the Dread by the amount shown when this item is used.
 magic: >-
   <strong>Magic;</strong>
-  While this item is in use, the character may increase their Magic stat by one. (unverified)
+  While this item is in use, the character may increase their Magic stat by one.
 magical_armour: >-
   <strong>Magical Armour;</strong>
   Spend an action and up to X Magic pegs to increase your Warded value by the number of pegs 
@@ -665,6 +669,7 @@ spell_rearrange_cells: >-
   While mutated you cannot use any equipment, although you can still carry it.<br><br>
   Place X Reminder counters on your character board. Remove one counter in each Assessment Phase.
   The effects last until the last counter is removed.
+gem: Gems, gold or money - these items are not used during the game, but they will be valuable when trading between quests so you'll want to allow space for them in your inventory.
 2_actions: Using this item/weapon takes 2 actions.
 starting_magic: >-
   <strong>Starting Magic;</strong>
@@ -687,7 +692,7 @@ skill_intimidating_1: >-
   (1) Reaction: use when an enemy in LoS activates. You may choose the enemy's target 
   for the round from any eligible characters it can see, even if it is already engaged and/or
   another target is closer.
-skill_intimidating_level_2: >-
+skill_intimidating_2: >-
   <strong>Skill: Intimidating (lvl 2);</strong>
   (2) Reaction: Use when an enemy enters LoS or starts their turn within LoS. Their turn 
   immediately ends and they are Stunned. <br><br>
