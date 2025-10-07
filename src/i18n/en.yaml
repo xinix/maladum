@@ -108,8 +108,8 @@ x_dice: >-
 ammunition: >-
   <strong>Ammunition</strong>;
   This icon is used to show that a weapon requires ammunition. When the weapon is used, 
-  the player must discard one of these tokens from their inventory. If the player does not have 
-  any tokens to discard, the weapon cannot be used.
+  and the player rolls a blue blunder then you must discard one of these tokens from your inventory. 
+  If the player does not have any tokens to discard, the weapon cannot be used.
 balanced: >-
   <strong>Balanced</strong>;
   This weapon rolls +1 dice when thrown.
@@ -628,7 +628,7 @@ blast: >-
   until no hits remain.
 range_plus_1: >-
   <strong>Range +1;</strong>
-  This item increases the range of ranged attacks by one square.
+  This item adds one extra die to the ranged attack.
 remove_poison: >-
   <strong>Remove Poison;</strong>
   This item can be used to remove Poisoned counters from a character.
