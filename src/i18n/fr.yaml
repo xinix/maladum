@@ -1,0 +1,892 @@
+back: Retour
+preferences: Préférences
+filter: Filtre
+apply: Appliquer filtre
+theme: Thème
+about: À propos
+light_mode: Mode clair
+dark_mode: Mode sombre
+owned_products: Ma collection Maladum
+clear_filter: Effacer les filtres
+search_placeholder: Recherche
+install_app: Installer l'app
+buy-me-a-coffee: Buy me a coffee
+buy-now: Acheter
+copyright: "All designs &copy; Battle Systems &#8482; 2022."
+this-is-free: >-
+  Il s'agit d'une application non officielle pour Maladum ; elle est entièrement gratuite et le restera.
+lang: Langue
+en: Anglais
+nl: Néerlandais
+fr: Français
+de: Allemand
+translated-by: Traduit par
+translator: Ronny
+about-me: >-
+  Salut ! Je m'appelle Nico et je suis un grand passionné de Core Space et de Maladum.
+  Dès que j'ai découvert Core Space sur le site
+  <a href="https://www.orderofgamers.com/games/core-space/" target="_blank">Esoteric Order of Gamers</a>, j'ai tout de suite
+  accroché. J'ai acheté la boîte de base ainsi que toutes les extensions disponibles. En 2020,
+  j'ai participé à la campagne Kickstarter de « First Born » et j'ai là aussi tout pris 😋.
+  <br/><br/>En 2022, je me suis porté volontaire pour présenter « First Born » lors du
+  salon Spiel à Essen, en Allemagne, et j'ai eu la chance d'être sélectionné. J'y ai animé des
+  démonstrations du jeu pendant deux jours, ce qui m'a permis de travailler aux côtés de Colin,
+  Steward et Simon. Après Essen, j'ai eu l'idée de créer une application pour Core Space, permettant
+  aux joueurs de consulter les jetons d'objets trouvés en cours de partie et d'obtenir des
+  explications détaillées sur leurs symboles. Quelques années plus tard, comme j'avais acquis
+  l'ensemble de la gamme Maladum, j'ai décidé de développer une application dédiée à ce jeu également.
+no_result: "Pas de résultats."
+maladum: "Maladum Dungeons of Enveron Kit de démarrage"
+beasts: "Beasts of Enveron Extension"
+adventure: "Of Ale and Adventure Extension"
+vaults: "Beyond the Vaults Extension"
+buy: Acheter
+filter_buy: Filtrer par prix d'achat
+sell: Vendre
+filter_sell: Filtrer par prix de revente
+rarity: Rareté
+tuto: Tutoriel
+tutorial_only: Montrer uniquement les objets du tutoriel
+common: Commun
+uncommon: Inhabituel
+rare: Rare
+exclusive: Exclusif
+f_size: Taille
+xxs: XXS
+xs: XS
+sm: SM
+md: MD
+lg: LG
+xl: XL
+xxl: XXL
+color: Couleur
+blue: Armes
+red: Équipement
+yellow: Armure
+purple: Gemmes
+grey: Pièges
+rarity_common: Objet commun - Après le tutoriel placer ces jetons dans le sac de pioche.
+rarity_uncommon: Objets inhabituels - Les objets inhabituels doivent être rangés à part dans un sac avec les autres objets inhabituels.
+rarity_rare: Objets rares - Les objets rares doivent être rangés à part dans un sac avec les autres objets rares.
+rarity_exclusive: Objets exclusifs - Les objets exclusifs doivent être rangés à part dans un sac avec les autres objets exclusifs.
+tutorial: Objet du Tutoriel - détachez les éléments suivants et suivez les instructions du guide « Lire en premier ».
+armour: >-
+  <strong>Armure</strong>:
+  Une armure physique réduit le nombre de touches contre son porteur de la valeur indiquée.
+  Elle limite aussi sa capacité à lancer des sorts.
+melee: >-
+  Nombre de dés {dice} de combat lancés lors d'une Attaque de mêlée avec cette arme.
+forceful_melee: >-
+  Cette arme peut effectuer un coup puissant. <strong>coup puissant</strong>.
+  Lancez un dé supplémentaire, mais il y a une chance que l'arme se casse.
+  <br/><br/>
+  Si deux symboles 💀 ou plus sont obtenus lors d'un coup puissant, l'arme se casse.
+  L'Attaque en cours est résolue normalement, puis retournez son jeton de 180° dans votre inventaire.
+  <br/><br/>
+  Un objet cassé ne peut pas être utilisé.
+  Vous devez vous rendre à la Guilde des Artisans après la partie pour les réparer.
+ranged: >-
+  <strong>Attaque à distance (Tir)</strong>:
+  Pour exécuter un Tir, la cible doit être à portée d'une de vos armes à distance, en LdV
+  et ne pas être engagée avec le tireur. Si le personnage est engagé avec un ou plusieurs Ennemis
+  lorsqu'il effectue un Tir, ces Ennemis peuvent exécuter une attaque d'opportunité contre
+  le tireur <strong>APRÈS</strong> la résolution du Tir.
+  <br/><br/>
+  Le modificateur le plus commun appliqué aux Tirs est le couvert.
+  Un couvert partiel réduit le nombre de touches obtenues sur un Tir de 1.
+  Ce modificateur est toujours appliqué en premier, avant tout autre modificateur comme l'armure.
+ranged_1: >-
+  <strong>Portée courte</strong>:
+  Cette arme peut tirer jusqu'à 5 cases (longueur de la plus courte réglette).
+  À cette portée cette arme lancera {dice} dés.
+ranged_2: >-
+  <strong>Portée moyenne</strong>:
+  Cette arme peut tirer de 6 à 13 cases (longueur de la plus longue réglette).
+  À cette portée cette arme lancera {dice} dés.
+ranged_3: >-
+  <strong>Longue Portée</strong>:
+  Cette arme peut tirer sur tout ce qui se trouve à 14 cases ou plus (au-delà de la longueur de la plus longue réglette).
+  À cette portée cette arme lancera {dice} dés.
+x_dice: >-
+  <strong>+X dés</strong>:
+  ce symbole accompagne souvent celui de <strong>Canalisation</strong>.
+  Il permet de lancer autant de dés supplémentaires pour une Attaque que le nombre d'épingles de Magie dépensées.
+ammunition: >-
+  <strong>Munitions</strong>:
+  Cette icône est utilisée pour identifier les armes qui ont besoin de munitions.
+  Si un symbole 💀 est obtenu sur le dé bleu lors d'un Tir, le personnage est à court de munitions pour cette arme.
+  L'arme ne pourra pas être utilisée à nouveau tant que vous ne trouvez pas plus de munitions.
+balanced: >-
+  <strong>Équilibré</strong>:
+  Cette arme gagne +1 dé lors d'un lancer.
+bludgeoning: >-
+  <strong>Contondant</strong>:
+  En cas de touche critique lors d'un lancer d'attaque, la cible gagne un marqueur Fatigue,
+  même si aucun dégât n'est infligé.
+  <br/><br/>
+  La cible gagne un marqueur Fatigue additionnel par dégât infligé.
+  <br/><br/>
+  Cette attaque gagne +1 dé lorsqu'elle est effectuée contre un décor.
+book: >-
+  <strong>Livre</strong>:
+  Lors de la phase de commerce qui suit votre acquisition de ce livre, lancez le Dé Magique
+  pour connaître son contenu ( Si le livre est inhabituel: ajouter 1 au résultat.
+  S'il est rare ou exclusif: ajoutez 2 au résultat)
+  <ul>
+  <li>1-2: Le livre est sans valeur. Défaussez le livre.</li>
+  <li>3-5: Le Livre se vend pour un montant égal à votre tirage.</li>
+  <li>6-7: L'aventurier de votre choix gagne +1XP. Défaussez le livre.</li>
+  <li>8: Vous trouvez des informations sur un ancien artefact. Ajoutez au hasard un jeton de ressource de relique dans le sac de pioche. Défaussez le livre.</li>
+  </ul>
+burning: >-
+  <strong>Incendiaire</strong>:
+  Si cette attaque obtient une touche critique, la cible gagne un marqueur Embrasement,
+  même si aucun dégât n'est infligé. Un objet avec ce symbole est considéré comme une source de feu.
+camouflage: >-
+  Ce personnage ne peut être ciblé que par des Tirs à portée courte.
+channel: >-
+  <strong>Canalisation</strong>:
+  Ce symbole accompagne d'autres statistiques ou capacités. Il indique qu'au moins une épingle de Magie
+  doit être dépensée pour utiliser la statistique/capacité. Si la statistique/capacité a une valeur X,
+  des épingles additionnelles peuvent être dépensées pour en améliorer l'effet.
+  N'oubliez pas de lancer le Dé Magique.
+forbidden_channel: >-
+  <strong>Canalisation (magie interdite)</strong>:
+  Le symbole canalisation (magie interdite) fonctionne de la même façon,
+  mais le joueur doit lancer le Dé de Magie Interdite au lieu du Dé Magique.
+cleave: >-
+  <strong>Tranchant</strong>:
+  Si cette attaque parvient à vaincre un Ennemi, vous pouvez appliquer le résultat de cette Attaque
+  contre un autre Ennemi valide, en réduisant le nombre de touches de un.
+  Vous pouvez continuer à faire ceci tant que vos Attaques parviennent à vaincre l'Ennemi ciblé
+  ou jusqu'à ce qu'il ne reste plus de cibles valides.
+crafting: >-
+  <strong>Ingrédient</strong>:
+  Un objet avec ce symbole est utilisé pour la fabrication d'objet (p. 85).
+  Sa lettre et sa couleur déterminent son type de ressource.
+  Les jetons avec un symbole numéroté sont employés pour la fabrication des reliques uniques.
+creature: >-
+  <strong>Créature</strong>:
+  Sauf spécification contraire, ce personnage ne peut pas ouvrir de portes, faire une Fouille,
+  utiliser de l'équipement ou avoir des Interactions avec les décors.
+cumbersome: >-
+  <strong>Encombrant</strong>:
+  Si ce lancer obtient un 💀 et que l'arme n'est pas cassée, tournez son jeton de 180°.
+  Cet objet ne peut pas être utilisé tant qu'il est dans cette position.
+  Une action rapide est requise pour retourner le jeton de 180° et le rendre à nouveau utilisable.
+  <br/><br/>
+  Une arme encombrante ne peut pas être lancée.
+curse: >-
+  <strong>Malédiction</strong>:
+  Si cette arme obtient une touche critique, la cible est Maudite (même si aucun dégât n'est infligé).
+darkness: >-
+  <strong>Ténèbres</strong>:
+  L'objet disposant d'un de ces symboles fonctionne comme un marqueur Ténèbres.
+  Il se déplace avec le personnage qui le transporte, obscurcissant la zone à portée courte autour de lui.
+  Si l'objet avec ce symbole doit être défaussé lors de son utilisation, quand il est utilisé,
+  placez le marqueur correspondant dans la salle.
+light: >-
+  <strong>Lumière</strong>:
+  L'objet disposant d'un de ces symboles fonctionne comme un marqueur Lumière.
+  Il se déplace avec le personnage qui le transporte, illuminant la zone à portée courte autour de lui.
+  Si l'objet avec ce symbole doit être défaussé lors de son utilisation, quand il est utilisé,
+  placez le marqueur correspondant dans la salle.
+defensive_re_roll: >-
+  <strong>Relance défensive</strong>:
+  Cet objet peut forcer la relance d'un seul dé de toute Attaque effectuée contre lui,
+  sauf si l'Attaque concernée ignore l'armure physique.
+  De plus, les touches critiques ne peuvent pas être relancées.
+melee_re_roll: >-
+  <strong>Relance de mêlée</strong>:
+  Ce personnage peut utiliser cette arme comme une arme de mêlée.
+  De plus, le personnage peut relancer un seul dé de Combat à chaque fois que l'arme est utilisée.
+discard: >-
+  <strong>Défausser</strong>:
+  Quand cet objet a été utilisé, rangez-le dans la réserve.
+effortless: >-
+  <strong>Rapide</strong>:
+  Cet objet peut être utilisé grâce à une action rapide.
+objective: >-
+  <strong>Objectifs</strong>:
+  Les jetons d'objectifs sont utilisés pour certaines quêtes et seront placés dans des coffres ou autres.
+entangling: >-
+  <strong>Handicapant</strong>:
+  Si cette attaque obtient une touche, la cible gagne un marqueur Fatigue.
+  Si ce lancer obtient une touche critique, la cible est mise au sol.
+  Ces effets s'appliquent même si aucun dégât n'est infligé.
+fast: >-
+  <strong>Vif</strong>:
+  Quand il effectue un Déplacement, le bénéficiaire de ce symbole peut bouger de X cases additionnelles.
+  Si l'utilisateur dispose de plusieurs occurrences de ce symbole, il n'utilise que la valeur la plus élevée
+  parmi elles (les sources ne se cumulent pas).
+first_strike: >-
+  <strong>Initiative</strong>:
+  Quand l'utilisateur entre à portée d'Attaque de mêlée d'un Ennemi
+  (y compris lors de sa mise en jeu ou de l'ouverture d'une porte),
+  il bénéficie d'une Attaque de mêlée gratuite et immédiate.
+fly: >-
+  <strong>Vol</strong>:
+  Le bénéficiaire de ce symbole peut voler au dessus du sol avec les avantages suivants:
+  <br/><br/>
+  <ul>
+  <li>Ruée</li>
+  <li>il ignore la 1ère touche de chaque attaque d'opportunité contre lui.</li>
+  <li>Il ne peut pas être mis au sol. Mais reste sujet aux autres règles qui devraient le mettre au sol.</li>
+  </ul>
+hawkeye: >-
+  <strong>Œil de lynx</strong>:
+  Cette attaque ignore les couverts partiels et peut tirer contre des personnages engagés
+  à n'importe quelle distance sans rendre la cible aléatoire.
+hazardous: >-
+  <strong>Dangereux</strong>:
+  Quand un objet avec ce symbole est utilisé, lancez le dé bleu.
+  Si une touche est obtenue, les effets normaux de l'objet s'appliquent.
+  Sur un incident, l'utilisateur subit les effets décrits à côté du symbole dangereux.
+  Sur un résultat vierge, l'objet ne produit pas d'effet.
+hidden_location: >-
+  <strong>Lieu Caché</strong>:
+  Piochez la Carte Lieu Caché dont le numéro correspond au jeton.
+  Remettez le jeton dans sa réserve (le sac de pioche pour les jetons communs ou leur sac respectif pour les autres).
+hit_and_run: >-
+  <strong>Tirailleur</strong>:
+  Après avoir exécuté une Attaque de mêlée, si ce personnage est toujours engagé,
+  il effectue un Déplacement gratuit pour s'éloigner directement de sa cible s'il y a l'espace pour le faire,
+  sans provoquer d'attaques d'opportunité. Il n'engage pas d'autres Ennemis avec ce déplacement.
+immobile: >-
+  <strong>Immobile</strong>:
+  Le bénéficiaire de ce symbole ne peut pas se Déplacer, ni être Déplacé,
+  sauf spécification contraire explicite d'une règle.
+immunity: >-
+  <strong>Immunité</strong>:
+  ce symbole accompagne d'autres capacités ou états.
+  Le bénéficiaire du symbole ne peut pas gagner de marqueurs correspondant à l'état
+  ou subir d'effets de la capacité indiquée.
+indestructible: >-
+  <strong>Indestructible</strong>:
+  Un objet avec ce symbole ne peut pas se casser.
+  Si un tel objet est désigné aléatoirement pour une casse, vous devez en choisir un autre, si possible.
+infinite_ammo: >-
+  <strong>Munitions infinies</strong>:
+  Quand cet objet est utilisé pour un Tir, ignorez les résultats 💀
+  qui causeraient un épuisement des munitions et forceraient à défausser le jeton.
+key: >-
+  <strong>Clé</strong>:
+  Un personnage portant cette clé peut verrouiller ou déverrouiller n'importe quelle porte ou décor
+  au prix d'une action rapide.
+lasting: >-
+  <strong>Effet durable</strong>:
+  Les effets découlant d'un objet avec ce symbole durent jusqu'à la fin du round.
+  Tournez le jeton de l'objet de 180° pour indiquer qu'il ne peut plus être utilisé pour l'instant :
+  remettez-le dans sa position normale quand les effets de l'objet ont cessé.
+  Si le jeton doit être défaussé lors de son utilisation, placez-le sur la fiche du bénéficiaire à la place
+  et défaussez-le à la fin du round.
+  <br/><br/>
+  L'utilisateur peut dépenser jusqu'à 2 épingles de Magie pour ajouter jusqu'à 2 marqueurs Rappel à l'objet.
+  À chaque phase d'évaluation, retirez un marqueur Rappel au lieu de défausser/retourner le jeton de l'objet.
+location_specific: >-
+  <strong>Usage spécifique</strong>:
+  Sauf spécification contraire d'une Quête, un objet avec ce symbole ne fonctionne que durant la Quête
+  où il est trouvé, ou lors de la Quête suivante s'il est acheté durant une phase de commerce.
+loud: >-
+  <strong>Bruyant</strong>:
+  Augmentez l'Effroi de 1 lorsqu'un objet avec ce symbole est utilisé.
+lull: >-
+  <strong>Accalmie</strong>:
+  Réduire l'Effroi de 1 lorsqu'un objet avec ce symbole est utilisé.
+magic: >-
+  <strong>Magic</strong>:
+  While this item is in use, the character may increase their Magic stat by one.
+magical_armour: >-
+  <strong>Magical Armour</strong>:
+  Dépensez une action et jusqu'à X épingles de Magie pour augmenter la valeur de Protection de X
+  <br/><br/>
+  Tournez le jeton/ marqueur de 180° pour indiquer que l'effet est actif :
+  tant qu'il est dans cette position, le jeton/marqueur ne peut pas être utilisé.
+malacyte_enhancement: >-
+  <strong>Enchantement de malacyte</strong>:
+  le bénéficiaire de ce symbole peut Incanter en utilisant une épingle de Magie de plus qu'autorisé par son rang.
+malacyte_stability: >-
+  <strong>Stabilité des Nanites</strong>:
+  Vous pouvez défausser un pion Magique pour relancer le Dé Magique.
+malacytic_conduit: >-
+  <strong>Conduit Malacytique</strong>:
+  Au début de chaque tour du bénéficiaire de ce symbole, ajoutez une épingle bleue au Compteur d'Effroi.
+  Si ce symbole figure sur un objet, la règle s'applique uniquement s'il est transporté ou équipé.
+master: >-
+  <strong>Maître</strong>:
+  Ce symbole accompagne une autre capacité sur la fiche d'un Compagnon ou d'un personnage invoqué.
+  Cette capacité s'applique au personnage qui contrôle le Compagnon tant qu'il est à portée courte.
+night_sight: >-
+  <strong>Vision nocturne</strong>:
+  Ce personnage ignore tous les effets des ténèbres.
+otherworldly: >-
+  <strong>Venu d'ailleurs</strong>:
+  Ce personnage vient d'une autre dimension.
+  Cette icône n'a pas d'effet particulier mais est utilisée par d'autres règles.
+pack: >-
+  <strong>Meute</strong>:
+  Ces personnages entrent en jeu en groupe. Placez autant de figurines que la valeur indiquée au lieu d'une seule figurine.
+  Les membres de la meute agissent néanmoins de façon individuelle.
+parry: >-
+  <strong>Parade</strong>:
+  Lors d'un lancer d'attaque contre le personnage, vous pouvez lancer un dé de combat.
+  Chaque touche obtenue annule une touche de l'adversaire, comme le ferait une armure physique.
+  L'utilisateur gagne ensuite un marqueur Fatigue.
+piercing: >-
+  <strong>Perforant</strong>:
+  L'armure physique ne peut pas annuler les touches d'un objet bénéficiant de ce symbole.
+plunderer: >-
+  <strong>Pillard</strong>:
+  Si cette attaque cause des dégâts, un objet choisi au hasard dans l'inventaire de la cible subit une dispersion.
+  Si l'Attaque obtient aussi une touche critique, l'attaquant peut récupérer cet objet à la place.
+poison: >-
+  <strong>Toxique</strong>:
+  Si cette attaque obtient une touche critique, la cible est Empoisonnée, et ce même si aucun dégât n'est infligé.
+preparation: >-
+  <strong>Préparation</strong>:
+  Après utilisation, tournez le jeton de 180°. Tant qu'il est dans cette position, l'objet ne peut pas être utilisé.
+  Dépensez une action pour retourner le jeton de 180° et rendre de nouveau l'objet utilisable.
+purification: >-
+  <strong>Purification</strong>:
+  Ce symbole possède une valeur X et précise comment il fonctionne (canalisation, action Repos, dépense d'action, etc.).
+  Quand il est employé, son utilisateur remplace ses X épingles noires de Santé les plus à droite par des épingles vertes.
+quickstrike: >-
+  <strong>Vive frappe</strong>:
+  Si cette attaque de mêlée obtient une touche critique, après sa résolution, le personnage peut,
+  immédiatement et gratuitement, faire un Rush ou exécuter une autre attaque avec la même arme ou une autre.
+rank: >-
+  <strong>Rang</strong>:
+  La puissance d'un PNJ. Les PNJ s'activent par ordre de rang décroissant (du plus élevé au plus faible).
+  Le rang peut aussi avoir un impact sur d'autres règles ou effets.
+reach: >-
+  <strong>Allonge</strong>:
+  Cette arme peut être utilisée pour exécuter des Attaques de mêlée contre des Ennemis situés jusqu'à X cases,
+  y compris en diagonale et y compris verticalement dans une zone de jeu sur plusieurs étages,cela a notamment un impact sur les attaques d'opportunité.
+  Sauf s'ils sont en contact avec l'utilisateur de l'arme, ses Ennemis ne sont pas considérés comme étant engagés.
+reactive: >-
+  <strong>Réactivité</strong>:
+  Une fois par tour, le bénéficiaire de ce symbole peut exécuter immédiatement une Attaque gratuite contre un autre personnage
+  qui commence son tour ou entre (intentionnellement ou pas) dans une case située à portée de ses Attaques.
+  L'Attaque interrompt le cours du jeu, le temps de sa résolution.
+  La cible peut ensuite poursuivre normalement son action/tour (si elle a survécu).
+regeneration: >-
+  <strong>Régénération (type d'épingle)</strong>:
+  Regagne X épingles du type indiqué lors de la phase d'évaluation.
+  Si le bénéficiaire dispose de plusieurs occurrences de ce symbole, elles cumulent leurs effets.
+relentless: >-
+  <strong>Implacable</strong>:
+  L'armure physique d'un personnage attaqué plusieurs fois lors du même round par des bénéficiaires de ce symbole
+  est réduite de 1 (min. : 0) par Attaque après la première, mais uniquement pour eux.
+  La valeur d'armure est réinitialisée entre chaque round.
+  <br/><br/>
+  Par exemple, la première Attaque exécutée par un bénéficiaire d'implacable utilise la valeur d'armure d'origine de la cible.
+  La seconde Attaque par un bénéficiaire d'implacable (que ce soit le même personnage ou non) contre la même cible
+  utilise sa valeur d'armure d'origine -1, tandis qu'une troisième Attaque utiliserait cette valeur -2, et ainsi de suite.
+re_roll: >-
+  <strong>Relance</strong>:
+  Si ce symbole se trouve sur une arme, l'utilisateur peut relancer un unique dé de combat
+  chaque fois que l'arme est employée pour l'Attaque ou pour une parade.
+rest: >-
+  <strong>Repos</strong>:
+  Ce symbole accompagne d'autres capacités et n'est utilisé que lors de l'action Repos.
+  Le bénéficiaire peut défausser un jeton où figure ce symbole pour gagner les capacités/effets qui y figurent.
+restore_action: >-
+  Ce symbole se trouve sur les potions et les remèdes.
+  Regagne X épingles d'Action à l'utilisateur ou à un autre Aventurier en contact.
+  Les actions éventuellement gagnées doivent être dépensées au tour du bénéficiaire et durant le round en cours.
+restore_health: >-
+  Ce symbole se trouve sur les potions et les remèdes.
+  Regagne X épingles de Vie à l'utilisateur ou à un autre Aventurier en contact.
+restore_magic: >-
+  Ce symbole se trouve sur les potions et les remèdes.
+  Regagne X épingles de Magie à l'utilisateur ou à un autre Aventurier en contact.
+restore_skill: >-
+  Ce symbole se trouve sur les potions et les remèdes.
+  Regagne X épingles de Compétences à l'utilisateur ou à un autre Aventurier en contact.
+retaliation: >-
+  <strong>Représailles</strong>:
+  Si le bénéficiaire de ce symbole bloque au moins une touche lors d'une Attaque de mêlée ayant obtenu un ou plusieurs 💀,
+  exécutez une Attaque résolue avec un dé par 💀 contre l'attaquant.
+rope: >-
+  <strong>Corde</strong>:
+  Un personnage peut placer un jeton d'objet avec ce symbole en contact avec lui en dépensant une action.
+  Tant que le jeton est en position, tout personnage peut s'en servir pour monter ou descendre d'un étage (une action par étage).
+  La hauteur d'un étage est égale à celle d'un mur.
+  Si la corde est placée en contact avec une fissure, les personnages peuvent la franchir
+  en augmentant de 2 la distance de sécurité de leurs sauts.
+rough_ground: >-
+  <strong>Terrain difficile</strong>:
+  Cette zone suit les règles du terrain difficile (p. 58) et utilise la valeur du symbole.
+  Des objets ou des personnages peuvent avoir ce symbole, accompagné d'une valeur négative :
+  le bénéficiaire réduit d'autant la valeur de tout terrain difficile.
+scramble: >-
+  <strong>Scramble</strong>:
+  La valeur en haut du symbole représente le maximum de hauteur et de largeur d'obstacles,
+  exprimé en cases/pouces, qu'un personnage peut franchir normalement au cours d'un Déplacement.
+  Il n'a pas besoin de recourir à une action spécifique pour les franchir.
+  <br/><br/>
+  La valeur en bas du symbole est la distance de sécurité du personnage lors des sauts.
+sharp: >-
+  <strong>Aiguisé</strong>:
+  Si cette attaque obtient une touche critique, la cible gagne un marqueur mutilation,
+  même si aucun dégât n'est infligé.
+shield_block: >-
+  <strong>Blocage au bouclier</strong>:
+  Le personnage peut dépenser une action pour le prendre dans son inventaire
+  et le placer à côté de sa figurine pour gagner les effets indiqués dans le bouclier du symbole.
+  Le jeton est remis dans l'inventaire de l'utilisateur dès qu'une des situations suivantes se présente:
+  <br/><br/>
+  <ul>
+  <li>Le personnage effectue une action autre qu'un Déplacement ou un Rush.</li>
+  <li>Le personnage subit des dégâts.</li>
+  <li>Le personnage est Étourdi.</li>
+  </ul>
+  <br/><br/>
+  Le personnage peut aussi utiliser cette capacité quand il est attaqué en dehors de son tour,
+  avant le lancer d'attaque. Dans ce cas, le personnage gagne un marqueur Fatigue après l'Attaque.
+  <br/><br/>
+  Un seul jeton Blocage au bouclier peut être utilisé à la fois.
+size: >-
+  <strong>Taille</strong>:
+  Ce personnage est plus grand ou plus petit qu'un humain moyen et plusieurs modifications s'appliquent à la LdV,
+  aux Poussées et lors des déplacements d'objets.
+stars: >-
+  <strong>Étoiles de lancer</strong>:
+  Les jetons d'arme utilisant les étoiles de lancer n'ont pas besoin d'un jeton matériel divers séparé pour fonctionner :
+  le jeton d'arme lui-même est défaussé si ses munitions sont épuisées.
+skill: >-
+  <strong>Compétence</strong>:
+  La compétence indiquée peut être utilisée par le personnage, au niveau figurant sous le symbole,
+  comme si elle était inscrite sur sa fiche de Classe.
+stash: >-
+  <strong>Cache</strong>:
+  Cet objet est immédiatement défaussé quand il est trouvé.
+  Sa valeur marchande est ajoutée à la Cache de votre Équipe.
+terrifying: >-
+  <strong>Terrifiant</strong>:
+  En cas de touche critique lors d'un lancer d'attaque, la cible gagne un marqueur Terreur.
+  <br/><br/>
+  Si un Ennemi termine son tour à portée courte de ce personnage, lancez le Dé Magique.
+  Sur un 1, l'Ennemi gagne un marqueur Terreur.
+trap: >-
+  <strong>Piège à ours</strong>:
+  Un Aventurier peut placer un jeton d'objet avec ce symbole dans une case adjacente en effectuant une Interaction.
+  Les PNJ n'ont pas conscience de l'existence du piège et définissent leurs trajectoires comme s'il n'existait pas.
+  Le piège se déclenche dès qu'un Ennemi entre dans sa case ou une case adjacente.
+  Ses effets sont résolus contre cet Ennemi. Retournez ensuite le jeton face cachée :
+  il ne se déclenche plus durant ce round. Retournez-le de nouveau lors de la phase d'évaluation pour le réactiver.
+  Chaque fois que le piège se déclenche, lancez un dé : sur un 💀, défaussez le jeton.
+  Les Aventuriers peuvent ramasser le piège à ours.
+trap_description: >-
+  Pièges -
+  Si un Aventurier révèle ce jeton lors d'une Fouille, un piège se déclenche immédiatement contre lui !
+  Les pièges obtenus en dehors d'une Fouille (par ex., lorsque vous piochez l'équipement d'un PNJ)
+  sont remis dans le sac de pioche sans produire d'effet et un nouveau jeton est pioché à la place.
+  Les pièges ne peuvent être ni achetés, ni vendus.
+trap_melee: >-
+  Pièges -
+  Si un Aventurier révèle ce jeton lors d'une Fouille, un piège se déclenche immédiatement contre lui !
+  Exécutez une attaque de mêlée sur l'aventurier qui a déclenché le piège.
+unreliable: >-
+  <strong>Peu fiable</strong>:
+  Si une Attaque utilisant cette arme avec ce symbole obtient un 💀, l'arme devient inutilisable.
+  Si une Attaque utilisant cette arme avec ce symbole obtient deux 💀, l'arme est cassée.
+  Retournez son jeton de 180° dans l'inventaire. Une action est nécessaire pour rendre l'arme de nouveau utilisable.
+unsanctioned: >-
+  <strong>Dissident</strong>:
+  L'utilisateur de ce symbole doit suivre les règles des Maladaars dissidents (p. 39).
+vampiric: >-
+  <strong>Vampirique (type d'épingle)</strong>:
+  Si cette attaque obtient une touche critique, la cible perd une épingle du type indiqué (si possible),
+  en plus des dégâts potentiels.
+  Si plusieurs types sont listés, la cible perd une épingle du type dont elle a le plus
+  (en cas d'égalité, l'attaquant choisit).
+  Si une épingle est ainsi perdue, l'attaquant récupère une épingle du même type, si possible.
+  S'il ne peut pas, il gagne un marqueur Bénédiction, si possible.
+vicious: >-
+  <strong>Vicieux</strong>:
+  les résultats ✸ obtenus sur le dé bleu lors des Attaques exécutées avec une arme disposant de ce symbole
+  sont des touches critiques.
+volatile: >-
+  <strong>Volatile</strong>:
+  Si cette attaque obtient un 💀 sur le dé bleu, l'utilisateur subit 1 dégât.
+  Puis tous les personnages adjacents subissent une Attaque bénéficiant du symbole 🔥
+  et résolue avec autant de dés que l'Attaque initiale.
+worthy_opponent: >-
+  <strong>Digne opposant</strong>:
+  Si un Aventurier parvient à vaincre un personnage disposant de ce symbole, son Équipe gagne un Renom.
+  Le personnage doit être vaincu par une offensive directe
+  (les dégâts différés, comme ceux du Poison ou d'une Mutilation, ne comptent pas).
+  <br/><br/>
+  Le personnage disposant de ce symbole ne peut apparaître qu'une seule fois par Quête.
+  Une fois qu'il est entré en jeu, tout effet ou règle qui en ferait venir un autre en jeu sont ignorés
+  même si le personnage a été vaincu.
+adamantine_elixir: >-
+  <strong>Élixir d'adamantine</strong>:
+  Tant qu'elle fait effet, cette potion augmente l'armure physique du bénéficiaire de 2
+  (ceci ne gêne pas son utilisation de la magie) et accorde une immunité contre :
+  contondant, incendiaire, handicapant, toxique, aiguisé, terrifiant.
+blessed_water: >-
+  <strong>Eau bénite</strong>:
+  Cet objet ne peut être utilisé que pour attaquer les Revenants.
+camping_gear: >-
+  <strong>Matériel de camping</strong>:
+  L'équipe en possession de cet objet peut relancer ses tirages en cas de repos dans la nature durant la phase de repos.
+cordial_of_cognisance: >-
+  <strong>Cordial de la connaissance</strong>:
+  Quand cet objet est utilisé, le personnage gagne 3 XP et peut les distribuer immédiatement sur sa fiche de Classe.
+  Les compétences et les sorts choisis peuvent être utilisés durant ce round.
+  Cochez les éléments choisis d'une couleur différente, car ces gains sont temporaires.
+  Quand le jeton de l'objet est défaussé, le bénéficiaire perd 2 des 3 XP et les sorts/compétences associés.
+  Notez que les personnages ne gagnent des niveaux que durant la phase de progression.
+daemon_mantle: >-
+  <strong>Mante du démon</strong>:
+  Cet objet peut être utilisé pour Incanter réorganisation cellulaire avec 5 épingles.
+  Aucune épingle n'est réellement dépensée (pas de lancer du Dé Magique).
+  Tournez le jeton de 180° pour indiquer qu'il ne peut plus être utilisé pour le reste de la partie.
+doorbuster: >-
+  <strong>Doorbuster</strong>:
+  Cet objet ajoute 3 dés à un lancer de combat à mains nues uniquement contre un objet de décor.
+gas_trap: >-
+  <strong>Piège à gaz</strong>:
+  Si un Aventurier révèle ce jeton lors d'une Fouille, résolvez un Tir causant une explosion contre lui.
+  Le piège ne cause pas de dégâts, mais inflige un marqueur Fatigue par touche.
+maladaar_almanac: >-
+  <strong>Almanach du Maladaar</strong>:
+  Pour utiliser cet objet, un personnage doit avoir un compteur de sort sur sa fiche de Classe.
+  L'utilisateur coche autant de cases de l'objet que son rang et coche une nouvelle case quand son rang augmente.
+  Par case cochée, l'utilisateur gagne un nouveau sort comme s'il avait dépensé de l'XP pour l'apprendre.
+  Cochez les sorts d'un X sur la carte Maladaar de référence.
+  Si, à l'issue d'une Quête, cet objet a changé de main, son utilisateur initial perd les sorts acquis grâce à l'objet
+  (effacez les coches sur l'objet et les sorts correspondants sur la carte de référence).
+mystic_grimoire: >-
+  <strong>Grimoire mystique</strong>:
+  Le personnage portant cet objet peut apprendre des sorts supérieurs d'1 niveau à son rang.
+  Les sorts appris restent acquis même si le personnage ne transporte plus l'objet.
+oblivions_echo: >-
+  <strong>Écho de l'Oubli</strong>:
+  L'utilisateur de cet objet peut effectuer une Interaction avec cet objet.
+  Dans ce cas, il produit un effet similaire à une Interaction avec le Creuset de la Résurrection (p. 53).
+sceptre_of_dominion: >-
+  <strong>Sceptre de domination</strong>:
+  Le personnage transportant cet objet peut Persuader n'importe quel personnage de faire n'importe quoi
+  (toutefois, les Aventuriers d'autres Équipes ne peuvent jamais rejoindre la vôtre).
+  La Persuasion peut être effectuée contre des PNJ sans valeur de Persuasion en utilisant leur rang à la place.
+sledge_of_burden: >-
+  <strong>Traîneau de charge</strong>:
+  Ce personnage est considéré comme ayant une taille supérieure d'un cran pour le déplacement des objets.
+tome_of_revenance: >-
+  <strong>Tome des Revenants</strong>:
+  Cet objet permet à l'utilisateur de relancer ses lancers d'attaques et ses tirages d'effets,
+  mais uniquement contre les Revenants.
+fireball: >-
+  <strong>Boule de feu</strong>:
+  Magie élémentaire - Action - source de feu requise à portée du magicien et de la cible.
+  Depuis la source de feu, exécutez un Tir avec X dés, bénéficiant du symbole 🔥
+  et considéré comme employant une arme à explosion.
+spell_nausea: >-
+  <strong>Nausée</strong>:
+  Magie exogène - Action - La cible est Empoisonnée.
+focused_energy: >-
+  <strong>Trait d'énergie</strong>:
+  Magie élémentaire - Action - Effectuez un Tir avec X dés et bénéficiant de Contondant et Aiguisé.
+harpoons: >-
+  <strong>Harpons</strong>:
+  Cette arme a besoin de munitions. Le personnage doit aussi disposer d'un jeton des munitions correspondantes
+  pour pouvoir utiliser cette arme. Une fois utilisé, défausser le jeton.
+steel: >-
+  <strong>Acier</strong>:
+  Habituellement extrait d'armes et armures usagées et reforgées pour leur donner une nouvelle vie.
+wood: >-
+  <strong>Bois</strong>:
+  Ressource commune se présentant sous forme de planche ou récupérée sur des armes usagées.
+  Il est employé pour fabriquer des armes, des boucliers ou sculpté pour créer des décorations.
+textiles: >-
+  <strong>Textile</strong>:
+  Différents tissus et divers cuirs sont utilisés pour fabriquer des vêtements et armures.
+riches: >-
+  <strong>Richesses</strong>:
+  Des matériaux précieux, comme des gemmes ou des peaux d'animaux rares, permettent d'ennoblir la plupart des objets.
+herbs: >-
+  <strong>Herbes</strong>:
+  Certaines plantes médicinales servent à fabriquer des potions et autres remèdes.
+fungus: >-
+  <strong>Champignons</strong>:
+  Omniprésents dans les donjons, certains champignons ont des propriétés médicinales, hallucinogènes
+  ou affectant la capacité à manipuler les malacytes.
+minerals: >-
+  <strong>Minéraux</strong>:
+  Ils peuvent être extraits du sol et sont un complément alchimique pour les potions de renforcement physique ou mental.
+keltic_steel: >-
+  <strong>Acier kelte</strong>:
+  Composant des armes les plus chères et des pièces de monnaie, le minerai kelte peut être fondu avec du fer
+  pour constituer un alliage de teinte gris-bleu. Les armes en acier kelte sont plus puissantes et plus faciles à manier.
+graam_ore: >-
+  <strong>Minerai de Graam</strong>:
+  Le graam a des propriétés conductrices pour les malacytes et est utilisé pour fabriquer des objets
+  pouvant s'harmoniser avec les malacytes de l'utilisateur et lui permettre de canaliser ses pouvoirs magiques.
+powdered_drakon_bone: >-
+  <strong>Poudre d'os de Drakon</strong>:
+  Cet ingrédient peut être consommé sous sa forme brute pour un gain immédiat d'adrénaline,
+  combiné pour fabriquer des stimulants qui amplifient ses effets, mais aussi utilisé par les forgerons.
+issen_oil: >-
+  <strong>Huile de l'Issen</strong>:
+  Extraite du lit riche en malacyte du fleuve Issen, cette substance hautement volatile
+  sert à créer de puissants explosifs et des armes incendiaires.
+serpent_venom: >-
+  <strong>Venin</strong>:
+  Distillé à partir d'une large variété de toxines animales, notamment des serpents,
+  ses propriétés meurtrières sont utilisées pour imbiber des armes ou d'autres objets.
+alary_carapace: >-
+  <strong>Carapace d'Alary</strong>:
+  Cette chitine iridescente est, à la fois, magnifique et terrifiante. C'est un porte-bonheur reconnu
+  et les Aventuriers sont prêts à payer un bon prix pour en sertir leur équipement.
+extract_of_maladite: >-
+  <strong>Extrait de Maladite</strong>:
+  La maladite est une roche riche en malacyte qui peut être fondue et incorporée dans des armes et des armures
+  pour fournir une protection contre les attaques magiques.
+necrotic_fluids: >-
+  <strong>Necrotic Fluids</strong>:
+  The chemical brew created by the Malagaunt can be used to imbue its ability to manipulate
+  lifeforces into items.
+blast: >-
+  <strong>Explosion</strong>:
+  Les attaques à explosion n'affectent pas uniquement leur cible mais aussi toutes les cases qui l'entourent.
+  Une explosion peut ainsi toucher des personnages qui sont normalement hors de vue !
+  <br/><br/>
+  Si un symbole ou plus est obtenu, décalez de un la case atteinte par l'explosion dans la direction
+  choisie par le joueur de la cible initiale (ou dans une direction aléatoire si la cible était un PNJ).
+  <br/><br/>
+  Le même résultat d'attaque est appliqué, en le réduisant d'une touche,
+  contre tout personnage se trouvant dans les huit cases adjacentes.
+  <br/><br/>
+  Poursuivez l'application du résultat contre tout personnage dans les cases adjacentes au-delà
+  en réduisant de un jusqu'à ce que le nombre de touches soit réduit à zéro.
+range_plus_1: >-
+  <strong>Range +1</strong>:
+  This item adds one extra die to the ranged attack.
+remove_poison: >-
+  <strong>Remove Poison</strong>:
+  Retirer un marqueur Poison d'un Aventurier.
+remove_wounded: >-
+  <strong>Remove Wounded</strong>:
+  Retirer un marqueur Mutilation d'un Aventurier.
+spell_illusion: >-
+  <strong>Illusion</strong>:
+  Placez une Illusion dans une case vide à portée et en LdV du magicien et de l'Ennemi choisi.
+  L'Ennemi est distrait.
+regen_magic: >-
+  <strong>Régénération magique</strong>:
+  Récupérer une épingle de Magie lors de la Phase d'évaluation.
+spell_cocoon: >-
+  <strong>Cocon (Magie élémentaire)</strong>:
+  Gagnez les bénéfices d'un Repos, même s'il y a des Ennemis dans votre salle ou à portée courte et en LdV
+  (un Ennemi engagé avec un personnage l'empêche toujours d'effectuer un Repos).
+  Jusqu'à X Alliés situés jusqu'à X cases du magicien bénéficient aussi du Repos dans le cadre du sort.
+spell_invisibility: >-
+  <strong>Invisibility (Magie personnelle)</strong>:
+  Gagnez les effets suivants jusqu'à la fin du round :
+  <br/><br/>
+  X=1: vous ne pouvez être ciblé qu'à portée courte par vos Ennemis.
+  <br/><br/>
+  X=2: vous ne pouvez être ciblé que par des Ennemis adjacents. Vous ne bloquez pas la LdV.
+  <br/><br/>
+  X=3 ou +: vous ne pouvez pas être ciblé.
+  Vous ne provoquez pas d'attaques d'opportunité (vous pouvez toujours en effectuer).
+  Vous ne bloquez pas la LdV. Vous pouvez choisir de bloquer ou non un Déplacement.
+spell_rearrange_cells: >-
+  <strong>Réorganisation cellulaire (Magie personnelle)</strong>:
+  Vous transformez temporairement votre corps en celui d'une bête.
+  Effectuez X+2 augmentations parmi les suivantes
+  <br/><br/>
+  <ul>
+  <li>Augmentez de 1: Mêlée (max 4), Armure (max 3), Mouvement (max 2) </li>
+  <li>Ajoutez un des effets suivants à vos Attaques: Contondant / Aiguisé / Vive frappe / Handicapant / Vicieux</li>
+  <li>Augmentez votre taille de 1. Si X est supérieur ou égal à 3, augmentez votre taille de 2 et gagnez Terrifiant.</li>
+  </ul>
+  <br/>
+  Placez X marqueurs Rappel sur votre fiche de personnage.
+  <br/><br/>
+  Retirez un de ces marqueurs à chaque phase d'évaluation.
+  La réorganisation cellulaire dure jusqu'au retrait du dernier marqueur.
+gem: >-
+  Gemmes, Or - Ces jetons sont rangés dans votre inventaire mais n'ont d'utilité qu'en dehors des parties lors d'une campagne.
+2_actions: >-
+  Utiliser cet objet/arme utilise 2 actions.
+starting_magic: >-
+  <strong>Starting Magic</strong>:
+  Cet objet va augmenter la valeur initiale de Magie de l'aventurier en fonction du nombre affiché.
+skill_camouflage_level_1: >-
+  <strong>Compétence: Camouflage (lvl 1)</strong>:
+  (1) Tant qu'il est en contact avec un mur, ce personnage ne peut pas être ciblé pour le reste du round.
+  Les Ennemis peuvent traverser les cases qui lui sont adjacentes sans s'arrêter ou déclencher ses attaques d'opportunité.
+  Ils ne peuvent pas finir un Déplacement en contact avec lui. Il ne bloque pas les LdV.
+skill_camouflage_level_2: >-
+  <strong>Compétence: Camouflage (lvl 2)</strong>:
+  (2) Ce personnage exécute un Tir ou un Déplacement.
+  Tant qu'il est en contact avec un décor, il ne peut pas être ciblé pour le reste du round.
+  Les Ennemis peuvent traverser les cases qui lui sont adjacentes sans s'arrêter ou déclencher ses attaques d'opportunité.
+  Ils ne peuvent pas finir un Déplacement en contact avec lui. Il ne bloque pas les LdV.
+skill_intimidating_1: >-
+  <strong>Compétence: Intimidation (lvl 1)</strong>:
+  (1) Réaction : à utiliser quand un Ennemi en LdV de ce personnage s'active.
+  Vous pouvez choisir la cible du round pour cet Ennemi parmi les personnages éligibles qu'il peut voir
+  (même si l'Ennemi est déjà engagé et/ou qu'une autre cible est plus proche).
+skill_intimidating_2: >-
+  <strong>Compétence: Intimidation (lvl 2)</strong>:
+  (2) Réaction : à utiliser quand un Ennemi entre en LdV de ce personnage ou commence son tour dans sa LdV.
+  Le tour de l'Ennemi se termine immédiatement et il gagne un marqueur Étourdissement.
+  <br/><br/>
+  <strong>Passif</strong>: vous pouvez effectuer une action avec n'importe quel Allié à portée courte de ce personnage,
+  comme s'il s'agissait d'une action rapide. L'Allié gagne ensuite un marqueur Fatigue.
+skill_tracking_level_1: >-
+  <strong>Compétence: Pistage (lvl 1)</strong>:
+  (1) Consultez les trois premières cartes du deck Évènement.
+skill_tracking_level_2: >-
+  <strong>Compétence: Pistage (lvl 2)</strong>:
+  (2) Effectuez les lancers d'entrée en jeu de tous les PNJ pouvant être mis en jeu durant ce round
+  en fonction du niveau d'Effroi actuel et placez-les à côté des Points d'Entrée appropriés.
+  Les Tombes ou les autres points de mise en jeu alternatifs à portée courte de cet Aventurier ne peuvent pas être utilisés.
+  Vous pouvez ensuite replacer les PNJ d'un Point d'Entrée vers un autre.
+  Les tirages pour l'entrée en jeu ne sont pas effectués durant ce round :
+  les PNJ sont simplement activés et doivent effectuer leur entrée dans la zone de jeu normalement.
+  <br/><br/>
+  <strong>Passif</strong>: si n'importe quelle règle cause un changement de position entre votre Point de Départ
+  et un Point d'Entrée désigné aléatoirement, vous pouvez lancer deux fois le Dé Magique
+  et choisir son résultat pour définir votre Point d'Entrée.
+skill_fortified_mind_level_1: >-
+  <strong>Compétence: Forteresse mentale (lvl 1)</strong>:
+  (1) À utiliser avant que le personnage Incante un sort Rapide : il peut l'Incanter même en étant engagé.
+skill_fortified_mind_level_2: >-
+  <strong>Compétence: Forteresse mentale (lvl 2)</strong>:
+  (2) Réaction: à utiliser quand un Allié à portée courte subit une Attaque.
+  Servez-vous de l'armure magique de l'utilisateur pour annuler les touches de l'Attaque.
+  N'importe quelle combinaison d'épingles de Magie de l'utilisateur et du bénéficiaire peut être dépensée pour améliorer l'armure.
+  Les effets du Dé Magique sont appliqués à l'utilisateur.
+skill_inspiring_level_1: >-
+  <strong>Compétence: Inspiration (lvl 1)</strong>:
+  (1) Un Allié à portée courte de ce personnage perd un marqueur Terreur.
+skill_inspiring_level_2: >-
+  <strong>Compétence: Inspiration (lvl 2)</strong>:
+  (2) Réaction: à utiliser après que ce personnage a vaincu un Ennemi.
+  Tous les Alliés à portée courte perdent un marqueur Terreur OU ce personnage effectue une action.
+  <br/><br/>
+  <strong>Passif</strong>: tout autre Allié qui commence son tour à portée courte et en LdV de ce personnage
+  perd un marqueur Terreur avant son activation.
+skill_inspiring_level_3: >-
+  <strong>Compétence: Inspiration (lvl 3)</strong>:
+  (3) Ce personnage et tous ses Alliés à portée courte perdent tous leurs marqueurs Terreur et Fatigue.
+  Puis, ils peuvent tous effectuer une action.
+skill_disarm_1: >-
+  <strong>Désarmement (lvl 1)</strong>:
+  (1) Réaction: à utiliser après une Attaque de mêlée qui n'a infligé aucun dégât au personnage.
+  L'arme utilisée par l'attaquant est retirée de son plateau et subit une dispersion.
+skill_disarm_2: >-
+  <strong>Désarmement (lvl 2)</strong>:
+  (2) Réaction: à utiliser après une Attaque de mêlée qui n'a infligé aucun dégât au personnage.
+  Le personnage récupère l'arme utilisée par l'attaquant (ajoutez-la à l'inventaire).
+  Si le personnage n'a pas assez de place, il doit la laisser tomber au sol
+  ou l'échanger contre d'autres objets (abandonnés au sol).
+skill_frenzy_1: >-
+  <strong>Frénésie (lvl 1)</strong>:
+  (1) À utiliser avant que le personnage effectue une Attaque de mêlée : il lance deux dés supplémentaires pour l'Attaque.
+skill_frenzy_2: >-
+  <strong>Frénésie (lvl 2)</strong>:
+  (2) À utiliser avant que le personnage effectue une Attaque de mêlée : il lance trois dés supplémentaires pour l'Attaque.
+skill_frenzy_3: >-
+  <strong>Frénésie (lvl 3)</strong>:
+  (3) À utiliser avant que le personnage effectue une Attaque de mêlée : il lance quatre dés supplémentaires pour l'Attaque.
+  Après le lancer d'attaque, il peut répartir ses touches entre autant d'Ennemis se trouvant à portée de son arme.
+  Tous les effets de l'Attaque (par ex., contondant), sont appliqués à tous les Ennemis subissant une touche.
+  <br/><br/>
+  <strong>Passif</strong>: Le personnage gagne Initiative
+skill_nature_1: >-
+  <strong>Uni à la nature (lvl 1)</strong>:
+  (1) À utiliser durant une Fouille globale.
+  Lancez le Dé Magique et prenez les objets indiqués en fonction de son résultat, en plus de ceux obtenus durant la Fouille :
+  <br/><br/>
+  1: Pas d'effet.
+  <br/>
+  2-3: Prenez un jeton herbes ou abats.
+  <br/>
+  4-5: Prenez un jeton provisions ou champignons.
+  <br/>
+  6: Prenez un jeton remède ou minéraux.
+  <br/>
+  <strong>Passif</strong>: si l'Équipe passe la phase repos dans la nature,
+  vous pouvez effectuer un tirage sur la table ci-dessus pour chaque personnage possédant cette compétence.
+skill_ambush_1: >-
+  <strong>Embuscade (lvl 1)</strong>:
+  (1) <strong>Réaction:</strong> à utiliser quand un Ennemi termine un Déplacement à 4 cases ou moins de ce personnage
+  se trouvant en couvert partiel ou total. Il effectue un Tir contre cet Ennemi.
+  Il peut faire un Rush avant ou après cette action.
+skill_ambush_2: >-
+  <strong>Embuscade (lvl 2)</strong>:
+  (2) <strong>Réaction:</strong> à utiliser quand un Ennemi termine un Déplacement à 4 cases ou moins de ce personnage
+  se trouvant en couvert partiel ou total. Il effectue un Déplacement puis une action Attaque contre cet Ennemi.
+  Il peut faire un seul Rush, avant ou après n'importe laquelle de ces actions.
+skill_persuasion_1: >-
+  <strong>Compétence: Entourloupe (lvl 1)</strong>:
+  (1) À utiliser avant d'effectuer une Persuasion : le personnage gagne deux touches sur le lancer de Persuasion.
+skill_persuasion_2: >-
+  <strong>Compétence: Entourloupe (lvl 2)</strong>:
+  (2) Le personnage effectue une Persuasion contre un Aventurier d'une autre Équipe pour le dissuader de poursuivre sa Quête :
+  la cible gagne un marqueur Fatigue par touche non annulée du lancer de Persuasion.
+  <br/><br/>
+  <strong>Passif</strong>: le personnage lance un dé supplémentaire lorsqu'il utilise Persuasion.
+skill_persuasion_3: >-
+  <strong>Compétence: Entourloupe (lvl 3)</strong>:
+  (3) Le personnage effectue une Persuasion contre un personnage, avec trois touches automatiques.
+  Utilisez les options normales pour l'action (toutefois, les Aventuriers d'une autre Équipe ne rejoindront jamais la vôtre).
+skill_tricks_of_the_trade_1: >-
+  <strong>Compétence: Ficelles du métier (lvl 1)</strong>:
+  (1) Le personnage peut verrouiller ou déverrouiller une porte ou un décor en contact,
+  ou le personnage peut ignorer les effets des jetons pièges piochés lors d'une Fouille.
+skill_distraction_1: >-
+  <strong>Compétence: Diversion (lvl 1)</strong>:
+  (1) Un personnage à portée moyenne et en LdV gagne un marqueur Fatigue.
+skill_smithing_1: >-
+  <strong>Compétence: Forge (lvl 1)</strong>:
+  (1) Durant une quête, ce personnage peut dépenser une action pour réparer gratuitement un objet cassé
+  comme si vous étiez à la Guilde des artisans.
+  La rareté de l'objet réparé dépend du nombre d'épingles dépensées:
+  <br/><br/>
+  1: Commun
+  <br/>
+  2: Commun ou inhabituel
+  <br/>
+  3: N'importe quel objet
+  <br/><br/>
+  <strong>Phase de commerce:</strong> Réparer un objet gratuitement en respectant les mêmes restrictions.
+skill_entertainer_1: >-
+  <strong>Compétence: Barde (lvl 1)</strong>:
+  (1) Retirez un marqueur Fatigue d'un autre personnage à portée courte.
+  <br/><br/>
+  <strong>Phase de repos:</strong> Ajouter jusqu'à 2 à tout résultat d'un tirage à l'auberge (Sans dépense de renom).
+skill_entertainer_2: >-
+  <strong>Compétence: Barde (lvl 2)</strong>:
+  (2) À utiliser lors d'un repos. Ce personnage et chaque allié sont Bénis.
+  Vous pouvez augmenter jusqu'à deux fois le niveau d'effroi: par augmentation, chaque personnage est Béni une fois de plus.
+  <br/><br/>
+  <strong>Phase de repos:</strong> À la fin de cette phase, tous les personnages de votre Équipe sont Bénis.
+skill_reflexes_1: >-
+  <strong>Compétence: Réflexes (lvl 1)</strong>:
+  (1) <strong>Réaction:</strong> à utiliser quand un Ennemi engage le personnage.
+  Le personnage effectue un Déplacement qui ignore les attaques d'opportunité.
+  <br/><br/>
+  <strong>Passif</strong>: le personnage ignore une touche obtenue contre lui lors d'une attaque d'opportunité.
+skill_impervious_1: >-
+  <strong>Compétence: Insensible (lvl 1)</strong>:
+  (1) <strong>Réaction:</strong> à utiliser chaque fois que le personnage doit recevoir n'importe quel marqueur d'état.
+  Défaussez le marqueur sans qu'il produise d'effet.
+skill_impervious_2: >-
+  <strong>Compétence: Insensible (lvl 2)</strong>:
+  (2) Le personnage gagne +2 Armure jusqu'à la fin du round.
+skill_impervious_3: >-
+  <strong>Compétence: Insensible (lvl 3)</strong>:
+  (3) Le personnage regagne 1 épingle de Santé
+  (il peut dépasser son niveau initial du moment qu'il y a de l'espace disponible sur son plateau).
+  Le personnage peut défausser n'importe quels marqueurs d'état.
+  <br/><br/>
+  De plus, le personnage ignore tous les dégâts, résiste à tous les sorts sans dépenser d'épingles
+  et annule tous les marqueurs d'état sans qu'ils produisent d'effet jusqu'à la fin du round.

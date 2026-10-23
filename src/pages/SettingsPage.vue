@@ -23,7 +23,7 @@ const language = useLanguage()
 const i18n = useI18n()
 const tokens = useTokens()
 
-const langs = ['en']
+const langs = ['en', 'fr']
 
 function onSave() {
     theme.save()
@@ -103,8 +103,8 @@ function onSave() {
                         <div>
                             <strong>{{ $t('translated-by') }}:</strong>
                             <dl class="description">
-                                <dt>{{ $t('nl') }}</dt>
-                                <dd>Nico Van den Winckel</dd>
+                                <dt>{{ $t(language.lang) }}</dt>
+                                <dd>{{ $t('translator') }}</dd>
                             </dl>
                         </div>
                         <div class="about-me">
